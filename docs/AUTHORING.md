@@ -15,7 +15,7 @@ Create `_stories/<you>/<story-slug>/index.md`:
 ```markdown
 ---
 title: The Last Ember
-theme: fantasy        # fantasy | sf | newspaper
+theme: fantasy        # fantasy | sf | newspaper | dusty
 summary: One or two sentences shown on the home page.
 ---
 Optional intro text shown above the chapter list.

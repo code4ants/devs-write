@@ -6,7 +6,7 @@
   --accent: #e8e5dd;
   --card: #1b1b1b;
   --border: #4a4a48;
-  --font-body: "Libre Baskerville", "Times New Roman", Times, serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   --font-head: "Playfair Display", "Times New Roman", serif;
   --radius: 0;
   /* callout inks: muted, like spot colour on newsprint */

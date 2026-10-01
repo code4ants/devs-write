@@ -8,7 +8,7 @@
 # Chapters inherit the story's theme. Also creates one page per author in
 # _data/authors.yml at /<author>/.
 module DevsWrite
-  THEMES = %w[fantasy sf newspaper].freeze
+  THEMES = %w[fantasy sf newspaper dusty].freeze
   DEFAULT_THEME = "fantasy"
 
   class StoriesGenerator < Jekyll::Generator

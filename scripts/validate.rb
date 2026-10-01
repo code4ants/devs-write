@@ -8,7 +8,7 @@ require "yaml"
 require "date"
 
 ROOT = File.expand_path("..", __dir__)
-THEMES = %w[fantasy sf newspaper].freeze
+THEMES = %w[fantasy sf newspaper dusty].freeze
 SLUG = /\A[a-z0-9][a-z0-9-]*\z/
 
 errors = []

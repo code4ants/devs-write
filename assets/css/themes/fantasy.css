@@ -6,7 +6,7 @@
   --accent: #d9a441;
   --card: #1e1811;
   --border: #3d3123;
-  --font-body: "EB Garamond", Garamond, Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   --font-head: "Cinzel", "Trajan Pro", Georgia, serif;
   --radius: 3px;
   /* callout inks: ember, moss, dusk, against candle-lit parchment */
@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
 }
 html:has(.theme-fantasy) { background: #15110c; }
-.theme-fantasy .prose { font-size: 1.12em; }
+.theme-fantasy .prose { font-size: 1.05em; }
 .theme-fantasy .site-header { border-bottom: 3px double var(--border); }
 .theme-fantasy h1 { text-align: center; letter-spacing: .04em; font-weight: 700; }
 .theme-fantasy h1::after { content: "\2766"; display: block; margin-top: .3rem; font-size: 1.1rem; color: var(--accent); }

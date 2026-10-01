@@ -1,14 +1,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
-<meta name="theme-color" content="{% case page.theme %}{% when 'fantasy' %}#15110c{% when 'sf' %}#090d16{% when 'newspaper' %}#141414{% else %}#0e0e10{% endcase %}">
+<meta name="theme-color" content="{% case page.theme %}{% when 'fantasy' %}#15110c{% when 'sf' %}#090d16{% when 'newspaper' %}#141414{% when 'dusty' %}#170d0a{% else %}#0e0e10{% endcase %}">
 <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.summary | default: site.description | strip_html | escape }}">
 {% case page.theme %}
   {% when "fantasy" %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
   {% when "sf" %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,11 @@
   {% when "newspaper" %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+  {% when "dusty" %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 {% endcase %}
 <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
 {% if page.theme %}
