@@ -1,0 +1,9 @@
+# Each author owns their own folder; the repo owner owns everything else.
+# Replace the placeholders with real GitHub usernames, then enable
+# "Require review from Code Owners" in the branch protection rule for main.
+# (Every @user listed here needs write access to the repo.)
+
+# *                      @REPO_OWNER_USERNAME
+# /_stories/alice/       @ALICE_GITHUB_USERNAME
+# /_stories/bob/         @BOB_GITHUB_USERNAME
+# /_stories/carol/       @CAROL_GITHUB_USERNAME

@@ -1,0 +1,47 @@
+/* Fantasy, dark: candle-lit parchment. */
+.theme-fantasy {
+  --bg: #15110c;
+  --fg: #e6d9bd;
+  --muted: #9a876a;
+  --accent: #d9a441;
+  --card: #1e1811;
+  --border: #3d3123;
+  --font-body: "EB Garamond", Garamond, Georgia, serif;
+  --font-head: "Cinzel", "Trajan Pro", Georgia, serif;
+  --radius: 3px;
+  /* callout inks: ember, moss, dusk, against candle-lit parchment */
+  --c-red: #cf6354;
+  --c-green: #94ad63;
+  --c-blue: #76a0c2;
+  background-image: radial-gradient(ellipse 80% 40% at 50% 0, rgba(217, 164, 65, .08), transparent);
+  background-repeat: no-repeat;
+}
+html:has(.theme-fantasy) { background: #15110c; }
+.theme-fantasy .prose { font-size: 1.12em; }
+.theme-fantasy .site-header { border-bottom: 3px double var(--border); }
+.theme-fantasy h1 { text-align: center; letter-spacing: .04em; font-weight: 700; }
+.theme-fantasy h1::after { content: "\2766"; display: block; margin-top: .3rem; font-size: 1.1rem; color: var(--accent); }
+.theme-fantasy .chapter .prose > p:first-of-type::first-letter {
+  float: left; font-family: var(--font-head); font-size: 3.3em; line-height: .85;
+  padding: .06em .1em 0 0; color: var(--accent);
+}
+.theme-fantasy .chapter-nav a { border-width: 2px; border-style: double; }
+
+/* Terminal: a scrying glass: amber glyphs on dark wood. */
+.theme-fantasy .terminal {
+  --t-fg: #e3b562;
+  --t-bg: #0e0a06;
+  --t-bar: #21180d;
+  --t-edge: #5a4527;
+  border: 3px double var(--t-edge);
+  box-shadow: inset 0 0 28px rgba(227, 181, 98, .07);
+}
+.theme-fantasy .terminal pre { text-shadow: 0 0 6px rgba(227, 181, 98, .3); }
+
+/* Callout: framed like an illuminated manuscript note. */
+.theme-fantasy .callout {
+  border: 3px double color-mix(in srgb, var(--c) 70%, transparent);
+  font-size: 1.05em;
+  padding: 1rem 1.25rem;
+  box-shadow: inset 0 0 24px color-mix(in srgb, var(--c) 8%, transparent);
+}

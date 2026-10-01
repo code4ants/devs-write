@@ -1,0 +1,47 @@
+/* SF, dark: terminal on deep navy. */
+.theme-sf {
+  --bg: #090d16;
+  --fg: #d3e0f2;
+  --muted: #7589a8;
+  --accent: #19e3d1;
+  --card: #0f1626;
+  --border: #1e2b45;
+  --font-body: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --font-head: "Orbitron", "Segoe UI", system-ui, sans-serif;
+  --radius: 2px;
+  /* callout inks: neon pink, mint, azure */
+  --c-red: #ff5c7a;
+  --c-green: #4dffa6;
+  --c-blue: #4da6ff;
+  font-size: clamp(.98rem, .94rem + .3vw, 1.06rem);
+  line-height: 1.8;
+}
+html:has(.theme-sf) { background: #090d16; }
+.theme-sf h1, .theme-sf h2 { text-transform: uppercase; letter-spacing: .1em; }
+.theme-sf h1 { font-size: clamp(1.4rem, 1.1rem + 1.6vw, 2.1rem); color: var(--accent); text-shadow: 0 0 14px rgba(25, 227, 209, .4); }
+.theme-sf .meta::before { content: "// "; color: var(--accent); }
+.theme-sf .chapter-nav a { border-color: var(--accent); color: var(--accent); }
+.theme-sf .chapter-nav a:hover { background: rgba(25, 227, 209, .08); }
+.theme-sf .prose { hyphens: none; }
+
+/* Terminal: CRT console, teal phosphor with faint scanlines. */
+.theme-sf .terminal {
+  --t-fg: #19e3d1;
+  --t-bg: #03060c;
+  --t-bar: #0a1322;
+  --t-edge: #1b4a52;
+  font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  box-shadow: 0 0 22px rgba(25, 227, 209, .12);
+}
+.theme-sf .terminal pre {
+  text-shadow: 0 0 7px rgba(25, 227, 209, .5);
+  background: repeating-linear-gradient(0deg, rgba(25, 227, 209, .035) 0 1px, transparent 1px 3px);
+}
+
+/* Callout: HUD panel with a faint glow. */
+.theme-sf .callout {
+  font-style: normal;
+  font-size: .96em;
+  border-radius: var(--radius);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--c) 18%, transparent);
+}

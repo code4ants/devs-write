@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="chapter">
+  <p class="meta"><a href="{{ page.story_url | relative_url }}">{{ page.story_title }}</a></p>
+  <h1>{{ page.title }}</h1>
+  <div class="prose">{{ content }}</div>
+  {% include chapter-nav.html %}
+</article>

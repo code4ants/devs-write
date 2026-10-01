@@ -1,0 +1,14 @@
+# One entry per author. The key MUST equal the author's folder name under
+# _stories/ (use the GitHub username). Samples below: replace with real authors.
+adrian:
+  name: Adrian Scripca
+  bio: Writes and codes. Or the other way around.
+bogdan:
+  name: Bogdan Mocanu
+  bio: Writes and codes. Or the other way around.
+vlad:
+  name: Vlad Mocanu
+  bio: Writes and codes. Or the other way around.
+demo:
+  name: Demostenescu
+  bio: Demo author.

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign info = site.data.authors[page.author_slug] %}
+<h1>{{ info.name }}</h1>
+{% if info.bio %}<p class="lede">{{ info.bio }}</p>{% endif %}
+
+{% assign mine = site.stories | where: "type", "story" | where: "author_slug", page.author_slug | sort: "title" %}
+{% if mine.size == 0 %}
+  <p class="meta">No stories yet.</p>
+{% else %}
+  <ul class="story-list">
+    {% for story in mine %}{% include story-row.html story=story %}{% endfor %}
+  </ul>
+{% endif %}

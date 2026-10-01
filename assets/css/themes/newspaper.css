@@ -1,0 +1,52 @@
+/* Newspaper, dark: newsprint after midnight. Single readable column. */
+.theme-newspaper {
+  --bg: #141414;
+  --fg: #e8e5dd;
+  --muted: #98958d;
+  --accent: #e8e5dd;
+  --card: #1b1b1b;
+  --border: #4a4a48;
+  --font-body: "Libre Baskerville", "Times New Roman", Times, serif;
+  --font-head: "Playfair Display", "Times New Roman", serif;
+  --radius: 0;
+  /* callout inks: muted, like spot colour on newsprint */
+  --c-red: #d9705f;
+  --c-green: #86ad8c;
+  --c-blue: #7ea2cc;
+  font-size: clamp(1rem, .96rem + .3vw, 1.06rem);
+  line-height: 1.7;
+}
+html:has(.theme-newspaper) { background: #141414; }
+.theme-newspaper .site-header { text-align: center; border-bottom: 4px double var(--border); padding-block: 1rem; }
+.theme-newspaper .site-title { font-family: var(--font-head); font-weight: 900; font-size: clamp(1.4rem, 1rem + 2vw, 2.1rem); text-transform: uppercase; letter-spacing: .04em; }
+.theme-newspaper h1 { font-weight: 900; padding-bottom: .4rem; border-bottom: 1px solid var(--border); }
+.theme-newspaper .meta { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; }
+.theme-newspaper .chapter-nav a { border-width: 1px 0; }
+.theme-newspaper .chapter .prose > p:first-of-type::first-letter {
+  float: left; font-family: var(--font-head); font-size: 3.2em; line-height: .8; padding-right: .08em;
+}
+
+/* Terminal: a wire-service teleprinter: typewriter type, off-white on black. */
+.theme-newspaper .terminal {
+  --t-fg: #e8e5dd;
+  --t-bg: #0a0a0a;
+  --t-bar: #1e1e1d;
+  --t-edge: #4a4a48;
+  border-width: 1px 0;
+  border-top: 3px solid var(--t-fg);
+  font-family: "Courier New", Courier, "Liberation Mono", monospace;
+}
+.theme-newspaper .terminal pre { font-size: .92rem; letter-spacing: .02em; }
+
+/* Callout: a pull-quote box with a heavy rule on top, hairline below. */
+.theme-newspaper .callout {
+  border: 0;
+  border-top: 3px solid var(--c);
+  border-bottom: 1px solid var(--c);
+  font-family: var(--font-head);
+  font-size: 1.08em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  padding: .9rem 1.1rem;
+}
