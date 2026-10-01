@@ -1,2 +1,2 @@
 # devswrite
-A collection of nuvellas written by members of this org.
+A collection of stories written by members of this org.
