@@ -4,6 +4,8 @@
 <meta name="theme-color" content="{% case page.theme %}{% when 'fantasy' %}#15110c{% when 'sf' %}#090d16{% when 'newspaper' %}#141414{% when 'dusty' %}#170d0a{% else %}#0e0e10{% endcase %}">
 <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.summary | default: site.description | strip_html | escape }}">
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
+<link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
 {% case page.theme %}
   {% when "fantasy" %}
 <link rel="preconnect" href="https://fonts.googleapis.com">

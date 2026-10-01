@@ -13,7 +13,7 @@
   --c-red: #d9705f;
   --c-green: #86ad8c;
   --c-blue: #7ea2cc;
-  font-size: clamp(1rem, .96rem + .3vw, 1.06rem);
+  font-size: clamp(1.06rem, 1rem + .3vw, 1.125rem);
   line-height: 1.7;
 }
 html:has(.theme-newspaper) { background: #141414; }
