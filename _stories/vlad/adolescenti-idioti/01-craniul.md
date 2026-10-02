@@ -1,3 +1,7 @@
+---
+title: Craniul
+---
+
 *POLIGON MILITAR - PROPRIETATE PRIVATA - ACCES INTERZIS - RISC DE MOARTE*
 {: .callout .red }
 
