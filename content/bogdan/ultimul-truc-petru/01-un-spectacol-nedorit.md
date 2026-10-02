@@ -30,7 +30,7 @@ Aerul răcoros îl învioră puțin și parca podeaua se opri din învârtirea e
 Cu un automatism format de-a lungul anilor, Petru intră pe scenă și își incepu discursul bombastic introductiv. Salută sala, evaluă componența publicului pentru a își ajusta numerele de magie în funcție de procentele de copii și adulți din sală, și începu cu primul număr din lista pe care o avea pregătită și memorată foarte bine.
 
 *Eh, am calculat destul de bine. 3 rânduri ocupate doar, primele două randuri doar copii, ultimul
-cu adulți... să fie vreo 50 de persoane... foarte slab*
+cu adulți... să fie vreo 70 de persoane... foarte slab*
 {.callout .blue}
 
 Parcă îl mai lăsase și amețeala coniacului de mai devreme. Se simțea destul de stabil pe picioare. Încercă să antreneze sala, apelând, pe rând, la trucurile pregătite de asistentul lui pe masa de pe scenă. Schimbă eșarfe în garoafe si umbreluțe, ascunse prin buzunarele fracului tot felul de mingiuțe de burete, stresă un iepure și 2 porumbei scoțându-i din joben și ascunzându-i pe urmă în cuștile lor de sub masă. Copiii păreau încântați de spectacol, se amuzau și chicoteau la fiecare număr, adulții priveau destul de plictisiți spectacolul. 
