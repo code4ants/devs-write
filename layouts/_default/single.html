@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ $story := .Parent }}
+{{ $chapters := partial "chapters.html" $story }}
+<article class="chapter">
+  <p class="meta"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a></p>
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+  <nav class="chapter-nav" aria-label="Chapters">
+    {{ range $i, $c := $chapters }}{{ if eq $c.RelPermalink $.RelPermalink }}
+      {{ if gt $i 0 }}{{ with index $chapters (sub $i 1) }}
+      <a class="prev" href="{{ .RelPermalink }}" rel="prev">&larr; {{ .Title }}</a>
+      {{ end }}{{ else }}<span></span>{{ end }}
+      {{ if lt $i (sub (len $chapters) 1) }}{{ with index $chapters (add $i 1) }}
+      <a class="next" href="{{ .RelPermalink }}" rel="next">{{ .Title }} &rarr;</a>
+      {{ end }}{{ else }}<span></span>{{ end }}
+    {{ end }}{{ end }}
+  </nav>
+</article>
+{{ end }}

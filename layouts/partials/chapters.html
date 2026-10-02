@@ -1,0 +1,12 @@
+{{- /* Chapters of a story, ordered by `order` or by the numeric filename prefix. */ -}}
+{{- $items := slice -}}
+{{- range .RegularPages -}}
+  {{- $order := 0 -}}
+  {{- $m := findRE `^\d+` .File.TranslationBaseName 1 -}}
+  {{- if $m -}}{{- with strings.TrimLeft "0" (index $m 0) -}}{{- $order = int . -}}{{- end -}}{{- end -}}
+  {{- if isset .Params "order" -}}{{- $order = int .Params.order -}}{{- end -}}
+  {{- $items = $items | append (dict "key" (printf "%08d|%s" $order .File.Path) "page" .) -}}
+{{- end -}}
+{{- $pages := slice -}}
+{{- range sort $items "key" -}}{{- $pages = $pages | append .page -}}{{- end -}}
+{{- return $pages -}}

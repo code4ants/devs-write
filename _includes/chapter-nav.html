@@ -1,8 +1,0 @@
-<nav class="chapter-nav" aria-label="Chapters">
-  {% if page.prev_chapter %}
-  <a class="prev" href="{{ page.prev_chapter.url | relative_url }}" rel="prev">&larr; {{ page.prev_chapter.title }}</a>
-  {% else %}<span></span>{% endif %}
-  {% if page.next_chapter %}
-  <a class="next" href="{{ page.next_chapter.url | relative_url }}" rel="next">{{ page.next_chapter.title }} &rarr;</a>
-  {% else %}<span></span>{% endif %}
-</nav>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="{{ with partial "theme.html" . }}theme-{{ . }}{{ end }}">
+  <header class="site-header">
+    <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  </header>
+  <main class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <p>{{ site.Title }}</p>
+  </footer>
+</body>
+</html>

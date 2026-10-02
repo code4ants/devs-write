@@ -1,0 +1,17 @@
+{{- /* Theme of a page: a story's own `theme`, inherited by its chapters. Home and author pages have none. */ -}}
+{{- $themes := slice "fantasy" "sf" "newspaper" "dusty" -}}
+{{- $story := false -}}
+{{- if and (eq .Kind "section") (not .Parent.IsHome) (not .IsHome) -}}
+  {{- $story = . -}}
+{{- else if and (eq .Kind "page") .Parent (not .Parent.IsHome) -}}
+  {{- $story = .Parent -}}
+{{- end -}}
+{{- $theme := "" -}}
+{{- if $story -}}
+  {{- $theme = lower (string $story.Params.theme) -}}
+  {{- if not (in $themes $theme) -}}
+    {{- warnf "%s: theme %q invalid, using fantasy" $story.File.Path $story.Params.theme -}}
+    {{- $theme = "fantasy" -}}
+  {{- end -}}
+{{- end -}}
+{{- return $theme -}}

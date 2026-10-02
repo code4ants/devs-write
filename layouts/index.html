@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+
+{{ $stories := slice }}
+{{ range .Sections }}{{ range .Sections }}{{ $stories = $stories | append . }}{{ end }}{{ end }}
+{{ if not $stories }}
+  <p class="meta">No stories yet.</p>
+{{ else }}
+  <ul class="story-list">
+    {{ range sort $stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
+  </ul>
+{{ end }}
+{{ end }}

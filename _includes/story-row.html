@@ -1,5 +1,0 @@
-<li class="story-row">
-  <a href="{{ include.story.url | relative_url }}">{{ include.story.title }}</a>
-  {% assign author_name = site.data.authors[include.story.author_slug].name | default: include.story.author_slug %}
-  <p class="by">by <a href="{{ '/' | append: include.story.author_slug | append: '/' | relative_url }}">{{ author_name }}</a></p>
-</li>

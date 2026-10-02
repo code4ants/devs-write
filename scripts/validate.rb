@@ -2,8 +2,9 @@
 # frozen_string_literal: true
 
 # Content checks run in CI before the site is built. Stdlib only.
-#   _stories/<author>/<story>/index.md       title, theme in THEMES; author listed in _data/authors.yml
-#   _stories/<author>/<story>/<chapter>.md   title; numeric prefix or `order`; unique order per story
+#   content/<author>/_index.md                 title (display name); one per author
+#   content/<author>/<story>/_index.md         title, summary, theme in THEMES
+#   content/<author>/<story>/<chapter>.md      title; numeric prefix or `order`; unique order per story
 require "yaml"
 require "date"
 
@@ -12,7 +13,6 @@ THEMES = %w[fantasy sf newspaper dusty].freeze
 SLUG = /\A[a-z0-9][a-z0-9-]*\z/
 
 errors = []
-authors = YAML.safe_load_file(File.join(ROOT, "_data", "authors.yml")) || {}
 
 def front_matter(path)
   text = File.read(path, encoding: "UTF-8")
@@ -25,21 +25,33 @@ end
 
 orders = Hash.new { |h, k| h[k] = {} }
 
-Dir.glob(File.join(ROOT, "_stories", "**", "*")).sort.each do |path|
+Dir.glob(File.join(ROOT, "content", "**", "*")).sort.each do |path|
   next if File.directory?(path)
 
   rel = path.sub("#{ROOT}/", "")
-  parts = rel.sub(%r{\A_stories/}, "").split("/")
+  parts = rel.sub(%r{\Acontent/}, "").split("/")
+  next if rel == "content/_index.md"
+
+  if parts.length == 2 && parts[1] == "_index.md"
+    fm = front_matter(path)
+    if !fm.is_a?(Hash)
+      errors << "#{rel}: missing or invalid front matter"
+    elsif fm["title"].to_s.strip.empty?
+      errors << "#{rel}: missing 'title' (the author's display name)"
+    end
+    errors << "#{rel}: folder '#{parts[0]}' must be lowercase letters, digits, dashes" unless parts[0].match?(SLUG)
+    next
+  end
 
   unless path.end_with?(".md") && parts.length == 3
-    errors << "#{rel}: expected _stories/<author>/<story>/<file>.md"
+    errors << "#{rel}: expected content/<author>/<story>/<file>.md"
     next
   end
 
   author, story, file = parts
   name = file.sub(/\.md\z/, "")
   [author, story].each { |s| errors << "#{rel}: folder '#{s}' must be lowercase letters, digits, dashes" unless s.match?(SLUG) }
-  errors << "#{rel}: author '#{author}' is not in _data/authors.yml" unless authors.key?(author)
+  errors << "#{rel}: author '#{author}' needs content/#{author}/_index.md" unless File.exist?(File.join(ROOT, "content", author, "_index.md"))
 
   fm = front_matter(path)
   if fm.nil?
@@ -52,7 +64,7 @@ Dir.glob(File.join(ROOT, "_stories", "**", "*")).sort.each do |path|
 
   errors << "#{rel}: missing 'title'" if fm["title"].to_s.strip.empty?
 
-  if name == "index"
+  if name == "_index"
     errors << "#{rel}: theme must be one of #{THEMES.join(', ')} (got #{fm['theme'].inspect})" unless THEMES.include?(fm["theme"].to_s)
     errors << "#{rel}: missing 'summary'" if fm["summary"].to_s.strip.empty?
   else

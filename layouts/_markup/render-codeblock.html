@@ -1,0 +1,5 @@
+{{- if eq .Type "terminal" -}}
+<div class="terminal"><pre><code>{{ .Inner }}</code></pre></div>
+{{- else -}}
+<pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
+{{- end }}
