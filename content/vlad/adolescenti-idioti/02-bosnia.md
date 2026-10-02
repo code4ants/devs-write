@@ -2,6 +2,6 @@
 title: B❤️SNIA
 ---
 *Many products, technology, fashion, tools, happy money*
-{: .callout .blue }
+{.callout .blue }
 
 Coming soon
