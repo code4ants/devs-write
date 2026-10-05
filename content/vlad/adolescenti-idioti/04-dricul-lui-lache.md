@@ -42,21 +42,21 @@ Vocea apartinea unui individ, la varsta mijlocie, cu o camasa inflorata si vesta
 A fost greu sa imi fac o lista mintala cu ce anume se afla in magazin - ar fi fost mai usor sa fac o lista cu ce nu era. Totusi, am luat cateva discuri de vinil, un aparat foto vechi si m-am intors la birou. La plecare, m-a petrecut un "Bye bye, return, yes?" ragusit, suvenir al anilor lungi de baut si fumat.
 
 ~~~chat {title="SayHi!"}
-Katana221 | right | Cum a fost azi la BouIdiot? Mai faci design la cutii de absorbante?
-Maximus980 | left | Eh da, nu nu, la tricourile voluntarilor!
-Katana221 | right | Exceptional - eu cred ca o sa imi dau demisia...
-Maximus980 | left | S-a intamplat ceva?
-Katana221 | right | Iti spun mai tarziu...
+Katana221 | left | Cum a fost azi la BouIdiot? Mai faci design la cutii de absorbante?
+Maximus980 | right | Eh da, nu nu, la tricourile voluntarilor!
+Katana221 | left | Exceptional - eu cred ca o sa imi dau demisia...
+Maximus980 | right | S-a intamplat ceva?
+Katana221 | left | Iti spun mai tarziu...
 ~~~
 
 In urma cu 4 ani, eram deja client fidel al magazinului. Veneam zilnic, in timpul pauzei de masa, si mereu plecam cu ceva. Cumva, Luka, proprietarul magazinului, reusea sa aduca in fiecare zi ceva nou in magazin, sau poate in fiecare zi descopeream eu ceva nou. Fiind client fidel, m-am apropiat de el, "apropiat" fiind mult spus, insa puteam sa ii cer sa imi aduca diverse lucruri. S-a oferit chiar sa ma ajute cu banii, cand nu imi ajungeau, dar niciodata nu am vrut sa merg in directia aia.
 
 ~~~chat {title="SayHi!"}
-Katana221 | right | Inca o zi, inca un tribut adus lui Lache?
-Maximus980 | left | Heh, ma stii - e deja rutina! Cum e la tine?
-Katana221 | right | Credeam ca la agentia asta imobiliara o sa fie mai bine dar pare mai rau ca la banca...
-Maximus980 | left | Vrei sa iti cauti altceva?
-Katana221 | right | Heh, ma stii - e deja rutina! 
+Katana221 | left | Inca o zi, inca un tribut adus lui Lache?
+Maximus980 | right | Heh, ma stii - e deja rutina! Cum e la tine?
+Katana221 | left | Credeam ca la agentia asta imobiliara o sa fie mai bine dar pare mai rau ca la banca...
+Maximus980 | right | Vrei sa iti cauti altceva?
+Katana221 | left | Heh, ma stii - e deja rutina! 
 ~~~
 
 In urma cu 2 ani, inspectam un obiectiv foto, cand Luka m-a chemat la tejghea - foarte rar se intampla asta, de obicei el era cel care venea la tine, daca avea treaba cu tine (nu prea vroiai sa aiba Luka treaba cu tine). M-am dus si nici nu apuc sa intreb ceva, ca ma ia direct: "Max boy, you want car? Very very good".
@@ -66,26 +66,26 @@ Initial am inteles "cat" asa ca ii zic ca nu pot sa iau un animal de companie - 
 "No no cat! Car, wheels, vruum-vruum! Confort plus, motor-vehicle!" si imi face semn sa il urmez in spatele magazinului. Era prima oara cand faceam asta, dar sigur nu i-ar fi facut ceva unui client fidel. In spatele mazinului se afla o rulota neagra, murdara si cam ruginita. "Look! Beautiful! Yours for cheap! Go see world!". Nu glumea, vroia sa imi vanda o rulota! La Bosnia nu se vindeau automobile, cel mult unelte de gradina - inca ma intreb ce combinatii a facut sa obtina masina... 
 
 ~~~chat {title="SayHi!"}
-Maximus980 | left | Tu ce stii de Lache?
-Katana221 | right | Gras, chel, dubios, probabil si-a luat yaht din banii tai, garantat mafiot - de ce?
-Maximus980 | left | Am cumparat o masina de la el.
-Katana221 | right | Ce???
-Maximus980 | left | Dap, o rulota neagra, are pat si chiuveta si tot.
-Katana221 | right | ... Ti-ai pierdut mintile???
-Maximus980 | left | A fost un pret bun, nu o sa neg, si cu un pic de atentie, o sa vizitam lumea!
-Katana221 | right | Despre ce vorbesti acolo, Alladin? Ce lumea vrei sa vizitam cu dricul lui Lache?
-Maximus980 | left | Hahaha, hai mah ca nu e asa negru 😅 Ai incredere - o punem pe picioare, si plecam! 
-Katana221 | right | pe roti*
-Maximus980 | left | Plus ca, nu o sa iti vina sa crezi dar am primit o noua comanda de flyere
-Katana221 | right | *dies*
-Maximus980 | left | Si anume pentru entuziasmati de camping! Am numit campania "La BUSa prapastiei" 😁
-Katana221 | right | Ti-am raportat deja contul, o sa fie inchis in 3 zile lucratoare
-Maximus980 | left | Da, da stiu, cam cheesy dar aparent clientul e multumit. Si asta nu e tot!
-Katana221 | right | Oh, mai e ceva? Te rog continua, mai multe detalii! Nu am altceva de facut 🙄
-Maximus980 | left | Se tine la "poligon" 😉
-Katana221 | right | Stai ce... "poligonul" nostru? Acel "poligon"? 
-Maximus980 | left | Dap! Asta a fost si reactia mea... Deci? Te bagi sa restauram dricul lui Lache (poate gasim un nume mai bun) si vizitezi lumea cu mine?
-Katana221 | right | Nu stiu de ce am vrea sa ne mai intoarcem acolo...
-Maximus980 | left | Sunt curios cum e in prezent + pana ajungem, o sa fie o comunitate infloritoare de detinatori de rulote (ceea ce si noi suntem, bun venit in club)
-Katana221 | right | Sau gasim rulotele abandonate, fara urme ale proprietarilor... 🥲
+Maximus980 | right | Tu ce stii de Lache?
+Katana221 | left | Gras, chel, dubios, probabil si-a luat yaht din banii tai, garantat mafiot - de ce?
+Maximus980 | right | Am cumparat o masina de la el.
+Katana221 | left | Ce???
+Maximus980 | right | Dap, o rulota neagra, are pat si chiuveta si tot.
+Katana221 | left | ... Ti-ai pierdut mintile???
+Maximus980 | right | A fost un pret bun, nu o sa neg, si cu un pic de atentie, o sa vizitam lumea!
+Katana221 | left | Despre ce vorbesti acolo, Alladin? Ce lumea vrei sa vizitam cu dricul lui Lache?
+Maximus980 | right | Hahaha, hai mah ca nu e asa negru 😅 Ai incredere - o punem pe picioare, si plecam! 
+Katana221 | left | pe roti*
+Maximus980 | right | Plus ca, nu o sa iti vina sa crezi dar am primit o noua comanda de flyere
+Katana221 | left | *dies*
+Maximus980 | right | Si anume pentru entuziasmati de camping! Am numit campania "La BUSa prapastiei" 😁
+Katana221 | left | Ti-am raportat deja contul, o sa fie inchis in 3 zile lucratoare
+Maximus980 | right | Da, da stiu, cam cheesy dar aparent clientul e multumit. Si asta nu e tot!
+Katana221 | left | Oh, mai e ceva? Te rog continua, mai multe detalii! Nu am altceva de facut 🙄
+Maximus980 | right | Se tine la "poligon" 😉
+Katana221 | left | Stai ce... "poligonul" nostru? Acel "poligon"? 
+Maximus980 | right | Dap! Asta a fost si reactia mea... Deci? Te bagi sa restauram dricul lui Lache (poate gasim un nume mai bun) si vizitezi lumea cu mine?
+Katana221 | left | Nu stiu de ce am vrea sa ne mai intoarcem acolo...
+Maximus980 | right | Sunt curios cum e in prezent + pana ajungem, o sa fie o comunitate infloritoare de detinatori de rulote (ceea ce si noi suntem, bun venit in club)
+Katana221 | left | Sau gasim rulotele abandonate, fara urme ale proprietarilor... 🥲
 ~~~
