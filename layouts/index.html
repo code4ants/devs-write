@@ -3,12 +3,30 @@
 {{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
 
 {{ $stories := slice }}
-{{ range .Sections }}{{ range .Sections }}{{ $stories = $stories | append . }}{{ end }}{{ end }}
+{{ $demoStories := slice }}
+{{ $demoUser := "" }}
+{{ range .Sections }}
+  {{ if eq .Section "demo" }}
+    {{ $demoUser = . }}
+    {{ range .Sections }}{{ $demoStories = $demoStories | append . }}{{ end }}
+  {{ else }}
+    {{ range .Sections }}{{ $stories = $stories | append . }}{{ end }}
+  {{ end }}
+{{ end }}
 {{ if not $stories }}
   <p class="meta">No stories yet.</p>
 {{ else }}
   <ul class="story-list">
     {{ range sort $stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
   </ul>
+{{ end }}
+
+{{ if $demoStories }}
+  <details class="demo-panel">
+    <summary>{{ $demoUser.Title }} <span class="count">({{ len $demoStories }})</span></summary>
+    <ul class="story-list">
+      {{ range sort $demoStories "Title" }}{{ partial "story-row.html" . }}{{ end }}
+    </ul>
+  </details>
 {{ end }}
 {{ end }}

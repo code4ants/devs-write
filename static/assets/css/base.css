@@ -270,6 +270,12 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .story-row .by { margin: 0; color: var(--muted); font-family: var(--font-head); font-size: .9rem; line-height: 1.5; }
 .story-row .by a { color: inherit; }
 .story-row .latest a { color: var(--fg); }
+/* Collapsible panel for the demo user's stories */
+.demo-panel { margin-top: 2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+.demo-panel > summary { cursor: pointer; padding: .8rem 1.15rem; font-family: var(--font-head); font-weight: 700; color: var(--muted); }
+.demo-panel > summary:hover, .demo-panel > summary:focus-visible { color: var(--accent); }
+.demo-panel .count { font-weight: 400; }
+.demo-panel > .story-list { margin: 0; padding: 0 1rem 1rem; }
 @media (max-width: 36rem) { .story-row .sep { display: none; } .story-row .latest { display: block; } }
 
 /* Story page */
