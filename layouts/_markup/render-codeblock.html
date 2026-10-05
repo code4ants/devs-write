@@ -1,5 +1,6 @@
 {{- if eq .Type "terminal" -}}
-<div class="terminal"><pre><code>{{ .Inner }}</code></pre></div>
+{{- /* Optional window title:  ~~~terminal {title="relay-9 shell"} */ -}}
+<div class="terminal{{ with .Attributes.title }} titled{{ end }}">{{ with .Attributes.title }}<div class="bar">{{ . }}</div>{{ end }}<pre><code>{{ .Inner }}</code></pre></div>
 {{- else if eq .Type "chat" -}}
 {{- /* One message per line:  Name | left | text   (side is left or right).
        Optional window title:  ~~~chat {title="Night watch"} */ -}}

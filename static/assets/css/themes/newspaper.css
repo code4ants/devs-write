@@ -43,7 +43,7 @@ html:has(.theme-newspaper) { background: #141414; }
   border: 0;
   border-top: 3px solid var(--c);
   border-bottom: 1px solid var(--c);
-  font-family: var(--font-head);
+  font-family: var(--font-body);
   font-size: 1.08em;
   font-weight: 700;
   font-style: italic;

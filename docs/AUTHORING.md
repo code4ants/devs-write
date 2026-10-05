@@ -67,7 +67,7 @@ reply from relay-9: time=-2ms
 ~~~
 ```
 
-It renders as a console window in the story's theme. There is a single color per theme and no color options. Long lines wrap, so it stays readable on phones.
+It renders as a console window in the story's theme. To give the window a title, add it on the opening fence: `~~~terminal {title="relay-9 shell"}`. The title is optional; without one, dusty shows its default unit label and the other themes show plain window chrome. There is a single color per theme and no color options. Long lines wrap, so it stays readable on phones.
 
 ## Chat blocks
 

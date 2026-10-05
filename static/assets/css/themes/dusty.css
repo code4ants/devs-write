@@ -53,6 +53,15 @@ html:has(.theme-dusty) { background: #170d0a; }
   font: 600 .7rem/1 var(--font-body);
   letter-spacing: .16em;
 }
+.theme-dusty .terminal.titled::before { display: none; }
+.theme-dusty .terminal .bar {
+  background: var(--t-bar);
+  padding-left: .9rem;
+  color: #b07a58;
+  font: 600 .7rem/2rem var(--font-body);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
 .theme-dusty .terminal pre {
   text-shadow: 0 0 5px rgba(240, 163, 90, .35);
   background:

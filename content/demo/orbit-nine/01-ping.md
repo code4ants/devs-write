@@ -26,7 +26,7 @@ Ut vitae velit mattis, ultricies sem vitae, volutpat leo. Etiam accumsan purus d
 
 Duis dignissim lectus mi, sit amet sodales lectus commodo vehicula. Sed tempor orci sed risus mattis, ac porttitor velit auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tempor aliquam finibus. Nullam felis felis, ornare vitae aliquet eget, ultrices in felis. Etiam convallis felis tortor. Donec neque lorem, accumsan ac mauris eget, luctus consectetur sem.
 
-~~~terminal
+~~~terminal {title="X-SYS console"}
 $ ping relay-9
 reply from relay-9: time=-2ms
 ~~~
