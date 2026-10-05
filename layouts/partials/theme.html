@@ -1,9 +1,9 @@
 {{- /* Theme of a page: a story's own `theme`, inherited by its chapters. Home and author pages have none. */ -}}
 {{- $themes := slice "fantasy" "sf" "newspaper" "dusty" -}}
 {{- $story := false -}}
-{{- if and (eq .Kind "section") (not .Parent.IsHome) (not .IsHome) -}}
+{{- if and (eq .Kind "section") .Parent (not .Parent.IsHome) (.Parent.Parent.IsHome) -}}
   {{- $story = . -}}
-{{- else if and (eq .Kind "page") .Parent (not .Parent.IsHome) -}}
+{{- else if and (eq .Kind "page") .Parent .Parent.Parent (not .Parent.IsHome) (not .Parent.Parent.IsHome) .Parent.Parent.Parent.IsHome -}}
   {{- $story = .Parent -}}
 {{- end -}}
 {{- $theme := "" -}}
