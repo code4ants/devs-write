@@ -10,11 +10,11 @@ Ajuns la motel, intră în cameră și aruncă cheile în colțul opus al camere
 
 Se duse la baie să caute un pahar cu care să bea niște apă. Simțea cum gâtul uscat și limba înțepenită amenințau să-l sufoce. Simțea că nu mai are aer.
 
--- Ești un terminat, aia ești! Un zero barat. La distanță de ani lumină de vedeta... ce vedetă, de Super Starul de acum 2 ani!!! Mai ții minte, Petrule Petroviciule, PĂCĂLICIULE, Sala Palatului din București??? Mai ții minte ăia 4000 de oameni, care se înfiorau și aplaudau după fiecare număr? Mai ții minte numerele alea fantastice, fulgerele de curent electric, teleportarea și numerele alea, de care Houdini ar fi fost mândru și ți-ar fi strâns mâna cu admirație??? Ții minte pe dracu'! Nu mai ții minte nimic!
+-- Ești un terminat, aia ești! Un zero barat. La distanță de ani lumină de vedeta... ce vedetă, de Super Starul de acum 2 ani!!! Mai ții minte, Petrule Petroviciule, mă PĂCĂLICIULE, Sala Palatului din București??? Mai ții minte ăia 4000 de oameni, care se înfiorau și aplaudau după fiecare număr? Mai ții minte numerele alea fantastice, fulgerele de curent electric, teleportarea și numerele alea, de care Houdini ar fi fost mândru și ți-ar fi strâns mâna cu admirație??? Ții minte pe dracu'! Nu mai ții minte nimic!
 
 Găsi în baie, într-un dulap, un set de două pahare. Își puse apă într-unul din ele și o dădu pe gât pe nerăsuflate.
 
--- S-o ia dracu' de viață! Aș face orice să scap de situația asta, să fiu din nou acolo sus, sa reușesc să...
+-- S-o ia dracu' de viață! Aș face orice să scap de situația asta, să fiu din nou acolo sus, să reușesc să...
 
 Paharul îi căzu din mână și ajunse pe podea, cioburile sărind cât colo, amestecându-se cu cele de la fructiera spartă mai devreme. Sângele lui Petru îngheță și simți cum tot corpul i se umple de adrenalină și inima îi explodează în piept.
 
@@ -32,7 +32,7 @@ Petru nu mai știa dacă închisese ușa cu cheia sau fusese prea doritor să g�
 
 -- Poate un prieten. Sau un salvator. Am văzut show-ul tău din seara asta. Jenant. Foarte jenant. Am văzut-o și pe Maria în seara asta. A ieșit la cină cu un tip blond, Victor Pancu. Un avocat din București.
 
-*Doamne dumnezeule! De unde știe ăsta toate detaliile astea!? În sală, în seara asta, sigur nu a fost... Să fi fost în staff-ul casei de cultură?... Trebuie cumva să scap de el, să-l dau afară!*
+*Doamne Dumnezeule! De unde știe ăsta toate detaliile astea!? În sală, în seara asta, sigur nu a fost... Să fi fost în staff-ul casei de cultură?... O cunoaște pe Maria??? Dar de unde!? Trebuie cumva să scap de el, să-l dau afară!*
 {.callout .blue}
 
 -- Uite ce este. Nu știu cine naiba ești, nici de unde știi detaliile astea, dar nu mă interesează, și vreau...
@@ -52,7 +52,7 @@ Petru nu credea ce auzea. Era un tip destul de logic, îi plăcea să creadă c�
 
 -- Magie pură zici? Adica puteri din ăstea... supranaturale?
 
--- Dacă vrei sa le zici așa.
+-- Dacă vrei să le zici așa.
 
 -- Ok, gata, sunt de acord. Sună evident foarte fantastic și real. La schimb ce vrei? 
 
@@ -65,7 +65,7 @@ Petru nu credea ce auzea. Era un tip destul de logic, îi plăcea să creadă c�
 
 Tipul de pe canapea râse cu poftă.
 
--- Ești glumeț, Petrule. Nu, nu trebuie sa îmi dai sufletul tău acum. Îl voi colecta eu peste 2 ani. Fix 2 ani. Deci, batem palma?
+-- Ești glumeț, Petrule. Nu, nu trebuie să îmi dai sufletul tău acum. Îl voi colecta eu peste 2 ani. Fix 2 ani. Deci, batem palma?
 
 -- Îl vei colecta... Ok... Da, clar, cum să nu, batem palma!
 
