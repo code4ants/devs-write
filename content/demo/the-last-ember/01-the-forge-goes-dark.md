@@ -3,7 +3,7 @@ title: The Forge Goes Dark
 ---
 On the night the great forge of Karn Dellow went cold, only Mira was awake to see it.
 
-~~~chat
+~~~chat {title="Night watch"}
 Edda | left | The forge is cold, Master.
 Master Orin | right | Then we light it again.
 Edda | left | With what? The last ember died at dusk.

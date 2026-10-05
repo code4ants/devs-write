@@ -3,7 +3,7 @@ title: Ping
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum ex, dictum eleifend euismod a, tristique nec quam. Duis magna libero, auctor a mauris ut, aliquam ultricies nibh. Quisque sed magna ut massa maximus sollicitudin nec nec metus. Quisque euismod urna nec est elementum, vitae aliquam felis condimentum. Proin interdum ligula et ipsum efficitur, a accumsan mi aliquet. Quisque sagittis tempus tortor, at scelerisque nibh. Sed vehicula sem vitae diam viverra posuere. Cras ultrices sit amet tortor vel aliquam.
 
-~~~chat
+~~~chat {title="Mission control"}
 Mira | left | Relay-9, do you copy?
 Relay-9 | right | Loud and clear. You are late.
 Relay-9 | right | Again.

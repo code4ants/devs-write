@@ -81,6 +81,8 @@ Relay-9 | right | Again.
 ~~~
 ```
 
+To give the window a title, add it on the opening fence: `~~~chat {title="Night watch"}`. The title is optional. Without one, sf and dusty show a default header ("Comms // channel encrypted", "Relay 03"), fantasy shows a single ornament, and newspaper shows none.
+
 Each distinct name gets its own tint (up to four before colors repeat), taken from the theme's palette. Consecutive messages from the same person are grouped and show the name once. The message is plain text (no Markdown) and can contain `|`. A malformed line fails the build with the offending text. Each theme restyles the block: a comms feed (sf), a radio relay (dusty), a printed transcript (newspaper) and illuminated scrolls (fantasy).
 
 ## Workflow

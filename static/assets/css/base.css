@@ -123,6 +123,7 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
                     Mira | left | Are you there?
                     Jonas | right | Always.
                     ~~~
+   Optional title: ~~~chat {title="Night watch"}
    Each distinct name gets its own tint (.p0-.p3, from the theme palette); the side
    decides alignment. Consecutive messages from the same speaker are grouped.
    Themes override the --k-* variables and restyle .chat, .who and .bubble. */
@@ -130,21 +131,33 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
   --k-bg: color-mix(in srgb, var(--fg) 4%, var(--bg));
   --k-edge: var(--border);
   --k-r: 1rem;
-  display: flex;
-  flex-direction: column;
   margin: 1.75rem 0;
-  padding: 1rem;
   border: 1px solid var(--k-edge);
   border-radius: var(--radius);
+  background: var(--bg);
   background: var(--k-bg);
+  overflow: hidden;
   font-family: var(--font-body);
   font-size: .95rem;
   line-height: 1.5;
   font-style: normal;
 }
+/* Window title (set with {title="..."} on the fence). Empty = hidden unless a theme gives it a default. */
+.chat .bar {
+  padding: .5rem 1rem;
+  border-bottom: 1px solid var(--k-edge);
+  background: color-mix(in srgb, var(--fg) 7%, var(--bg));
+  color: var(--muted);
+  font-family: var(--font-head);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+}
+.chat .bar:empty { display: none; }
+.chat .log { display: flex; flex-direction: column; padding: 1rem; }
 .chat .msg { --pc: var(--accent); display: flex; flex-direction: column; max-width: 84%; margin-top: .2rem; }
 .chat .msg.first { margin-top: .85rem; }
-.chat > :first-child { margin-top: 0; }
+.chat .log > :first-child { margin-top: 0; }
 .chat .p1 { --pc: var(--c-blue); }
 .chat .p2 { --pc: var(--c-green); }
 .chat .p3 { --pc: var(--c-red); }
@@ -170,7 +183,7 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .chat .right .bubble { background: color-mix(in srgb, var(--pc) 22%, var(--bg)); }
 .chat .left.first .bubble { border-top-left-radius: .2rem; }
 .chat .right.first .bubble { border-top-right-radius: .2rem; }
-@media (max-width: 36rem) { .chat { margin-inline: -.25rem; padding: .75rem; } .chat .msg { max-width: 92%; } }
+@media (max-width: 36rem) { .chat { margin-inline: -.25rem; } .chat .log { padding: .75rem; } .chat .bar { padding-inline: .75rem; } .chat .msg { max-width: 92%; } }
 
 /* Header / footer */
 .site-header, .site-footer {

@@ -51,17 +51,18 @@ html:has(.theme-newspaper) { background: #141414; }
   padding: .9rem 1.1rem;
 }
 
-/* Chat: a printed transcript. No bubbles' roundness: ruled boxes, serif speaker
-   names in small caps, a double rule framing the exchange. */
+/* Chat: a printed transcript. Ruled boxes instead of rounded bubbles, serif
+   small-caps speaker names, a double rule framing the exchange. */
 .theme-newspaper .chat {
   --k-bg: transparent;
   --k-edge: #4a4a48;
   --k-r: 0;
-  padding: 1rem .25rem;
   border-width: 3px 0;
   border-style: double;
   font-size: 1.02rem;
 }
+.theme-newspaper .chat .bar { padding-inline: .25rem; background: none; color: var(--fg); font-family: var(--font-head); font-size: .85rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; text-align: center; }
+.theme-newspaper .chat .log { padding-inline: .25rem; }
 .theme-newspaper .chat .who {
   font-variant: small-caps;
   font-size: .9rem;

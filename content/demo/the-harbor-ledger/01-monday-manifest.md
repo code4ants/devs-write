@@ -3,7 +3,7 @@ title: Monday Manifest
 ---
 Forty crates were logged out of Pier Six on Monday morning. By evening, nobody on the waterfront could say where they had gone.
 
-~~~chat
+~~~chat {title="Interview notes"}
 Editor | left | Is the manifest confirmed?
 Reporter | right | Two ships, one missing crate, and a harbor master who won't comment.
 Editor | left | Then comment is the story. File it.

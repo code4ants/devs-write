@@ -53,16 +53,9 @@ html:has(.theme-sf) { background: #090d16; }
   --k-r: 2px;
   box-shadow: 0 0 22px rgba(25, 227, 209, .1);
 }
-.theme-sf .chat::before {
-  content: "COMMS // CHANNEL ENCRYPTED";
-  margin: -1rem -1rem .9rem;
-  padding: .45rem 1rem;
-  border-bottom: 1px solid var(--k-edge);
-  background: #0a1322;
-  color: var(--muted);
-  font: 600 .68rem/1 var(--font-head);
-  letter-spacing: .18em;
-}
+.theme-sf .chat .bar,
+.theme-sf .chat .bar:empty { display: block; background: #0a1322; color: var(--muted); font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; }
+.theme-sf .chat .bar:empty::before { content: "Comms // channel encrypted"; }
 .theme-sf .chat .who { text-transform: uppercase; letter-spacing: .12em; font-size: .68rem; }
 .theme-sf .chat .left .who::before { content: "< "; }
 .theme-sf .chat .right .who::after { content: " >"; }

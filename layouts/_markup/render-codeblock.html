@@ -1,12 +1,14 @@
 {{- if eq .Type "terminal" -}}
 <div class="terminal"><pre><code>{{ .Inner }}</code></pre></div>
 {{- else if eq .Type "chat" -}}
-{{- /* One message per line:  Name | left | text   (side is left or right). */ -}}
+{{- /* One message per line:  Name | left | text   (side is left or right).
+       Optional window title:  ~~~chat {title="Night watch"} */ -}}
 {{- $s := newScratch -}}
 {{- $s.Set "seen" slice -}}
 {{- $s.Set "prev" "" -}}
-<div class="chat" role="group" aria-label="Conversation">
-{{- range split (replace .Inner "\r" "") "\n" -}}
+<div class="chat" role="group" aria-label="{{ .Attributes.title | default "Conversation" }}">
+<div class="bar">{{ .Attributes.title }}</div>
+<div class="log">{{- range split (replace .Inner "\r" "") "\n" -}}
   {{- $line := . -}}
   {{- if strings.TrimSpace $line -}}
     {{- $m := findRESubmatch `(?i)^\s*([^|]+?)\s*\|\s*(left|right)\s*\|\s*(.+?)\s*$` $line -}}
@@ -25,6 +27,7 @@
 <div class="msg {{ $side }} p{{ $idx }}{{ if $cont }} cont{{ else }} first{{ end }}">{{ if not $cont }}<span class="who">{{ $p }}</span>{{ end }}<p class="bubble">{{ $text }}</p></div>
   {{- end -}}
 {{- end }}
+</div>
 </div>
 {{- else -}}
 <pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
