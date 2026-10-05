@@ -50,3 +50,30 @@ html:has(.theme-newspaper) { background: #141414; }
   line-height: 1.5;
   padding: .9rem 1.1rem;
 }
+
+/* Chat: a printed transcript. No bubbles' roundness: ruled boxes, serif speaker
+   names in small caps, a double rule framing the exchange. */
+.theme-newspaper .chat {
+  --k-bg: transparent;
+  --k-edge: #4a4a48;
+  --k-r: 0;
+  padding: 1rem .25rem;
+  border-width: 3px 0;
+  border-style: double;
+  font-size: 1.02rem;
+}
+.theme-newspaper .chat .who {
+  font-variant: small-caps;
+  font-size: .9rem;
+  letter-spacing: .08em;
+  font-weight: 900;
+}
+.theme-newspaper .chat .who::after { content: ":"; }
+.theme-newspaper .chat .bubble {
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--pc) 70%, transparent);
+  background: color-mix(in srgb, var(--fg) 5%, transparent);
+  padding: .5rem .8rem .55rem;
+}
+.theme-newspaper .chat .right .bubble { border-top-width: 3px; background: color-mix(in srgb, var(--fg) 9%, transparent); }
+.theme-newspaper .chat .p0 { --pc: var(--fg); }

@@ -3,6 +3,13 @@ title: The Last Cistern
 ---
 The wind came down off the ridge at dawn and took the roof of the old pump house with it. Mara counted the sheets of corrugated steel as they went, the way her mother had taught her to count everything that could not be replaced.
 
+~~~chat
+Sister Ana | left | How much is left in the cistern?
+Tomas | right | Four days. Maybe five if nobody prays too loudly.
+Sister Ana | left | Tomas.
+Tomas | right | Three, then.
+~~~
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum ex, dictum eleifend euismod a, tristique nec quam. Duis magna libero, auctor a mauris ut, aliquam ultricies nibh. Quisque sed magna ut massa maximus sollicitudin nec nec metus. Quisque euismod urna nec est elementum, vitae aliquam felis condimentum. Proin interdum ligula et ipsum efficitur, a accumsan mi aliquet. Quisque sagittis tempus tortor, at scelerisque nibh.
 
 *Three days of water. Maybe four, if nobody argues.*

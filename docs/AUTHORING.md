@@ -69,6 +69,20 @@ reply from relay-9: time=-2ms
 
 It renders as a console window in the story's theme. There is a single color per theme and no color options. Long lines wrap, so it stays readable on phones.
 
+## Chat blocks
+
+To show a conversation between two or more people, write a fenced block whose opening fence is `~~~chat`. One message per line, in the form `Name | side | message`, where side is `left` or `right`:
+
+```markdown
+~~~chat
+Mira | left | Relay-9, do you copy?
+Relay-9 | right | Loud and clear. You are late.
+Relay-9 | right | Again.
+~~~
+```
+
+Each distinct name gets its own tint (up to four before colors repeat), taken from the theme's palette. Consecutive messages from the same person are grouped and show the name once. The message is plain text (no Markdown) and can contain `|`. A malformed line fails the build with the offending text. Each theme restyles the block: a comms feed (sf), a radio relay (dusty), a printed transcript (newspaper) and illuminated scrolls (fantasy).
+
 ## Workflow
 
 1. Create a branch, add or edit files, open a pull request to `main`.

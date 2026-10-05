@@ -45,3 +45,30 @@ html:has(.theme-sf) { background: #090d16; }
   border-radius: var(--radius);
   box-shadow: 0 0 18px color-mix(in srgb, var(--c) 18%, transparent);
 }
+
+/* Chat: encrypted comms feed. Squared neon panels, clipped corners, mono type. */
+.theme-sf .chat {
+  --k-bg: #060a13;
+  --k-edge: #1b4a52;
+  --k-r: 2px;
+  box-shadow: 0 0 22px rgba(25, 227, 209, .1);
+}
+.theme-sf .chat::before {
+  content: "COMMS // CHANNEL ENCRYPTED";
+  margin: -1rem -1rem .9rem;
+  padding: .45rem 1rem;
+  border-bottom: 1px solid var(--k-edge);
+  background: #0a1322;
+  color: var(--muted);
+  font: 600 .68rem/1 var(--font-head);
+  letter-spacing: .18em;
+}
+.theme-sf .chat .who { text-transform: uppercase; letter-spacing: .12em; font-size: .68rem; }
+.theme-sf .chat .left .who::before { content: "< "; }
+.theme-sf .chat .right .who::after { content: " >"; }
+.theme-sf .chat .bubble {
+  font-size: .92em;
+  box-shadow: 0 0 14px color-mix(in srgb, var(--pc) 16%, transparent);
+}
+.theme-sf .chat .left .bubble { clip-path: polygon(0 0, 100% 0, 100% 100%, .6rem 100%, 0 calc(100% - .6rem)); }
+.theme-sf .chat .right .bubble { clip-path: polygon(0 0, 100% 0, 100% calc(100% - .6rem), calc(100% - .6rem) 100%, 0 100%); }

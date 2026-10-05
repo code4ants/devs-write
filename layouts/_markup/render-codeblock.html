@@ -1,5 +1,31 @@
 {{- if eq .Type "terminal" -}}
 <div class="terminal"><pre><code>{{ .Inner }}</code></pre></div>
+{{- else if eq .Type "chat" -}}
+{{- /* One message per line:  Name | left | text   (side is left or right). */ -}}
+{{- $s := newScratch -}}
+{{- $s.Set "seen" slice -}}
+{{- $s.Set "prev" "" -}}
+<div class="chat" role="group" aria-label="Conversation">
+{{- range split (replace .Inner "\r" "") "\n" -}}
+  {{- $line := . -}}
+  {{- if strings.TrimSpace $line -}}
+    {{- $m := findRESubmatch `(?i)^\s*([^|]+?)\s*\|\s*(left|right)\s*\|\s*(.+?)\s*$` $line -}}
+    {{- if not $m -}}
+      {{- errorf "chat block in %s: expected 'Name | left or right | message', got %q" $.Page.Path $line -}}
+    {{- end -}}
+    {{- $p := index (index $m 0) 1 -}}
+    {{- $side := lower (index (index $m 0) 2) -}}
+    {{- $text := index (index $m 0) 3 -}}
+    {{- if not (in ($s.Get "seen") $p) }}{{ $s.Add "seen" (slice $p) }}{{ end -}}
+    {{- $idx := 0 -}}
+    {{- range $i, $n := $s.Get "seen" }}{{ if eq $n $p }}{{ $idx = mod $i 4 }}{{ end }}{{ end -}}
+    {{- $key := printf "%s|%s" $p $side -}}
+    {{- $cont := eq ($s.Get "prev") $key -}}
+    {{- $s.Set "prev" $key }}
+<div class="msg {{ $side }} p{{ $idx }}{{ if $cont }} cont{{ else }} first{{ end }}">{{ if not $cont }}<span class="who">{{ $p }}</span>{{ end }}<p class="bubble">{{ $text }}</p></div>
+  {{- end -}}
+{{- end }}
+</div>
 {{- else -}}
 <pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
 {{- end }}

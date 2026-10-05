@@ -79,3 +79,27 @@ html:has(.theme-dusty) { background: #170d0a; }
   height: .6rem;
   background: repeating-linear-gradient(-45deg, var(--c) 0 .6rem, #170d0a .6rem 1.2rem);
 }
+
+/* Chat: a jury-rigged radio relay. Stencilled header plate, flat riveted bubbles
+   with a thick rust edge on the speaker's side. */
+.theme-dusty .chat {
+  --k-bg: #0d0705;
+  --k-edge: #6b3d28;
+  --k-r: 0;
+  border: 2px solid var(--k-edge);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+}
+.theme-dusty .chat::before {
+  content: "RELAY 03  \00b7  SIGNAL FAINT";
+  margin: -1rem -1rem .9rem;
+  padding: .55rem 1rem;
+  background: #2a1710;
+  color: #b07a58;
+  font: 600 .7rem/1 var(--font-body);
+  letter-spacing: .16em;
+}
+.theme-dusty .chat .who { text-transform: uppercase; letter-spacing: .12em; font-weight: 800; font-size: .8rem; }
+.theme-dusty .chat .bubble { font-weight: 500; }
+.theme-dusty .chat .left .bubble { border-left: 5px solid var(--pc); }
+.theme-dusty .chat .right .bubble { border-right: 5px solid var(--pc); }
+.theme-dusty .chat .left.first .bubble, .theme-dusty .chat .right.first .bubble { border-radius: 0; }

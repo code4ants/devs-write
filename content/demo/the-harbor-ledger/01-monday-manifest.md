@@ -3,6 +3,12 @@ title: Monday Manifest
 ---
 Forty crates were logged out of Pier Six on Monday morning. By evening, nobody on the waterfront could say where they had gone.
 
+~~~chat
+Editor | left | Is the manifest confirmed?
+Reporter | right | Two ships, one missing crate, and a harbor master who won't comment.
+Editor | left | Then comment is the story. File it.
+~~~
+
 Harbormaster Eide declined to comment. His clerk, asked twice, found something urgent in the ledger.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum ex, dictum eleifend euismod a, tristique nec quam. Duis magna libero, auctor a mauris ut, aliquam ultricies nibh. Quisque sed magna ut massa maximus sollicitudin nec nec metus. Quisque euismod urna nec est elementum, vitae aliquam felis condimentum. Proin interdum ligula et ipsum efficitur, a accumsan mi aliquet. Quisque sagittis tempus tortor, at scelerisque nibh. Sed vehicula sem vitae diam viverra posuere. Cras ultrices sit amet tortor vel aliquam.

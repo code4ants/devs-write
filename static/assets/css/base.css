@@ -118,6 +118,60 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .terminal pre * { color: inherit; }
 @media (max-width: 36rem) { .terminal pre { font-size: .82rem; padding: .75rem .85rem .9rem; } }
 
+/* Chat: a conversation between two or more people, as message bubbles.
+   Authors write:   ~~~chat
+                    Mira | left | Are you there?
+                    Jonas | right | Always.
+                    ~~~
+   Each distinct name gets its own tint (.p0-.p3, from the theme palette); the side
+   decides alignment. Consecutive messages from the same speaker are grouped.
+   Themes override the --k-* variables and restyle .chat, .who and .bubble. */
+.chat {
+  --k-bg: color-mix(in srgb, var(--fg) 4%, var(--bg));
+  --k-edge: var(--border);
+  --k-r: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1.75rem 0;
+  padding: 1rem;
+  border: 1px solid var(--k-edge);
+  border-radius: var(--radius);
+  background: var(--k-bg);
+  font-family: var(--font-body);
+  font-size: .95rem;
+  line-height: 1.5;
+  font-style: normal;
+}
+.chat .msg { --pc: var(--accent); display: flex; flex-direction: column; max-width: 84%; margin-top: .2rem; }
+.chat .msg.first { margin-top: .85rem; }
+.chat > :first-child { margin-top: 0; }
+.chat .p1 { --pc: var(--c-blue); }
+.chat .p2 { --pc: var(--c-green); }
+.chat .p3 { --pc: var(--c-red); }
+.chat .left { align-self: flex-start; align-items: flex-start; }
+.chat .right { align-self: flex-end; align-items: flex-end; text-align: left; }
+.chat .who {
+  margin: 0 .35rem .2rem;
+  color: var(--pc);
+  font-family: var(--font-head);
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.chat .bubble {
+  margin: 0;
+  padding: .55rem .85rem;
+  border: 1px solid color-mix(in srgb, var(--pc) 45%, transparent);
+  border-radius: var(--k-r);
+  background: color-mix(in srgb, var(--pc) 12%, var(--bg));
+  color: var(--fg);
+  overflow-wrap: anywhere;
+}
+.chat .right .bubble { background: color-mix(in srgb, var(--pc) 22%, var(--bg)); }
+.chat .left.first .bubble { border-top-left-radius: .2rem; }
+.chat .right.first .bubble { border-top-right-radius: .2rem; }
+@media (max-width: 36rem) { .chat { margin-inline: -.25rem; padding: .75rem; } .chat .msg { max-width: 92%; } }
+
 /* Header / footer */
 .site-header, .site-footer {
   padding: .9rem var(--gutter);
