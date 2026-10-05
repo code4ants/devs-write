@@ -46,7 +46,7 @@ Stiam ca au mascota un dragon mov - saptamana trecuta am fost sa beau cu Kata la
 
 La fel ca noaptea trecuta, inima uriasa rosie de pe sigla magazinului "Bosnia" lumina puternic, chiar daca era zi afara, insa de data aceasta, magazinul nu era inchis, in interiorul ingust cateva persoane se plimbau printre rafturile cu lucruri. Am deschis usa, lovind un clopotel, anuntand astfel intrarea mea in magazin. Cativa potentiali cumparatori au ridicat ochii spre sursa sunetului, dupa care au continuat cotrobaitul printre rafturi. Din spatele magazinului, am auzit o voce ragusita "Hiloo! Welcome, welcome! Come!".
 
-Vocea apartinea unui individ, la varsta mijlocie, cu o camasa inflorata si vesta tricotata inconjurand forme supraponderale. Avea parul lung, prin in coada, chelie, si o barba sarmoasa, preponderent gri. Nu s-a uitat spre mine, era ocupat cu reparatul unui ceas mecanic, actiune pe care o facea cu o dibacie incredibila, in ciuda mainilor dure si a degetele groase populate cu inele.
+Vocea apartinea unui individ, la varsta mijlocie, cu o camasa inflorata si vesta tricotata inconjurand forme supraponderale. Avea parul lung, prins in coada, chelie, si o barba sarmoasa, preponderent gri. Nu s-a uitat spre mine, era ocupat cu reparatul unui ceas mecanic, actiune pe care o facea cu o dibacie incredibila, in ciuda mainilor dure si a degetele groase populate cu inele.
 
 A fost greu sa imi fac o lista mintala cu ce anume se afla in magazin - ar fi fost mai usor sa fac o lista cu ce nu era. Totusi, am luat cateva discuri de vinil, un aparat foto vechi si m-am intors la birou. La plecare, m-a petrecut un "Bye bye, return, yes?" ragusit, suvenir al anilor lungi de baut si fumat.
 
@@ -62,7 +62,7 @@ A fost greu sa imi fac o lista mintala cu ce anume se afla in magazin - ar fi fo
 > Katana221: Iti spun mai tarziu...
 ~~~
 
-In urma cu 4 ani, eram deja client fidel al magazinului. Veneam zilnic, in timpul pauzei de masa, si mereu plecam cu ceva. Cumva, Luka reusea sa aduca in fiecare zi ceva nou in magazin, sau poate in fiecare zi descopeream eu ceva nou. Fiind client fidel, m-am apropiat de el, "apropiat" fiind mult spus, insa puteam sa ii cer sa imi aduca diverse lucruri. S-a oferit chiar sa ma ajute cu banii, cand nu imi ajungeau, dar niciodata nu am vrut sa merg in directia aia.
+In urma cu 4 ani, eram deja client fidel al magazinului. Veneam zilnic, in timpul pauzei de masa, si mereu plecam cu ceva. Cumva, Luka, proprietarul magazinului, reusea sa aduca in fiecare zi ceva nou in magazin, sau poate in fiecare zi descopeream eu ceva nou. Fiind client fidel, m-am apropiat de el, "apropiat" fiind mult spus, insa puteam sa ii cer sa imi aduca diverse lucruri. S-a oferit chiar sa ma ajute cu banii, cand nu imi ajungeau, dar niciodata nu am vrut sa merg in directia aia.
 
 
 ~~~terminal
@@ -77,9 +77,9 @@ In urma cu 4 ani, eram deja client fidel al magazinului. Veneam zilnic, in timpu
 > Katana221: ma stii - e deja rutina! 
 ~~~
 
-In urma cu 2 ani, inspectam un obiectiv foto, cand Luka m-a chemat la tejghea - foarte rar se intampla asta, de obicei el era cel care venea la tine, daca avea treaba cu tine (nu prea vroiai sa aibe Luka treaba cu tine). M-am dus si nici nu apuc sa intreb ceva, ca ma ia direct: "Max boy, you want car? Very very good".
+In urma cu 2 ani, inspectam un obiectiv foto, cand Luka m-a chemat la tejghea - foarte rar se intampla asta, de obicei el era cel care venea la tine, daca avea treaba cu tine (nu prea vroiai sa aiba Luka treaba cu tine). M-am dus si nici nu apuc sa intreb ceva, ca ma ia direct: "Max boy, you want car? Very very good".
 
-Initial am inteles "cat" asa ca ii zic ca nu pot sa iau un animal de companie - garsoniera mica in care stateam (da, dupa 4 ani de lucru, insa am preferat sa fac economii), nu ar fi acomodat asa ceva.
+Initial am inteles "cat" asa ca ii zic ca nu pot sa iau un animal de companie - garsoniera mica in care stateam (da, dupa 4 ani de lucru inca stateam in prima mea garsoniera, insa am preferat sa fac economii), nu ar fi acomodat asa ceva.
 
 "No no cat! Car, wheels, vruum-vruum! Confort plus, motor-vehicle!" si imi face semn sa il urmez in spatele magazinului. Era prima oara cand faceam asta, dar sigur nu i-ar fi facut ceva unui client fidel. In spatele mazinului se afla o rulota neagra, murdara si cam ruginita. "Look! Beautiful! Yours for cheap! Go see world!". Nu glumea, vroia sa imi vanda o rulota! La Bosnia nu se vindeau automobile, cel mult unelte de gradina - inca ma intreb ce combinatii a facut sa obtina masina... 
 
@@ -108,23 +108,23 @@ Initial am inteles "cat" asa ca ii zic ca nu pot sa iau un animal de companie - 
 
 > Katana221: *dies*
 
-~ Maximus980: Si anume pentru entuziasmati de camping! Am numit campania "La BUSa prapastiei"
+~ Maximus980: Si anume pentru entuziasmati de camping! Am numit campania "La BUSa prapastiei" 😁
 
 > Katana221: Ti-am raportat deja contul, o sa fie inchis in 3 zile lucratoare
 
 ~ Maximus980: Da, da stiu, cam cheesy dar aparent clientul e multumit. Si asta nu e tot!
 
-> Katana221: Oh, mai e ceva? Te rog continua, mai multe detalii! Nu am altceva de facut
+> Katana221: Oh, mai e ceva? Te rog continua, mai multe detalii! Nu am altceva de facut 🙄
 
 ~ Maximus980: Se tine la "poligon" 😉
 
 > Katana221: Stai ce... "poligonul" nostru? Acel "poligon"? 
 
-~ Maximus980: Dap! Asta a fost si reactia mea... Deci? Te bagi sa restauram dricul lui Lache (putem gasi un nume mai bun, insa) si vizitezi lumea cu mine?
+~ Maximus980: Dap! Asta a fost si reactia mea... Deci? Te bagi sa restauram dricul lui Lache (poate gasim un nume mai bun) si vizitezi lumea cu mine?
 
 > Katana221: Nu stiu de ce am vrea sa ne mai intoarcem acolo...
 
-~ Maximus980: Sunt curios cum e in prezent + pana ajungem, o sa fie o comunitate infloritoare de detinatori de rulota (ceea ce si noi suntem, bun venit in club)
+~ Maximus980: Sunt curios cum e in prezent + pana ajungem, o sa fie o comunitate infloritoare de detinatori de rulote (ceea ce si noi suntem, bun venit in club)
 
-> Katana221: Sau gasim rulotele abandonate, fara urme ale proprietarilor...
+> Katana221: Sau gasim rulotele abandonate, fara urme ale proprietarilor... 🥲
 ~~~
