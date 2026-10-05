@@ -8,21 +8,16 @@ In urma cu 6 ani si 11 luni, intr-o dimineata frumoasa de Aprilie ma indreptam s
 
 Usile liftului s-au deschis si in scurt timp imi lasam lucrurile pe biroul unde masa de design ma astepta pentru inca o aventura halucinanta a regelui pietricelelor, nivel nemaivazut de adrenalina! Am pornit statia grafica, si am dat o fuga pana la bucatarie sa imi fac o cafea. Am asezat cafeaua proaspata langa tastatura, aburul unduios al ei, blocand usor fereastra de Communicator de pe monitor:
 
-~~~terminal
-> Jeff Blee: Salutare, Max! Uite m-au contactat astia cu sala de ping-pong (comanda #921), si cica vor sa incorporezi cumva si mascota lor in logo. Da, da, stiu, o sa ma intrebi "ce mascota?" - uite ca au decis ca au o mascota, aparent... Un dragon mov 😐
-
-> Jeff Blee: "Dar Jeff, culorile lor sunt verde, alb si rosu, ca doar sunt unguri", te aud dar nah, se pare ca asta vor - poti sa faci un draft cu un nou logo, cu acest dragon?
-
-~ Maxim Cela: Salut Jeff! Da, da nu e bai, gasesc eu o solutie - daca am facut pana acum cinci schimbari, o facem si pe a 6a!
-
-> Jeff Blee: Suuuper! Mda, stiu ce zici, si eu m-am saturat de acest du-te-vin-o, e ca si cum am juca...
-
-~ Maxim Cela: Jeff, te rog, nu...
-
-> Jeff Blee: ... PING-PONG 😅
-
-~ Maxim Cela: ... la naiba 🤣
+~~~chat {title="Communicator - Jeff Blee"}
+Jeff Blee | left |  Salutare, Max! Uite m-au contactat astia cu sala de ping-pong (comanda #921), si cica vor sa incorporezi cumva si mascota lor in logo. Da, da, stiu, o sa ma intrebi "ce mascota?" - uite ca au decis ca au o mascota, aparent... Un dragon mov 😐
+Jeff Blee | left |  "Dar Jeff, culorile lor sunt verde, alb si rosu, ca doar sunt unguri", te aud dar nah, se pare ca asta vor - poti sa faci un draft cu un nou logo, cu acest dragon?
+| right | Salut Jeff! Da, da nu e bai, gasesc eu o solutie - daca am facut pana acum cinci schimbari, o facem si pe a 6a!
+Jeff Blee | left |  Suuuper! Mda, stiu ce zici, si eu m-am saturat de acest du-te-vin-o, e ca si cum am juca...
+| right | Jeff, te rog, nu...
+Jeff Blee | left |  PING-PONG 😅
+| right | la naiba 🤣
 ~~~
+
 
 Stiam ca au mascota un dragon mov - saptamana trecuta am fost sa beau cu Kata la barul clubului lor de tenis de masa, si erau entuziasmati de noua mascota. Nu am anuntat la firma ca nah, nu imi dau singur de lucru... Aveam deja drafturile gata, anticipand acest moment.
 
