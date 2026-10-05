@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{{ printf "https://fonts.googleapis.com/css2?family=%s&display=swap" . | safeURL }}">
 {{ end -}}
-<link rel="stylesheet" href="{{ "assets/css/base.css" | relURL }}">
+<link rel="stylesheet" href="{{ "assets/css/base.css" | relURL }}?v={{ readFile "static/assets/css/base.css" | md5 | truncate 8 "" }}">
 {{ if $theme -}}
-<link rel="stylesheet" href="{{ printf "assets/css/themes/%s.css" $theme | relURL }}">
+<link rel="stylesheet" href="{{ printf "assets/css/themes/%s.css" $theme | relURL }}?v={{ readFile (printf "static/assets/css/themes/%s.css" $theme) | md5 | truncate 8 "" }}">
 {{ end -}}
