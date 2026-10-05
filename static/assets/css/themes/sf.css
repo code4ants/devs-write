@@ -24,6 +24,20 @@ html:has(.theme-sf) { background: #090d16; }
 .theme-sf .chapter-nav a:hover { background: rgba(25, 227, 209, .08); }
 .theme-sf .prose { hyphens: none; }
 
+/* Scene break: a dashed signal line with a glowing sync marker. */
+.theme-sf .prose hr {
+  --hr-mark: "// \25C8 //";
+  --hr-c: var(--accent);
+  margin: 2.75rem 0;
+  background: repeating-linear-gradient(to right, var(--hr-c) 0 .6rem, transparent .6rem .9rem) center / 100% 1px no-repeat;
+  filter: drop-shadow(0 0 5px rgba(25, 227, 209, .55));
+}
+.theme-sf .prose hr::before {
+  font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  font-size: .85rem;
+  letter-spacing: .15em;
+}
+
 /* Terminal: CRT console, teal phosphor with faint scanlines. */
 .theme-sf .terminal {
   --t-fg: #19e3d1;

@@ -56,6 +56,20 @@ The color is optional and the same three IDs work in every theme: `.red`, `.gree
 
 A plain `>` blockquote (without the `{...}` line) stays a quiet, muted quote.
 
+## Scene breaks
+
+To separate two story planes or two fragments of the same chapter, put `---` on a line of its own, with a blank line above and below (without the blank line above, Markdown reads it as a heading):
+
+```markdown
+End of the first scene.
+
+---
+
+Start of the next one.
+```
+
+Each theme draws the break in its own style and palette: a gilded flourish (fantasy), a glowing dashed signal line (sf), a column rule with an asterism (newspaper) and hazard tape with a stencilled plate (dusty).
+
 ## Terminal blocks
 
 To show a console session, write a fenced block whose opening fence is `~~~terminal`:

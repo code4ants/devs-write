@@ -27,6 +27,18 @@ html:has(.theme-fantasy) { background: #15110c; }
 }
 .theme-fantasy .chapter-nav a { border-width: 2px; border-style: double; }
 
+/* Scene break: a gilded flourish between rules that fade into the parchment. */
+.theme-fantasy .prose hr {
+  --hr-mark: "\2726\00a0\2766\00a0\2726";
+  --hr-c: var(--accent);
+  height: 2rem;
+  margin: 3rem 0;
+  background:
+    linear-gradient(to right, transparent, var(--hr-c) 35%, var(--hr-c) 65%, transparent) center calc(50% - 2px) / 100% 1px no-repeat,
+    linear-gradient(to right, transparent, color-mix(in srgb, var(--hr-c) 60%, transparent) 35%, color-mix(in srgb, var(--hr-c) 60%, transparent) 65%, transparent) center calc(50% + 2px) / 100% 1px no-repeat;
+}
+.theme-fantasy .prose hr::before { font-size: 1.15rem; letter-spacing: .15em; text-shadow: 0 0 10px rgba(217, 164, 65, .45); }
+
 /* Terminal: a scrying glass: amber glyphs on dark wood. */
 .theme-fantasy .terminal {
   --t-fg: #e3b562;

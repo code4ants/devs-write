@@ -31,6 +31,23 @@ html:has(.theme-dusty) { background: #170d0a; }
 .theme-dusty .chapter-nav a { border-width: 2px; text-transform: uppercase; letter-spacing: .06em; }
 .theme-dusty .chapter-nav a:hover { background: rgba(224, 115, 63, .1); }
 
+/* Scene break: a strip of hazard tape with a stencilled plate in the middle. */
+.theme-dusty .prose hr {
+  --hr-mark: "\25B8\25B8\25B8";
+  --hr-c: var(--accent);
+  height: 1.6rem;
+  margin: 2.75rem 0;
+  background: repeating-linear-gradient(-45deg, var(--hr-c) 0 .55rem, #170d0a .55rem 1.1rem) center / 100% .55rem no-repeat;
+}
+.theme-dusty .prose hr::before {
+  padding: .3rem .9rem;
+  border: 2px solid #6b3d28;
+  background: #21130e;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .2em;
+}
+
 /* Terminal: a salvaged field unit. Cracked amber display, grit in the scanlines,
    a worn rust housing instead of window chrome. */
 .theme-dusty .terminal {

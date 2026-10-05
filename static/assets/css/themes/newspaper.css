@@ -26,6 +26,18 @@ html:has(.theme-newspaper) { background: #141414; }
   float: left; font-family: var(--font-head); font-size: 3.2em; line-height: .8; padding-right: .08em;
 }
 
+/* Scene break: a column rule, heavy over hairline, with a printer's asterism. */
+.theme-newspaper .prose hr {
+  --hr-mark: "\2042";
+  --hr-c: var(--fg);
+  height: 2rem;
+  margin: 2.5rem 0;
+  background:
+    linear-gradient(var(--hr-c), var(--hr-c)) center calc(50% - 3px) / 100% 3px no-repeat,
+    linear-gradient(var(--hr-c), var(--hr-c)) center calc(50% + 3px) / 100% 1px no-repeat;
+}
+.theme-newspaper .prose hr::before { font-family: var(--font-head); font-size: 1.5rem; font-weight: 900; padding: 0 .9rem; }
+
 /* Terminal: a wire-service teleprinter: typewriter type, off-white on black. */
 .theme-newspaper .terminal {
   --t-fg: #e8e5dd;

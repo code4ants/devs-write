@@ -34,6 +34,8 @@ Duis dignissim lectus mi, sit amet sodales lectus commodo vehicula. Sed tempor o
 
 Cras quam erat, placerat nec ultrices quis, euismod quis enim. Duis tincidunt ligula faucibus sapien malesuada, et egestas augue consequat. Etiam elementum ex id velit vulputate, ac feugiat risus congue. Nulla nec interdum metus. Phasellus bibendum nibh id dui vehicula dignissim. Suspendisse non porttitor tortor. Aliquam fermentum aliquam enim, ut fermentum tortor fringilla ac. Vestibulum non ante ac diam porttitor dictum eu vitae ligula.
 
+---
+
 Fusce eu tempor massa, at pellentesque ligula. Sed venenatis at odio sit amet rutrum. Cras fringilla velit ullamcorper massa ultricies euismod. Etiam ut tellus vel ligula efficitur aliquet. Phasellus maximus tempor elementum. Donec elementum ultricies ex non tempor. Integer metus justo, posuere sed ultrices imperdiet, tincidunt convallis lectus.
 
 *Lichen on the north wall. It was not there yesterday.*
