@@ -375,7 +375,6 @@ html.map-open { overflow: hidden; }
 .meta.top, .section-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .meta.top { min-height: 2.25rem; }
 .section-head h2 { margin-block: 2rem .5em; }
-.section-head .bio-btn { margin-top: 1.5rem; }
 .bio-btn {
   display: inline-flex; align-items: center; gap: .4rem; flex: none; padding: .35rem .85rem .35rem .7rem;
   font: 600 .85rem/1.2 var(--font-head); letter-spacing: .05em; color: var(--accent); cursor: pointer;
@@ -422,4 +421,10 @@ html.bio-open { overflow: hidden; }
 /* Themes may prefix .meta with a ::before marker (a flex item here): keep marker + link together on the left. */
 .meta.top { justify-content: flex-start; gap: 0; }
 .meta.top > a { margin-right: auto; }
-.meta.top > .bio-btn { margin-left: 1rem; }
+
+/* Bio + Dex buttons sit side by side. */
+.actions { display: inline-flex; align-items: center; gap: .5rem; flex: none; }
+.meta.top > .actions { margin-left: 1rem; }
+.section-head .actions { margin-top: 1.5rem; }
+.meta.top > .bio-btn { margin-left: 0; }
+.section-head .bio-btn { margin-top: 0; }

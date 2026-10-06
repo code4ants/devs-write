@@ -1,0 +1,32 @@
+{{- /* Dex button + glossary dialog for a story (page = the story section). Renders nothing without a
+       dex.yaml in the story folder:
+         entries:
+           - name: ...
+             description: ...
+       Entries are shown alphabetically. Shares the bio dialog's classes and script.            */ -}}
+{{- with .Resources.Get "dex.yaml" -}}
+  {{- $data := . | transform.Unmarshal -}}
+  {{- $entries := slice -}}
+  {{- if reflect.IsMap $data }}{{ $entries = $data.entries }}{{ end -}}
+  {{- if not (and $entries (reflect.IsSlice $entries)) -}}
+    {{- errorf "%s: expected an 'entries' list" .Name -}}
+  {{- end -}}
+  {{- $keyed := slice -}}
+  {{- range $entries -}}
+    {{- if not (and (reflect.IsMap .) .name) -}}
+      {{- errorf "dex.yaml: every entry needs a 'name'" -}}
+    {{- end -}}
+    {{- $keyed = $keyed | append (dict "key" (lower (string .name)) "e" .) -}}
+  {{- end -}}
+  <button type="button" class="bio-btn dex-btn" aria-haspopup="dialog" aria-controls="dex-dialog"><svg viewBox="0 0 24 24" width="1.1em" height="1.1em" aria-hidden="true"><path d="M5 3h11a3 3 0 0 1 3 3v15H8a3 3 0 0 1-3-3zm3 0v15m0 0a1 1 0 0 0 0 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Dex</span></button>
+  <dialog class="bio-dialog dex-dialog" id="dex-dialog" aria-labelledby="dex-title">
+    <div class="bio-head"><h2 id="dex-title">Dex</h2><button type="button" class="bio-close" aria-label="Close">&times;</button></div>
+    <ul class="bio-list">
+    {{- range sort $keyed "key" -}}
+      {{- with .e }}
+      <li class="bio-card"><div><h3>{{ .name }}</h3>{{ with .description }}<p class="bio-aspect">{{ . }}</p>{{ end }}</div></li>
+      {{- end -}}
+    {{- end }}
+    </ul>
+  </dialog>
+{{- end -}}

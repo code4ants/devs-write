@@ -18,8 +18,8 @@
   {{ with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
   <div class="prose">{{ .Content }}</div>
 
-  {{ $bio := partial "bio.html" . | string | strings.TrimSpace }}
-  <div class="section-head"><h2>Chapters</h2>{{ $bio | safeHTML }}</div>
+  {{ $bio := printf "%s%s" (partial "bio.html" .) (partial "dex.html" .) | strings.TrimSpace }}
+  <div class="section-head"><h2>Chapters</h2>{{ with $bio }}<span class="actions">{{ . | safeHTML }}</span>{{ end }}</div>
   <ol class="chapter-list">
     {{ range partial "chapters.html" . }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

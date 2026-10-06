@@ -2,8 +2,8 @@
 {{ $story := .Parent }}
 {{ $chapters := partial "chapters.html" $story }}
 <article class="chapter">
-{{ $bio := partial "bio.html" $story | string | strings.TrimSpace }}
-  <div class="meta top"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a>{{ $bio | safeHTML }}</div>
+{{ $bio := printf "%s%s" (partial "bio.html" $story) (partial "dex.html" $story) | strings.TrimSpace }}
+  <div class="meta top"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a>{{ with $bio }}<span class="actions">{{ . | safeHTML }}</span>{{ end }}</div>
   <h1>{{ .Title }}</h1>
   <div class="prose">{{ .Content }}</div>
   <nav class="chapter-nav" aria-label="Chapters">

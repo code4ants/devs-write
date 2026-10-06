@@ -1,0 +1,9 @@
+entries:
+  - name: Orbit Nine
+    description: A derelict relay station on the far edge of the outer ring, abandoned when the trade lanes were rerouted.
+  - name: Ping
+    description: A short test signal sent to a relay to confirm it is alive. Normally answered after the round-trip delay, never before it.
+  - name: Relay-9
+    description: The station's dormant routing system. Its replies arrive earlier than physics allows.
+  - name: Round-trip delay
+    description: The time a signal needs to travel to its target and back. The one number Oda trusted.

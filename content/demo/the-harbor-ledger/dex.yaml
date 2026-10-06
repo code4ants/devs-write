@@ -1,0 +1,9 @@
+entries:
+  - name: The Ledger
+    description: The harbor's daily paper of record, where manifests, tides and rumors are printed side by side.
+  - name: Manifest
+    description: The official list of a ship's cargo. When the manifest and the crates disagree, someone is lying.
+  - name: North breakwater
+    description: A long stone arm sheltering the harbor from the open sea. Nobody has any business there after midnight.
+  - name: Tide table
+    description: A printed schedule of high and low water. On Tuesday it was the only thing in the harbor everyone agreed on.

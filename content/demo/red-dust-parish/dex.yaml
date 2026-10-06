@@ -1,0 +1,9 @@
+entries:
+  - name: The Domes
+    description: Sealed habitats that sheltered the first colonists. They failed forty years before the story begins.
+  - name: Parish
+    description: A settlement the old maps still mark, said to lie beyond the dry canal. The source of the radio signal.
+  - name: Water-runner
+    description: Someone who hauls water between settlements by rover or on foot, trusted with the most precious cargo on the planet.
+  - name: Dry canal
+    description: A vast channel cut by the first colonists to carry meltwater. Now a landmark, and a trap for rovers.

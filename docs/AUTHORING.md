@@ -141,6 +141,22 @@ Only `name` is required; `role` and `aspect` (how the character looks) are optio
 
 With a bio, a **Bio** button shows up on the story page, on the same line as "Chapters", and at the top right of every chapter, opposite the link back to the story. It opens a popup with the characters, styled by the story theme. Text is plain (no Markdown). A file without a `characters` list, or a character without a name, fails the build.
 
+## Dex (glossary)
+
+A story can explain its concepts, materials, locations and other things. Add a `dex.yaml` next to the story's `_index.md` (`content/<you>/<story>/dex.yaml`):
+
+```yaml
+entries:
+  - name: The Ember
+    description: The last living coal of the old forge of Karn Dellow.
+  - name: Ashen Marches
+    description: A grey, windswept borderland where the road gives out.
+```
+
+Both fields are plain text, and `name` is required. Entries are always shown in alphabetical order, whatever order you write them in. The file is optional.
+
+With a dex, a **Dex** button appears next to the Bio button (or alone, if the story has no bio) on the story page and in every chapter. It opens a popup with all the entries, styled by the story theme. A file without an `entries` list, or an entry without a name, fails the build.
+
 ## Workflow
 
 1. Create a branch, add or edit files, open a pull request to `main`.

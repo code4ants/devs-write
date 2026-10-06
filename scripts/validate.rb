@@ -6,6 +6,7 @@
 #   content/<author>/<story>/_index.md         title, summary, theme in THEMES
 #   content/<author>/<story>/<chapter>.md      title; numeric prefix or `order`; unique order per story
 #   content/<author>/<story>/bio.yaml          optional; non-empty characters list, each with a name
+#   content/<author>/<story>/dex.yaml          optional; non-empty entries list, each with a name
 #   content/<author>/<story>/<map>.jpg         optional story maps
 require "yaml"
 require "date"
@@ -45,23 +46,41 @@ Dir.glob(File.join(ROOT, "content", "**", "*")).sort.each do |path|
     next
   end
 
-if parts.length == 3 && parts[2] == "bio.yaml"
-  begin
-    data = YAML.safe_load(File.read(path, encoding: "UTF-8"))
-    list = data.is_a?(Hash) ? data["characters"] : nil
-    if !list.is_a?(Array) || list.empty?
-      errors << "#{rel}: expected a non-empty 'characters' list"
-    else
-      list.each_with_index do |c, i|
-        errors << "#{rel}: character #{i + 1} needs a 'name'" unless c.is_a?(Hash) && !c["name"].to_s.strip.empty?
+  if parts.length == 3 && parts[2] == "bio.yaml"
+    begin
+      data = YAML.safe_load(File.read(path, encoding: "UTF-8"))
+      list = data.is_a?(Hash) ? data["characters"] : nil
+      if !list.is_a?(Array) || list.empty?
+        errors << "#{rel}: expected a non-empty 'characters' list"
+      else
+        list.each_with_index do |c, i|
+          errors << "#{rel}: character #{i + 1} needs a 'name'" unless c.is_a?(Hash) && !c["name"].to_s.strip.empty?
+        end
       end
+    rescue Psych::Exception => e
+      errors << "#{rel}: invalid YAML (#{e.message})"
     end
-  rescue Psych::Exception => e
-    errors << "#{rel}: invalid YAML (#{e.message})"
+    next
   end
-  next
-end
-next if parts.length == 3 && parts[2].match?(/\A[a-z0-9][a-z0-9-]*\.jpg\z/) # story maps
+  if parts.length == 3 && parts[2] == "dex.yaml"
+    begin
+      data = YAML.safe_load(File.read(path, encoding: "UTF-8"))
+      list = data.is_a?(Hash) ? data["entries"] : nil
+      if !list.is_a?(Array) || list.empty?
+        errors << "#{rel}: expected a non-empty 'entries' list"
+      else
+        list.each_with_index do |c, i|
+          errors << "#{rel}: entry #{i + 1} needs a 'name'" unless c.is_a?(Hash) && !c["name"].to_s.strip.empty?
+        end
+      end
+    rescue Psych::Exception => e
+      errors << "#{rel}: invalid YAML (#{e.message})"
+    end
+    next
+  end
+
+
+  next if parts.length == 3 && parts[2].match?(/\A[a-z0-9][a-z0-9-]*\.jpg\z/) # story maps
 
 unless path.end_with?(".md") && parts.length == 3
     errors << "#{rel}: expected content/<author>/<story>/<file>.md"
