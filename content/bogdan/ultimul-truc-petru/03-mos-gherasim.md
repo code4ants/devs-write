@@ -45,7 +45,7 @@ _Țrrrrrrrrrr!_
 *Hmm, cred ca e asistentul. I-am spus că nu mai trebuie să îmi aducă și cuștile cu păsări din dubă. Ce doream să testez, am testat.*
 {.callout .blue}
 
-Deschizând ușa, rămase surprins să dea nas în nas cu un batrân pe la 60-70 de ani, cu un chip senin și ochi zâmbitori, îmbrăcat simplu și curat. Deși nu arătau a haine scumpe, Petru observă că hainele bătrânului era ca noi, fără urmă de uzură sau tocire.
+Deschizând ușa, rămase surprins să dea nas în nas cu un batrân pe la 60-70 de ani, cu un chip senin și ochi zâmbitori, îmbrăcat simplu și curat. Deși nu arătau a haine scumpe, Petru observă că hainele bătrânului erau ca noi, fără urmă de uzură sau tocire.
 
 -- Bună ziua, vă pot ajuta cu ceva?
 
@@ -65,7 +65,7 @@ Moș Gherasim se uită direct în ochii lui Petru și spuse calm:
 
 -- Am venit să vă ajut eu pe dumneavoastră. Ați făcut un târg cu Diavolul. În 2 ani o să muriți.
 
-Petru rămase încremenit. Deși nu auzea nimic nou, faptul că bătrânul din fața lui spunea extrem de simplu ceea ce el încercase toată săptămâna să își scoată din minte și, cumva, să parcheze aceste gânduri pentru... _mai încolo_ - vorbele bătrânului îl răscoliră și îî aduseră din nou in suflet frica pe care o simțise în camera de motel din Craiova.
+Petru rămase încremenit. Deși nu auzea nimic nou, faptul că bătrânul din fața lui spunea extrem de simplu ceea ce el încercase toată săptămâna să își scoată din minte și, cumva, să parcheze aceste gânduri pentru... _mai încolo_ - vorbele bătrânului îl răscoliră și îi aduseră din nou in suflet frica pe care o simțise în camera de motel din Craiova.
 
 -- De unde știți toate astea? De unde știți că ăla a fost... Dumneavoastră cine sunteți? ... Dumnezeu?
 
