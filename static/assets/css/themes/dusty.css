@@ -130,3 +130,11 @@ html:has(.theme-dusty) { background: #170d0a; }
   border-image: repeating-linear-gradient(135deg, var(--accent) 0 14px, #170d0a 14px 28px) 8; }
 .theme-dusty .map-ctl { border-width: 2px; }
 .theme-dusty .map-path .line { stroke-dasharray: 16 9; stroke-width: 6px; }
+
+/* Bio: stencilled ID plates between strips of hazard tape. */
+.theme-dusty .bio-btn { border-radius: 2px; border-width: 2px; text-transform: uppercase; letter-spacing: .14em; font-weight: 800; }
+.theme-dusty .bio-dialog { border: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent;
+  border-image: repeating-linear-gradient(135deg, var(--accent) 0 14px, #170d0a 14px 28px) 8; }
+.theme-dusty .bio-head h2 { font-size: 1.4rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
+.theme-dusty .bio-mark { border-radius: 2px; border-width: 2px; }
+.theme-dusty .bio-card h3 { text-transform: uppercase; letter-spacing: .06em; font-weight: 800; font-size: 1.3rem; }

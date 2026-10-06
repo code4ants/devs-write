@@ -18,12 +18,14 @@
   {{ with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
   <div class="prose">{{ .Content }}</div>
 
-  <h2>Chapters</h2>
+  {{ $bio := partial "bio.html" . | string | strings.TrimSpace }}
+  <div class="section-head"><h2>Chapters</h2>{{ $bio | safeHTML }}</div>
   <ol class="chapter-list">
     {{ range partial "chapters.html" . }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ol>
+  {{ if $bio }}<script src="{{ "assets/js/bio.js" | relURL }}?v={{ readFile "static/assets/js/bio.js" | md5 | truncate 8 "" }}" defer></script>{{ end }}
 </article>
 {{ end }}
 {{ end }}

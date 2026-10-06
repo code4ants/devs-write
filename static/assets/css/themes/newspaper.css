@@ -96,3 +96,12 @@ html:has(.theme-newspaper) { background: #141414; }
 .theme-newspaper .map-dialog { border: 0; outline: 1px solid var(--border); outline-offset: -8px; border-top: 4px double var(--fg); border-bottom: 4px double var(--fg); }
 .theme-newspaper .map-img { filter: grayscale(.55) contrast(1.05); }
 .theme-newspaper .map-path .line { stroke: var(--fg); }
+
+/* Bio: a printed "dramatis personae": ruled, small caps, no rounding. */
+.theme-newspaper .bio-btn { border-radius: 0; border-width: 1px 0; background: none; text-transform: uppercase; letter-spacing: .12em; padding-inline: .4rem; }
+.theme-newspaper .bio-dialog { border: 0; border-top: 4px double var(--fg); border-bottom: 4px double var(--fg); }
+.theme-newspaper .bio-head { border-bottom: 1px solid var(--fg); }
+.theme-newspaper .bio-head h2 { font-family: var(--font-head); font-weight: 900; text-transform: uppercase; letter-spacing: .08em; color: var(--fg); }
+.theme-newspaper .bio-mark { border-radius: 0; background: var(--fg); color: var(--bg); font-family: var(--font-head); font-weight: 900; border: 0; }
+.theme-newspaper .bio-card h3 { font-family: var(--font-head); font-weight: 900; }
+.theme-newspaper .bio-role { color: var(--muted); }

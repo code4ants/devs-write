@@ -123,6 +123,24 @@ With several points, the popup starts on the first one and draws a curved dashed
 
 The button and popup take their colors and style from the story theme. A missing image, a malformed line or a point outside the image fails the build with the offending text. Maps are large; keep the file reasonably small (a few MB) so it loads fast on phones.
 
+## Character bios
+
+A story can describe its characters. Add a `bio.yaml` next to the story's `_index.md` (`content/<you>/<story>/bio.yaml`):
+
+```yaml
+characters:
+  - name: Mira
+    role: Hedge-witch, protagonist
+    aspect: Lean and sun-browned, with ash-grey streaks in her braid and a patched green cloak.
+  - name: Edda
+    role: Forge apprentice
+    aspect: A sharp-eyed girl of fifteen with a leather apron two sizes too large.
+```
+
+Only `name` is required; `role` and `aspect` (how the character looks) are optional. Characters are listed in the order you write them. The file is optional: without it, nothing appears.
+
+With a bio, a **Bio** button shows up on the story page, on the same line as "Chapters", and at the top right of every chapter, opposite the link back to the story. It opens a popup with the characters, styled by the story theme. Text is plain (no Markdown). A file without a `characters` list, or a character without a name, fails the build.
+
 ## Workflow
 
 1. Create a branch, add or edit files, open a pull request to `main`.

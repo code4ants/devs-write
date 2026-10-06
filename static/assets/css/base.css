@@ -369,3 +369,57 @@ html.map-open { overflow: hidden; }
   position: absolute; z-index: 2; display: flex; flex-direction: column; gap: .5rem;
   right: max(.75rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom));
 }
+
+/* Character bio: a `Bio` icon button (story page, next to "Chapters"; chapter page, top right) opens a
+   dialog listing the story's characters from bio.yaml. Coloured from the theme variables. */
+.meta.top, .section-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.meta.top { min-height: 2.25rem; }
+.section-head h2 { margin-block: 2rem .5em; }
+.section-head .bio-btn { margin-top: 1.5rem; }
+.bio-btn {
+  display: inline-flex; align-items: center; gap: .4rem; flex: none; padding: .35rem .85rem .35rem .7rem;
+  font: 600 .85rem/1.2 var(--font-head); letter-spacing: .05em; color: var(--accent); cursor: pointer;
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 65%, transparent); border-radius: 999px;
+  -webkit-tap-highlight-color: transparent;
+}
+.bio-btn:hover { background: color-mix(in srgb, var(--accent) 20%, transparent); border-color: var(--accent); }
+.bio-btn:focus-visible, .bio-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+html.bio-open { overflow: hidden; }
+.bio-dialog {
+  position: fixed; inset: 0; margin: auto; padding: 0; overflow: auto; overscroll-behavior: contain;
+  width: min(94vw, 40rem); max-width: none; max-height: min(88vh, 46rem);
+  color: var(--fg); background: var(--card); font-family: var(--font-body); font-size: 1rem; line-height: 1.55;
+  border: 2px solid var(--accent); border-radius: var(--radius); box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .65);
+}
+.bio-dialog::backdrop { background: rgba(0, 0, 0, .78); }
+@media (max-width: 36rem) {
+  .bio-dialog { width: 100vw; height: 100vh; height: 100dvh; max-height: none; border-width: 0; border-radius: 0; }
+}
+.bio-head {
+  position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between;
+  padding: .9rem 1.1rem .9rem 1.4rem; background: var(--card); border-bottom: 1px solid var(--border);
+}
+.bio-head h2 { margin: 0; font-size: 1.15rem; letter-spacing: .06em; color: var(--accent); }
+.bio-close {
+  width: 2.5rem; height: 2.5rem; padding: 0; font: 400 1.6rem/1 var(--font-head); color: var(--muted); cursor: pointer;
+  background: none; border: 1px solid transparent; border-radius: var(--radius);
+}
+.bio-close:hover { color: var(--accent); border-color: var(--border); }
+.bio-list { list-style: none; margin: 0; padding: .5rem 1.4rem 1.2rem; }
+.bio-card { display: flex; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
+.bio-card:last-child { border-bottom: 0; }
+.bio-mark {
+  flex: none; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%;
+  font: 700 1.3rem/1 var(--font-head); color: var(--accent); text-transform: uppercase;
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg)); border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+}
+.bio-card h3 { margin: 0; font-size: 1.15rem; }
+.bio-role { margin: .1rem 0 .45rem; font: 600 .75rem/1.4 var(--font-head); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.bio-aspect { margin: 0; color: var(--fg); }
+.bio-card > div > :last-child { margin-bottom: 0; }
+/* Themes may prefix .meta with a ::before marker (a flex item here): keep marker + link together on the left. */
+.meta.top { justify-content: flex-start; gap: 0; }
+.meta.top > a { margin-right: auto; }
+.meta.top > .bio-btn { margin-left: 1rem; }

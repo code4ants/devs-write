@@ -85,3 +85,12 @@ html:has(.theme-fantasy) { background: #15110c; }
 .theme-fantasy .map-btn { border-style: double; border-width: 3px; letter-spacing: .12em; text-transform: uppercase; }
 .theme-fantasy .map-dialog { border: 4px double var(--accent); }
 .theme-fantasy .map-ctl { border-style: double; border-width: 3px; }
+
+/* Bio: a gilded tab, a double-ruled scroll of characters with illuminated initials. */
+.theme-fantasy .bio-btn { border-radius: 3px; border-style: double; border-width: 3px; letter-spacing: .1em; text-transform: uppercase; }
+.theme-fantasy .bio-dialog { border: 4px double var(--accent); }
+.theme-fantasy .bio-head { justify-content: center; border-bottom: 3px double var(--border); position: sticky; }
+.theme-fantasy .bio-head h2 { letter-spacing: .14em; text-transform: uppercase; }
+.theme-fantasy .bio-close { position: absolute; right: .9rem; }
+.theme-fantasy .bio-mark { border-radius: 3px; border: 3px double color-mix(in srgb, var(--accent) 70%, transparent); }
+.theme-fantasy .bio-card h3 { font-family: var(--font-head); letter-spacing: .05em; }

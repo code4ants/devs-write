@@ -86,3 +86,13 @@ html:has(.theme-sf) { background: #090d16; }
 .theme-sf .map-dialog { box-shadow: 0 0 0 1px var(--border), 0 0 40px rgba(25, 227, 209, .25); }
 .theme-sf .map-path .line { filter: drop-shadow(0 0 4px var(--accent)); }
 .theme-sf .map-ctl { box-shadow: 0 0 10px rgba(25, 227, 209, .2); }
+
+/* Bio: a console chip and a crew manifest with square glowing badges. */
+.theme-sf .bio-btn { border-radius: 2px; text-transform: uppercase; letter-spacing: .14em; box-shadow: 0 0 10px rgba(25, 227, 209, .2); }
+.theme-sf .bio-dialog { box-shadow: 0 0 0 1px var(--border), 0 0 40px rgba(25, 227, 209, .25); }
+.theme-sf .bio-head h2 { text-transform: uppercase; letter-spacing: .16em; }
+.theme-sf .bio-head h2::before { content: "// "; }
+.theme-sf .bio-mark { border-radius: 2px; box-shadow: 0 0 10px rgba(25, 227, 209, .25); }
+.theme-sf .bio-card h3 { text-transform: uppercase; letter-spacing: .08em; font-size: 1rem; }
+.theme-sf .bio-role::before { content: "> "; }
+.theme-sf .meta.top::before { margin-right: .5ch; } /* flex item: the trailing space of "// " is collapsed */

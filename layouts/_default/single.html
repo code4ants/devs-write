@@ -2,7 +2,8 @@
 {{ $story := .Parent }}
 {{ $chapters := partial "chapters.html" $story }}
 <article class="chapter">
-  <p class="meta"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a></p>
+{{ $bio := partial "bio.html" $story | string | strings.TrimSpace }}
+  <div class="meta top"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a>{{ $bio | safeHTML }}</div>
   <h1>{{ .Title }}</h1>
   <div class="prose">{{ .Content }}</div>
   <nav class="chapter-nav" aria-label="Chapters">
@@ -15,6 +16,7 @@
       {{ end }}{{ else }}<span></span>{{ end }}
     {{ end }}{{ end }}
   </nav>
+  {{ if $bio }}<script src="{{ "assets/js/bio.js" | relURL }}?v={{ readFile "static/assets/js/bio.js" | md5 | truncate 8 "" }}" defer></script>{{ end }}
   {{ if in .RawContent "~~~map" }}<script src="{{ "assets/js/map.js" | relURL }}?v={{ readFile "static/assets/js/map.js" | md5 | truncate 8 "" }}" defer></script>{{ end }}
 </article>
 {{ end }}

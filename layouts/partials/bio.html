@@ -1,0 +1,27 @@
+{{- /* Bio button + character dialog for a story (page = the story section). Renders nothing without a
+       bio.yaml in the story folder:
+         characters:
+           - name: ...
+             role: ...
+             aspect: ...                                                              */ -}}
+{{- with .Resources.Get "bio.yaml" -}}
+  {{- $data := . | transform.Unmarshal -}}
+  {{- $chars := $data -}}
+  {{- if reflect.IsMap $data }}{{ $chars = $data.characters }}{{ end -}}
+  {{- if not (and $chars (reflect.IsSlice $chars)) -}}
+    {{- errorf "%s: expected a 'characters' list" .Name -}}
+  {{- end -}}
+  <button type="button" class="bio-btn" aria-haspopup="dialog" aria-controls="bio-dialog"><svg viewBox="0 0 24 24" width="1.1em" height="1.1em" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/></svg><span>Bio</span></button>
+  <dialog class="bio-dialog" id="bio-dialog" aria-labelledby="bio-title">
+    <div class="bio-head"><h2 id="bio-title">Characters</h2><button type="button" class="bio-close" aria-label="Close">&times;</button></div>
+    <ul class="bio-list">
+    {{- range $chars -}}
+      {{- if not (and (reflect.IsMap .) .name) -}}
+        {{- errorf "bio.yaml: every character needs a 'name'" -}}
+      {{- end }}
+      <li class="bio-card"><span class="bio-mark" aria-hidden="true">{{ substr (string .name) 0 1 }}</span>
+        <div><h3>{{ .name }}</h3>{{ with .role }}<p class="bio-role">{{ . }}</p>{{ end }}{{ with .aspect }}<p class="bio-aspect">{{ . }}</p>{{ end }}</div></li>
+    {{- end }}
+    </ul>
+  </dialog>
+{{- end -}}
