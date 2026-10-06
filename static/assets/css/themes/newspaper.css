@@ -90,3 +90,9 @@ html:has(.theme-newspaper) { background: #141414; }
 }
 .theme-newspaper .chat .right .bubble { border-top-width: 3px; background: color-mix(in srgb, var(--fg) 9%, transparent); }
 .theme-newspaper .chat .p0 { --pc: var(--fg); }
+
+/* Map: a printed-plate button and a ruled frame; the route is a plain dashed line. */
+.theme-newspaper .map-btn { border-width: 1px 0; text-transform: uppercase; letter-spacing: .1em; background: none; }
+.theme-newspaper .map-dialog { border: 0; outline: 1px solid var(--border); outline-offset: -8px; border-top: 4px double var(--fg); border-bottom: 4px double var(--fg); }
+.theme-newspaper .map-img { filter: grayscale(.55) contrast(1.05); }
+.theme-newspaper .map-path .line { stroke: var(--fg); }

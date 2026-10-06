@@ -15,5 +15,6 @@
       {{ end }}{{ else }}<span></span>{{ end }}
     {{ end }}{{ end }}
   </nav>
+  {{ if in .RawContent "~~~map" }}<script src="{{ "assets/js/map.js" | relURL }}?v={{ readFile "static/assets/js/map.js" | md5 | truncate 8 "" }}" defer></script>{{ end }}
 </article>
 {{ end }}

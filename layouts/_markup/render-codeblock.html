@@ -30,6 +30,36 @@
 {{- end }}
 </div>
 </div>
+{{- else if eq .Type "map" -}}
+{{- /* A button that opens a map popup.  ~~~map {map="map0"}  then one "X, Y" per line, in pixels of the
+       image <story folder>/<map>.jpg.  One line = a pin; several = a path through them. */ -}}
+{{- $name := .Attributes.map -}}
+{{- if not (and $name (findRE `^[a-z0-9][a-z0-9-]*$` $name)) -}}
+  {{- errorf "map block in %s: needs {map=\"name\"} (lowercase letters, digits, dashes), got %q" .Page.Path $name -}}
+{{- end -}}
+{{- $img := .Page.Parent.Resources.Get (printf "%s.jpg" $name) -}}
+{{- if not $img -}}
+  {{- errorf "map block in %s: %s.jpg not found in the story folder" .Page.Path $name -}}
+{{- end -}}
+{{- $pts := slice -}}
+{{- range split (replace .Inner "\r" "") "\n" -}}
+  {{- if strings.TrimSpace . -}}
+    {{- $m := findRESubmatch `^\s*(\d+(?:\.\d+)?)\s*[, ]\s*(\d+(?:\.\d+)?)\s*$` . -}}
+    {{- if not $m -}}
+      {{- errorf "map block in %s: expected 'X, Y', got %q" $.Page.Path . -}}
+    {{- end -}}
+    {{- $x := float (index (index $m 0) 1) -}}
+    {{- $y := float (index (index $m 0) 2) -}}
+    {{- if or (gt $x $img.Width) (gt $y $img.Height) -}}
+      {{- errorf "map block in %s: point %q is outside %s.jpg (%dx%d)" $.Page.Path . $name $img.Width $img.Height -}}
+    {{- end -}}
+    {{- $pts = $pts | append (printf "[%v,%v]" $x $y) -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $pts -}}
+  {{- errorf "map block in %s: needs at least one 'X, Y' point" .Page.Path -}}
+{{- end -}}
+<p class="map-block"><button type="button" class="map-btn" data-src="{{ $img.RelPermalink }}" data-w="{{ $img.Width }}" data-h="{{ $img.Height }}" data-points="[{{ delimit $pts "," }}]" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="1.15em" height="1.15em" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Map</span></button></p>
 {{- else -}}
 <pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
 {{- end }}

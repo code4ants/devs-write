@@ -1,6 +1,15 @@
 ---
 title: The Last Cistern
 ---
+
+~~~map {map="map0"}
+1210, 905
+1500, 760
+1760, 560
+2150, 640
+2480, 420
+~~~
+
 The wind came down off the ridge at dawn and took the roof of the old pump house with it. Mara counted the sheets of corrugated steel as they went, the way her mother had taught her to count everything that could not be replaced.
 
 ~~~chat

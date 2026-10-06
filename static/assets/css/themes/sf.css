@@ -79,3 +79,10 @@ html:has(.theme-sf) { background: #090d16; }
 }
 .theme-sf .chat .left .bubble { clip-path: polygon(0 0, 100% 0, 100% 100%, .6rem 100%, 0 calc(100% - .6rem)); }
 .theme-sf .chat .right .bubble { clip-path: polygon(0 0, 100% 0, 100% calc(100% - .6rem), calc(100% - .6rem) 100%, 0 100%); }
+
+/* Map: a neon-edged console; the route is a glowing signal trace. */
+.theme-sf .map-btn { text-transform: uppercase; letter-spacing: .14em; box-shadow: 0 0 14px rgba(25, 227, 209, .25); }
+.theme-sf .map-btn span::before { content: "// "; }
+.theme-sf .map-dialog { box-shadow: 0 0 0 1px var(--border), 0 0 40px rgba(25, 227, 209, .25); }
+.theme-sf .map-path .line { filter: drop-shadow(0 0 4px var(--accent)); }
+.theme-sf .map-ctl { box-shadow: 0 0 10px rgba(25, 227, 209, .2); }

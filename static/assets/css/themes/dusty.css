@@ -123,3 +123,10 @@ html:has(.theme-dusty) { background: #170d0a; }
 .theme-dusty .chat .left .bubble { border-left: 5px solid var(--pc); }
 .theme-dusty .chat .right .bubble { border-right: 5px solid var(--pc); }
 .theme-dusty .chat .left.first .bubble, .theme-dusty .chat .right.first .bubble { border-radius: 0; }
+
+/* Map: stencilled signage with hazard-tape edges; the route is painted dashes. */
+.theme-dusty .map-btn { text-transform: uppercase; letter-spacing: .14em; font-weight: 800; border-width: 2px; }
+.theme-dusty .map-dialog { border: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent;
+  border-image: repeating-linear-gradient(135deg, var(--accent) 0 14px, #170d0a 14px 28px) 8; }
+.theme-dusty .map-ctl { border-width: 2px; }
+.theme-dusty .map-path .line { stroke-dasharray: 16 9; stroke-width: 6px; }

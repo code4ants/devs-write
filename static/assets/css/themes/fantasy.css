@@ -80,3 +80,8 @@ html:has(.theme-fantasy) { background: #15110c; }
 }
 .theme-fantasy .chat .right .bubble { background: color-mix(in srgb, var(--pc) 18%, #15110c); }
 .theme-fantasy .chat .left.first .bubble, .theme-fantasy .chat .right.first .bubble { border-radius: 3px; }
+
+/* Map: a gilded button and a double-ruled frame; the route is a gold trail. */
+.theme-fantasy .map-btn { border-style: double; border-width: 3px; letter-spacing: .12em; text-transform: uppercase; }
+.theme-fantasy .map-dialog { border: 4px double var(--accent); }
+.theme-fantasy .map-ctl { border-style: double; border-width: 3px; }

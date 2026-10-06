@@ -1,6 +1,15 @@
 ---
 title: Monday Manifest
 ---
+
+~~~map {map="map0"}
+1210, 905
+1500, 760
+1760, 560
+2150, 640
+2480, 420
+~~~
+
 Forty crates were logged out of Pier Six on Monday morning. By evening, nobody on the waterfront could say where they had gone.
 
 ~~~chat {title="Interview notes"}

@@ -99,6 +99,30 @@ To give the window a title, add it on the opening fence: `~~~chat {title="Night 
 
 Each distinct name gets its own tint (up to four before colors repeat), taken from the theme's palette. Consecutive messages from the same person are grouped and show the name once. The message is plain text (no Markdown) and can contain `|`. A malformed line fails the build with the offending text. Each theme restyles the block: a comms feed (sf), a radio relay (dusty), a printed transcript (newspaper) and illuminated scrolls (fantasy).
 
+## Story maps
+
+A story can have maps: big images the reader opens from a **Map** button. Put the image in the story folder, in its root, as a `.jpg` (`content/<you>/<story>/map0.jpg`; you can have several: `map0.jpg`, `harbor.jpg`, ...). Then, where the button should appear in a chapter, write a fenced block whose opening fence is `~~~map`, naming the map without the extension, followed by one point per line as `X, Y` in pixels of the image (0, 0 is the top-left corner):
+
+```markdown
+~~~map {map="map0"}
+1210, 905
+~~~
+```
+
+Clicking the button opens a popup with the map centred on the point, marked with a pin. The reader can drag to pan and zoom with the wheel, a pinch, double-click or the + / - buttons (arrows and +/- also work from the keyboard).
+
+With several points, the popup starts on the first one and draws a curved dashed path through all of them in order, with pins on the first and last point and dots on the points in between. A button appears to fit the whole path in view:
+
+```markdown
+~~~map {map="map0"}
+1210, 905
+1500, 760
+1760, 560
+~~~
+```
+
+The button and popup take their colors and style from the story theme. A missing image, a malformed line or a point outside the image fails the build with the offending text. Maps are large; keep the file reasonably small (a few MB) so it loads fast on phones.
+
 ## Workflow
 
 1. Create a branch, add or edit files, open a pull request to `main`.

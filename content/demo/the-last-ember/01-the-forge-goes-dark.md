@@ -3,6 +3,10 @@ title: The Forge Goes Dark
 ---
 On the night the great forge of Karn Dellow went cold, only Mira was awake to see it.
 
+~~~map {map="map0"}
+1210, 905
+~~~
+
 ~~~chat {title="Night watch"}
 Edda | left | The forge is cold, Master.
 Master Orin | right | Then we light it again.

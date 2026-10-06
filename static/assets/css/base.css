@@ -302,3 +302,70 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
   .chapter-nav .next { order: -1; }
   .chapter-nav span { display: none; }
 }
+
+/* Story map: a `Map` button in the prose opens a popup (assets/js/map.js) with a pannable,
+   zoomable map. Everything is coloured from the theme variables; themes add flourishes. */
+.map-block { margin: 1.75rem 0; text-align: center; }
+.map-btn {
+  display: inline-flex; align-items: center; gap: .55rem; min-height: 3rem; padding: .55rem 1.35rem;
+  font: 600 .95rem/1 var(--font-head); letter-spacing: .04em; color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--card));
+  border: 1px solid var(--accent); border-radius: var(--radius); cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.map-btn:hover { background: color-mix(in srgb, var(--accent) 20%, var(--card)); }
+.map-btn:focus-visible, .map-ctl:focus-visible, .map-view:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+html.map-open { overflow: hidden; }
+.map-dialog {
+  position: fixed; inset: 0; margin: auto; padding: 0; overflow: hidden;
+  width: min(96vw, 1200px); height: min(90vh, 820px); max-width: none; max-height: none;
+  color: var(--fg); background: var(--card); font-family: var(--font-head);
+  border: 2px solid var(--accent); border-radius: var(--radius);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .65);
+}
+.map-dialog::backdrop { background: rgba(0, 0, 0, .78); }
+@media (max-width: 40rem), (max-height: 34rem) {
+  .map-dialog { width: 100vw; height: 100vh; height: 100dvh; border-width: 0; border-radius: 0; }
+}
+.map-view {
+  position: absolute; inset: 0; overflow: hidden; background: var(--card);
+  touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none;
+}
+.map-view.grabbing { cursor: grabbing; }
+.map-view.loading::after, .map-view.failed::after {
+  content: "Loading map\2026"; position: absolute; inset: 0; display: grid; place-items: center;
+  color: var(--muted); letter-spacing: .08em; pointer-events: none;
+}
+.map-view.failed::after { content: "The map could not be loaded."; }
+.map-stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
+.map-img { display: block; max-width: none; width: 100%; height: 100%; -webkit-user-drag: none; }
+.map-path { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+.map-path path { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.map-path .halo { stroke: rgba(0, 0, 0, .8); stroke-width: 11px; }
+.map-path .line { stroke: var(--accent); stroke-width: 5px; stroke-dasharray: 14 9; }
+.map-pins { position: absolute; inset: 0; pointer-events: none; }
+.map-pin { position: absolute; left: 0; top: 0; width: 0; height: 0; will-change: transform; }
+.map-pin svg {
+  position: absolute; left: -1.1rem; bottom: 0; width: 2.2rem; height: 3.1rem; overflow: visible;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .6));
+}
+.map-pin svg path { fill: var(--accent); stroke: var(--bg); stroke-width: 1.6; }
+.map-pin svg circle { fill: var(--bg); }
+.map-pin.end svg path { fill: var(--c-red); }
+.map-pin.via::before {
+  content: ""; position: absolute; left: -.55rem; top: -.55rem; width: 1.1rem; height: 1.1rem; border-radius: 50%;
+  background: var(--accent); border: 3px solid #000; box-shadow: 0 0 0 1px var(--accent);
+}
+.map-ctl {
+  display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0;
+  font: 600 1.5rem/1 var(--font-head); color: var(--accent); cursor: pointer;
+  background: color-mix(in srgb, var(--card) 92%, transparent); border: 1px solid var(--accent); border-radius: var(--radius);
+  -webkit-tap-highlight-color: transparent;
+}
+.map-ctl:hover { background: color-mix(in srgb, var(--accent) 22%, var(--card)); }
+.map-close { position: absolute; top: max(.75rem, env(safe-area-inset-top)); right: max(.75rem, env(safe-area-inset-right)); z-index: 2; }
+.map-controls {
+  position: absolute; z-index: 2; display: flex; flex-direction: column; gap: .5rem;
+  right: max(.75rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom));
+}

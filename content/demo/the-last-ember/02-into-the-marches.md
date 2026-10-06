@@ -4,6 +4,14 @@ title: Into the Marches
 The Ashen Marches began where the road forgot itself. Mira walked until the grass turned grey, and the ember pulsed against her ribs like a second heart.
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum ex, dictum eleifend euismod a, tristique nec quam. Duis magna libero, auctor a mauris ut, aliquam ultricies nibh. Quisque sed magna ut massa maximus sollicitudin nec nec metus. Quisque euismod urna nec est elementum, vitae aliquam felis condimentum. Proin interdum ligula et ipsum efficitur, a accumsan mi aliquet. Quisque sagittis tempus tortor, at scelerisque nibh. Sed vehicula sem vitae diam viverra posuere. Cras ultrices sit amet tortor vel aliquam.
+~~~map {map="map0"}
+1210, 905
+1500, 760
+1760, 560
+2150, 640
+2480, 420
+~~~
+
 
 Sed tortor dui, mattis ac ante eget, imperdiet volutpat odio. Aenean vel sem erat. Integer a porttitor orci, quis faucibus arcu. Aliquam et metus eget ipsum fringilla scelerisque. Quisque scelerisque pretium feugiat. Maecenas erat leo, semper at augue id, aliquam dictum eros. Nulla sit amet mollis mi. In eget elementum dui.
 
