@@ -2,7 +2,7 @@
 title: Seriful
 ---
 
-Am parcat "dricul" langa celelalte rulote, putin intimidat de primele contacte cu ceilalti proprietari - mereu am fost mai introvertit si m-am ferit sa socializez . Katarina e fix invers - un fluturas social, cum s-ar zice. Abia de opresc motorul si sora-mea coboara din masina, scandand zona si facand cu mana la cateva persoane intinse pe sezlonguri. 
+Am parcat "dricul" langa celelalte rulote, putin intimidat de primele contacte cu ceilalti proprietari - mereu am fost mai introvertit si m-am ferit sa socializez. Katarina e fix invers - un fluturas social, cum s-ar zice. Abia de opresc motorul si sora-mea coboara din masina, scanand zona si facand cu mana la cateva persoane intinse pe sezlonguri. 
 
 "Ma duc sa ne anunt venirea!" zise ea, dupa ce si-a bagat in buzunar pachetul de tigari, bricheta, telefonul si a inchis portiera.
 
@@ -10,7 +10,7 @@ Am parcat "dricul" langa celelalte rulote, putin intimidat de primele contacte c
 
 *TOCK! TOCK! TOCK!*
 
-Tresar si ma uit in stanga mea, de unde s-a auzit sunetul. Prin geamul prafuit vad un tip inalt, ten masiliniu, bine facut (locuieste la gym?), cu o lanterna in mana (sursa sunetului) si un zambet prietenos, parca desenat pe fata impecabila. Nu am genul ala de interese dar pana si eu sunt impresionat de aspectul individului. 
+Tresar si ma uit in stanga mea, de unde s-au auzit loviturile in geam. Prin geamul prafuit vad un tip inalt, ten masiliniu, bine facut (locuieste la gym?), cu o lanterna in mana (sursa sunetului) si un zambet prietenos, parca desenat pe fata impecabila. Nu am genul ala de interese dar pana si eu am fost impresionat de aspectul individului. 
 
 "Ummm-d-da, da, scuze - buna ziua!" invart stangaci manivela geamului, care scartaie in timp ce coboara.
 
@@ -18,21 +18,21 @@ Tresar si ma uit in stanga mea, de unde s-a auzit sunetul. Prin geamul prafuit v
 
 "... salut?"
 
-"Salut si tie! Eu sunt Robin si as vrea sa iti urez bun venit in comunitatea <Pe Busa Prapastiei> si sa te anunt ca ai o scurgere de ulei, destul de urata chiar."
+"Salut si tie! Eu sunt Robin si as vrea sa iti urez bun venit in comunitatea Pe Busa Prapastiei si sa te anunt ca ai o scurgere de ulei, destul de urata chiar."
 
-"Oh, ummmm, salutare, multumesc, adica multumim, scurgere de ulei?"
+"Oh, ummmm, salutare, multumesc, adica multumim... Scurgere de ulei?"
 
-"Dap, nu v-am vazut cand ati venit, dar cu ocazia plimbarii mele zilnice, am dat peste o dara neagra, am urmarit-o, si asa am ajuns la tine. Sau voi?"
+"Dap, nu te-am vazut cand ai venit, dar cu ocazia plimbarii mele zilnice, am dat peste o dara neagra, am urmarit-o, si asa am ajuns la tine. Sau voi?"
 
 "Da, nu sunt singur"
 
-Robin ridica un pic capul si cauta persoana cu care am venit, desigur aceasta nefiind vizibila, dupa care se uita la mine putin sceptic. 
+Robin ridica un pic capul si cauta persoana cu care am venit, desigur aceasta nefiind prezenta, dupa care se uita la mine putin sceptic. 
 
-"Ah si zici ca am o scurgere de ulei?" schimb subiectul in timp ce cobor din masina, pe langa Robin si ma uit sub masina. Acolo era un adevarat dezastru, imposibil de diferentiat componentele masinii din cauza unui strat gros de ulei uscat amestecat cu praf si ulei proaspat, care se prelingea pe pietris.
+"Ah si zici ca am o scurgere de ulei?" schimb subiectul in timp ce cobor din masina pe langa Robin si ma uit sub masina. Acolo era un adevarat dezastru, imposibil de diferentiat componentele masinii din cauza unui strat gros de ulei uscat amestecat cu praf si ulei proaspat, care se prelingea pe pietris.
 
-"Mda, acum la cat de veche pare rulota, nu ma mira, insa ar fi indicat sa repari problema inainte sa mergi mai departe... Oricum-" si Robin a luat un pic de pozitie de drepti. Cu lanterna in mana, hainele verde inchis si fizicul specific, arata fix ca un serif.
+"Mda, acum la cat de veche pare rulota, nu ma mira, insa ar fi indicat sa repari problema inainte sa mergi mai departe. Oricum..." si Robin ia de pozitie de drepti. Cu lanterna in mana, hainele verde inchis si fizicul specific, arata fix ca un serif din filmele ieftine cu orasele americane.
 
-"-a fost o ocazie buna ca sa ma prezint, in calitate de seriful oficial al comunitatii PBP!!"
+"A fost o ocazie buna ca sa ma prezint, in calitate de serif oficial al comunitatii PBP!"
 
 "Ceeee??" intreb cu ochii mari in timp ce ma ridic de pe pietris si imi sterg mainile pe pantaloni.
 
@@ -40,11 +40,11 @@ Robin ridica un pic capul si cauta persoana cu care am venit, desigur aceasta ne
 
 "Exista serif in zon-"
 
-"Ok, ok, nu sunt serif, insa incerc sa tin lucrurile sub control! Stii tu, destram ocazionala petrecere prea zgomotoasa si calmez ocazionalul impatimit al berii Saint Buffalo! Desigur ca nu am o autoritate oficiala, dar membrii acestei comunitati au ajuns sa aibe incredere in mine."
+"Ok, ok, nu sunt serif, insa incerc sa tin lucrurile sub control! Stii tu, destram ocazionala petrecere prea zgomotoasa si calmez ocazionalul consumator prea impatimit de alcool! Desigur ca nu am o autoritate oficiala, dar membrii acestei comunitati au ajuns sa aiba incredere in mine."
 
 "Ah, bun, e bine de stiut!" nu prea stiu ce sa fac cu mainile, acum curate, si sterg praful de pe oglinda stanga a rulotei, murdarindu-mi mana din nou.
 
-"Daaaaar comunitatea PBP este oficiala, si oricat de idiot ar fi numele, <Pe Busa Prapastiei>, suntem recunoscuti la nivel internationl in cercurile de camping si impatimiti ai traitului in natura!"
+"Daaaaar comunitatea PBP este oficiala, si oricat de idiot ar fi numele, *Pe Busa Prapastiei*, suntem recunoscuti la nivel internationl in cercurile de camping si impatimiti ai traitului in natura!"
 
 "Ok, hai ca nu e asa idiot numele, adica descrie locatia evenimentului si include formatul lui..." ii zic putin iritat.
 
@@ -66,17 +66,17 @@ Realizez cat de cioban am fost ca nu m-am prezentat. Desigur ca pe langa carisma
 
 "KATARINA CELA!" - tresar, cand aud vocea surorii mele, proaspat intoarsa din recunoastere. "DEOSEBIT de incantata sa te cunosc! Poti sa imi spui Kata, ...?"
 
-"<la naiba, cam atat cu tinutul departe>" imi zic in gand, deja o lupta pierduta dar poate si una castigata cand, pentru prima data, il vad pe seriful Robin fastacindu-se.
+"*la naiba, cam atat cu tinutul departe*" imi zic in gand, deja o lupta pierduta dar poate si una castigata cand, pentru prima data, il vad pe Seriful Robin fastacindu-se.
 
 "Oh, Robin Gallaway! Dar poti sa imi spui Robin... Evident!"
 
-"<roseste?>"
+"*roseste?*"
 
 "Rob, a fost o placere sa te cunosc, si, cred ca pot sa vorbesc si in numele FRATELUI meu Max, abia astept sa mai interactionam!" zise Kata cu un zambet larg si ochi luminosi.
 
-"Da, pai, va las sa va instalati - orice loc e ok, nu avem o regula anume - odata ce sunteti comozi, va recomand sa mergeti sa va prezentati comunitatii, dar nu inainte de a consulta panoul central!"
+"Da, ummm, pai, va las sa va instalati - orice loc e ok, nu avem o regula anume - odata ce sunteti comozi, va recomand sa mergeti sa va prezentati comunitatii, dar nu inainte de a consulta panoul central!"
 
-"Ok, Robin, multumim pentru primire!" ii fac cu mana prietenos
+"Ok, Robin, multumim pentru primire!" ii fac cu mana prietenos.
 
 "... da, pai salutare Max si Kat- adica Kata si Max! Eu o sa merg acum sa verific ceva, si da, ok - salutare!"
 
@@ -88,18 +88,18 @@ Realizez cat de cioban am fost ca nu m-am prezentat. Desigur ca pe langa carisma
 
 "Nah ce a fost asta???" ii zic, dupa ce a plecat Robin.
 
-"Ce? Se numeste a fi preietenos! Ar trebui sa incerci si tu din cand in cand!"
+"Thihi, Ce? Se numeste a fi preietenos! Ar trebui sa incerci si tu din cand in cand!"
 
 "Nu mersi, nu vreau sa incerc! Ia zi, ai aflat ceva?"
 
-"Da pai, am vorbit cu cateva persoane, majoritatea amabili si bucurosi sa ne vada. Lumea e destul de relaxata aici, se trezeste tarziu, dupa care se plimba in natura, se canta muzica, se gateste, se mai doarme un pic, se mai face un foc de tabara, totul in comunitate. Pare fain!"
+"Am vorbit cu cateva persoane, majoritatea amabili si bucurosi sa ne vada. Lumea e destul de relaxata aici, se trezeste tarziu, dupa care se plimba in natura, se canta muzica, se gateste, se mai doarme un pic, se mai face un foc de tabara, totul in comunitate. Pare fain!"
 
 "Huh, ok, deci complet diferit de ce faceam noi pe vremuri aici..."
 
-"Mda nah, poate s-a maturizat si <poligonul> - tu ce ai aflat de la Robin cel aratos!"
+"Mda nah, poate s-a maturizat si *poligonul* - tu ce ai aflat de la Robin *cel aratos*!"
 
-"... sincer, nu e asa aratos! " minteam "Aparent el se ocupa cu pastratul ordinii in zona, ca avem o problema la masina si ca i se pare ca numele <La Busa Prapastiei> este deosebit de amuzant si creativ!" ii spun ranjind.
+"... nu e asa aratos! " minteam "Pai, el se ocupa cu pastratul ordinii in zona, avem o problema la masina si i se pare ca numele *La Busa Prapastiei* este deosebit de amuzant si creativ!" ii spun ranjind.
 
-"Huh, ok, mda, d-aia toata lumea prescurteaza si foloseste PBP..."
+"Dap, clar, d-aia toata lumea prescurteaza si foloseste PBP", imi face cu ochiul in timp ce scoate o tigara din pachet.
 
 Ranjetul mi se risipeste ca fumul tigarii in vant, proaspat aprinse de Katarina.
