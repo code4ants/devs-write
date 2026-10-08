@@ -1,0 +1,4 @@
+<li class="story-row">
+  <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <p class="by">by {{ with partial "author.html" . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ .Params.author }}{{ end }}</p>
+</li>

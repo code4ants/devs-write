@@ -228,6 +228,9 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .chat .right.first .bubble { border-top-right-radius: .2rem; }
 @media (max-width: 36rem) { .chat { margin-inline: -.25rem; } .chat .log { padding: .75rem; } .chat .bar { padding-inline: .75rem; } .chat .msg { max-width: 92%; } }
 
+/* Challenge pages (list, challenge and contributions) have no story theme: the reading text uses the sans-serif UI font. */
+body.challenges { --font-body: var(--font-head); }
+
 /* Header / footer */
 .site-header, .site-footer {
   padding: .9rem var(--gutter);
@@ -245,7 +248,7 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .meta { margin: 0 0 1rem; color: var(--muted); font-family: var(--font-head); font-size: .9rem; }
 .meta a { color: inherit; }
 
-/* Story listing (home + author pages): one card per story */
+/* Story listing (home, author and challenge pages): one card per story / challenge / contribution; the home page groups them in .panel dropdowns */
 .story-list { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .9rem; }
 .story-row {
   padding: 1rem 1.15rem 1.05rem;
@@ -271,11 +274,12 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .story-row .by a { color: inherit; }
 .story-row .latest a { color: var(--fg); }
 /* Collapsible panel for the demo user's stories */
-.demo-panel { margin-top: 2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
-.demo-panel > summary { cursor: pointer; padding: .8rem 1.15rem; font-family: var(--font-head); font-weight: 700; color: var(--muted); }
-.demo-panel > summary:hover, .demo-panel > summary:focus-visible { color: var(--accent); }
-.demo-panel .count { font-weight: 400; }
-.demo-panel > .story-list { margin: 0; padding: 0 1rem 1rem; }
+.panel { margin-top: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+.panel > summary { cursor: pointer; padding: .8rem 1.15rem; font-family: var(--font-head); font-weight: 700; color: var(--fg); }
+.panel > summary:hover, .panel > summary:focus-visible { color: var(--accent); }
+.panel .count { font-weight: 400; color: var(--muted); }
+.panel > .story-list { margin: 0; padding: 0 1rem 1rem; }
+.panel > .meta { margin: 0; padding: 0 1.15rem 1rem; }
 @media (max-width: 36rem) { .story-row .sep { display: none; } .story-row .latest { display: block; } }
 
 /* Story page */

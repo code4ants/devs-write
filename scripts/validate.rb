@@ -2,12 +2,14 @@
 # frozen_string_literal: true
 
 # Content checks run in CI before the site is built. Stdlib only.
-#   content/<author>/_index.md                 title (display name); one per author
-#   content/<author>/<story>/_index.md         title, summary, theme in THEMES
-#   content/<author>/<story>/<chapter>.md      title; numeric prefix or `order`; unique order per story
-#   content/<author>/<story>/bio.yaml          optional; non-empty characters list, each with a name
-#   content/<author>/<story>/dex.yaml          optional; non-empty entries list, each with a name
-#   content/<author>/<story>/<map>.jpg         optional story maps
+#   content/stories/<author>/_index.md                 title (display name); one per author
+#   content/stories/<author>/<story>/_index.md         title, summary, theme in THEMES
+#   content/stories/<author>/<story>/<chapter>.md      title; numeric prefix or `order`; unique order per story
+#   content/stories/<author>/<story>/bio.yaml          optional; non-empty characters list, each with a name
+#   content/stories/<author>/<story>/dex.yaml          optional; non-empty entries list, each with a name
+#   content/stories/<author>/<story>/<map>.jpg         optional story maps
+#   content/challenges/<challenge>/_index.md           title + description text (the body)
+#   content/challenges/<challenge>/<contribution>.md   title, author (an existing story author); no theme, no maps
 require "yaml"
 require "date"
 
@@ -26,6 +28,10 @@ rescue Psych::Exception => e
   e
 end
 
+def body(path)
+  File.read(path, encoding: "UTF-8").sub(/\A---\s*\n.*?\n---\s*(\n|\z)/m, "")
+end
+
 orders = Hash.new { |h, k| h[k] = {} }
 
 Dir.glob(File.join(ROOT, "content", "**", "*")).sort.each do |path|
@@ -34,6 +40,50 @@ Dir.glob(File.join(ROOT, "content", "**", "*")).sort.each do |path|
   rel = path.sub("#{ROOT}/", "")
   parts = rel.sub(%r{\Acontent/}, "").split("/")
   next if rel == "content/_index.md"
+  next if parts.include?("local") # git-ignored scratch folders
+
+  section = parts.shift
+  case section
+  when "stories"
+    next if parts == ["_index.md"]
+  when "challenges"
+    if parts == ["_index.md"]
+      next
+    elsif parts.length == 2 && parts[1].end_with?(".md")
+      slug_ok = parts[0].match?(SLUG)
+      errors << "#{rel}: folder '#{parts[0]}' must be lowercase letters, digits, dashes" unless slug_ok
+      name = parts[1].sub(/\.md\z/, "")
+      fm = front_matter(path)
+      if fm.nil?
+        errors << "#{rel}: missing front matter"
+        next
+      elsif fm.is_a?(Exception)
+        errors << "#{rel}: invalid YAML front matter (#{fm.message})"
+        next
+      end
+      errors << "#{rel}: missing 'title'" if fm["title"].to_s.strip.empty?
+      if name == "_index"
+        errors << "#{rel}: missing description text below the front matter" if body(path).strip.empty?
+        %w[theme author].each { |k| errors << "#{rel}: a challenge takes only 'title' and a description; remove '#{k}'" if fm.key?(k) }
+      else
+        errors << "#{rel}: contribution filename must match #{SLUG.inspect}" unless name.match?(SLUG)
+        author = fm["author"].to_s.strip
+        if author.empty?
+          errors << "#{rel}: missing 'author' (the author's user name)"
+        elsif !File.exist?(File.join(ROOT, "content", "stories", author, "_index.md"))
+          errors << "#{rel}: author '#{author}' needs content/stories/#{author}/_index.md"
+        end
+        errors << "#{rel}: contributions have no theme; remove 'theme'" if fm.key?("theme")
+        errors << "#{rel}: maps are only available in stories" if body(path).match?(/^\s*~~~\s*map\b/)
+      end
+    else
+      errors << "#{rel}: expected content/challenges/<challenge>/_index.md or <contribution>.md"
+    end
+    next
+  else
+    errors << "#{rel}: content must live in content/stories/ or content/challenges/"
+    next
+  end
 
   if parts.length == 2 && parts[1] == "_index.md"
     fm = front_matter(path)
@@ -83,14 +133,14 @@ Dir.glob(File.join(ROOT, "content", "**", "*")).sort.each do |path|
   next if parts.length == 3 && parts[2].match?(/\A[a-z0-9][a-z0-9-]*\.jpg\z/) # story maps
 
 unless path.end_with?(".md") && parts.length == 3
-    errors << "#{rel}: expected content/<author>/<story>/<file>.md"
+    errors << "#{rel}: expected content/stories/<author>/<story>/<file>.md"
     next
   end
 
   author, story, file = parts
   name = file.sub(/\.md\z/, "")
   [author, story].each { |s| errors << "#{rel}: folder '#{s}' must be lowercase letters, digits, dashes" unless s.match?(SLUG) }
-  errors << "#{rel}: author '#{author}' needs content/#{author}/_index.md" unless File.exist?(File.join(ROOT, "content", author, "_index.md"))
+  errors << "#{rel}: author '#{author}' needs content/stories/#{author}/_index.md" unless File.exist?(File.join(ROOT, "content", "stories", author, "_index.md"))
 
   fm = front_matter(path)
   if fm.nil?

@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="{{ with partial "theme.html" . }}theme-{{ . }}{{ end }}">
+<body class="{{ with partial "theme.html" . }}theme-{{ . }}{{ end }}{{ if eq .Section "challenges" }}challenges{{ end }}">
   <header class="site-header">
     <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
   </header>

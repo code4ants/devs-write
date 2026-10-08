@@ -1,5 +1,17 @@
 {{ define "main" }}
 {{ if .Parent.IsHome }}
+{{- /* all stories (/stories/) */ -}}
+<h1>{{ .Title }}</h1>
+{{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+{{ $all := partial "stories.html" . }}
+{{ if $all.stories }}
+  <ul class="story-list">
+    {{ range sort $all.stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
+  </ul>
+{{ else }}
+  <p class="meta">No stories yet.</p>
+{{ end }}
+{{ else if .Parent.Parent.IsHome }}
 {{- /* author page */ -}}
 <h1>{{ .Title }}</h1>
 {{ with .Params.bio }}<p class="lede">{{ . }}</p>{{ end }}

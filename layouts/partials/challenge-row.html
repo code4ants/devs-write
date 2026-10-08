@@ -1,0 +1,5 @@
+<li class="story-row">
+  <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ with .Content | plainify | truncate 160 }}<p class="by">{{ . }}</p>{{ end }}
+  <p class="by">{{ with len .RegularPages }}{{ . }} {{ if eq . 1 }}contribution{{ else }}contributions{{ end }}{{ else }}No contributions yet{{ end }}</p>
+</li>

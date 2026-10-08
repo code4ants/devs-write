@@ -33,6 +33,9 @@
 {{- else if eq .Type "map" -}}
 {{- /* A button that opens a map popup.  ~~~map {map="map0"}  then one "X, Y" per line, in pixels of the
        image <story folder>/<map>.jpg.  One line = a pin; several = a path through them. */ -}}
+{{- if ne .Page.Section "stories" -}}
+  {{- errorf "map block in %s: maps are only available in stories" .Page.Path -}}
+{{- end -}}
 {{- $name := .Attributes.map -}}
 {{- if not (and $name (findRE `^[a-z0-9][a-z0-9-]*$` $name)) -}}
   {{- errorf "map block in %s: needs {map=\"name\"} (lowercase letters, digits, dashes), got %q" .Page.Path $name -}}

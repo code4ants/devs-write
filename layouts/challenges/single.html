@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{- /* A challenge contribution. No maps, bio or dex; no story theme. */ -}}
+<article class="chapter">
+  <div class="meta top"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></div>
+  <h1>{{ .Title }}</h1>
+  <p class="meta">by {{ with partial "author.html" . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ .Params.author }}{{ end }}</p>
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}

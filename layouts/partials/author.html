@@ -1,0 +1,6 @@
+{{- /* The author page (content/stories/<username>/) named by a contribution's `author` front matter, or false. */ -}}
+{{- $author := false -}}
+{{- with .Params.author -}}
+  {{- $author = site.GetPage (printf "/stories/%s" (lower (string .))) | default false -}}
+{{- end -}}
+{{- return $author -}}

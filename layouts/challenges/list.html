@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ if .Parent.IsHome }}
+{{- /* all challenges (/challenges/) */ -}}
+<h1>{{ .Title }}</h1>
+{{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+{{ with .Sections }}
+  <ul class="story-list">
+    {{ range sort . "Title" }}{{ partial "challenge-row.html" . }}{{ end }}
+  </ul>
+{{ else }}
+  <p class="meta">No challenges yet.</p>
+{{ end }}
+{{ else }}
+{{- /* challenge page: description + contributions */ -}}
+<article class="story">
+  <p class="meta">Challenge</p>
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+
+  <div class="section-head"><h2>Contributions</h2></div>
+  {{ with .RegularPages }}
+  <ul class="story-list">
+    {{ range sort . "Title" }}{{ partial "contribution-row.html" . }}{{ end }}
+  </ul>
+  {{ else }}
+  <p class="meta">No contributions yet.</p>
+  {{ end }}
+</article>
+{{ end }}
+{{ end }}

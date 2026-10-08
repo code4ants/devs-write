@@ -2,31 +2,38 @@
 <h1>{{ .Title }}</h1>
 {{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
 
-{{ $stories := slice }}
-{{ $demoStories := slice }}
-{{ $demoUser := "" }}
-{{ range .Sections }}
-  {{ if eq .Section "demo" }}
-    {{ $demoUser = . }}
-    {{ range .Sections }}{{ $demoStories = $demoStories | append . }}{{ end }}
-  {{ else }}
-    {{ range .Sections }}{{ $stories = $stories | append . }}{{ end }}
-  {{ end }}
-{{ end }}
-{{ if not $stories }}
-  <p class="meta">No stories yet.</p>
-{{ else }}
-  <ul class="story-list">
-    {{ range sort $stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
-  </ul>
-{{ end }}
+{{ $all := partial "stories.html" . }}
+{{ $challenges := slice }}
+{{ with site.GetPage "/challenges" }}{{ $challenges = .Sections }}{{ end }}
 
-{{ if $demoStories }}
-  <details class="demo-panel">
-    <summary>{{ $demoUser.Title }} <span class="count">({{ len $demoStories }})</span></summary>
-    <ul class="story-list">
-      {{ range sort $demoStories "Title" }}{{ partial "story-row.html" . }}{{ end }}
-    </ul>
-  </details>
+<details class="panel" open>
+  <summary>Stories <span class="count">({{ len $all.stories }})</span></summary>
+  {{ if $all.stories }}
+  <ul class="story-list">
+    {{ range sort $all.stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
+  </ul>
+  {{ else }}
+  <p class="meta">No stories yet.</p>
+  {{ end }}
+</details>
+
+<details class="panel" open>
+  <summary>Challenges <span class="count">({{ len $challenges }})</span></summary>
+  {{ if $challenges }}
+  <ul class="story-list">
+    {{ range sort $challenges "Title" }}{{ partial "challenge-row.html" . }}{{ end }}
+  </ul>
+  {{ else }}
+  <p class="meta">No challenges yet.</p>
+  {{ end }}
+</details>
+
+{{ if $all.demo }}
+<details class="panel">
+  <summary>Demo content <span class="count">({{ len $all.demo }})</span></summary>
+  <ul class="story-list">
+    {{ range sort $all.demo "Title" }}{{ partial "story-row.html" . }}{{ end }}
+  </ul>
+</details>
 {{ end }}
 {{ end }}

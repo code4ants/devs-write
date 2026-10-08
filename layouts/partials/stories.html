@@ -1,0 +1,16 @@
+{{- /* All stories, split into regular ones and the demo author's. Returns
+       dict "stories" (pages) "demo" (pages) "demoUser" (page or nil). */ -}}
+{{- $stories := slice -}}
+{{- $demo := slice -}}
+{{- $demoUser := false -}}
+{{- with site.GetPage "/stories" -}}
+  {{- range .Sections -}}
+    {{- if eq (path.Base .Path) "demo" -}}
+      {{- $demoUser = . -}}
+      {{- range .Sections }}{{ $demo = $demo | append . }}{{ end -}}
+    {{- else -}}
+      {{- range .Sections }}{{ $stories = $stories | append . }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "stories" $stories "demo" $demo "demoUser" $demoUser -}}

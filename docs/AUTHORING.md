@@ -1,6 +1,8 @@
 # Authoring guide
 
-Everything you write lives under `content/<your-folder>/`. Your folder name is your GitHub username, lowercase, and must contain an `_index.md` with your display name (one-time setup):
+The site has two kinds of content: **stories** (`content/stories/`) and **challenges** (`content/challenges/`, see [Challenges](#challenges)). The rest of this guide is about stories, except where it says otherwise.
+
+Everything you write lives under `content/stories/<your-folder>/`. Your folder name is your GitHub username, lowercase, and must contain an `_index.md` with your display name (one-time setup):
 
 ```markdown
 ---
@@ -10,14 +12,14 @@ bio: One line about you.
 ```
 
 ```
-content/<you>/<story-slug>/_index.md          <- the story (title, theme, summary)
-content/<you>/<story-slug>/01-first.md        <- chapter 1
-content/<you>/<story-slug>/02-second.md       <- chapter 2
+content/stories/<you>/<story-slug>/_index.md          <- the story (title, theme, summary)
+content/stories/<you>/<story-slug>/01-first.md        <- chapter 1
+content/stories/<you>/<story-slug>/02-second.md       <- chapter 2
 ```
 
 ## New story
 
-Create `content/<you>/<story-slug>/_index.md`:
+Create `content/stories/<you>/<story-slug>/_index.md`:
 
 ```markdown
 ---
@@ -101,7 +103,7 @@ Each distinct name gets its own tint (up to four before colors repeat), taken fr
 
 ## Story maps
 
-A story can have maps: big images the reader opens from a **Map** button. Put the image in the story folder, in its root, as a `.jpg` (`content/<you>/<story>/map0.jpg`; you can have several: `map0.jpg`, `harbor.jpg`, ...). Then, where the button should appear in a chapter, write a fenced block whose opening fence is `~~~map`, naming the map without the extension, followed by one point per line as `X, Y` in pixels of the image (0, 0 is the top-left corner):
+A story can have maps: big images the reader opens from a **Map** button. Put the image in the story folder, in its root, as a `.jpg` (`content/stories/<you>/<story>/map0.jpg`; you can have several: `map0.jpg`, `harbor.jpg`, ...). Then, where the button should appear in a chapter, write a fenced block whose opening fence is `~~~map`, naming the map without the extension, followed by one point per line as `X, Y` in pixels of the image (0, 0 is the top-left corner):
 
 ```markdown
 ~~~map {map="map0"}
@@ -125,7 +127,7 @@ The button and popup take their colors and style from the story theme. A missing
 
 ## Character bios
 
-A story can describe its characters. Add a `bio.yaml` next to the story's `_index.md` (`content/<you>/<story>/bio.yaml`):
+A story can describe its characters. Add a `bio.yaml` next to the story's `_index.md` (`content/stories/<you>/<story>/bio.yaml`):
 
 ```yaml
 characters:
@@ -143,7 +145,7 @@ With a bio, a **Bio** button shows up on the story page, on the same line as "Ch
 
 ## Dex (glossary)
 
-A story can explain its concepts, materials, locations and other things. Add a `dex.yaml` next to the story's `_index.md` (`content/<you>/<story>/dex.yaml`):
+A story can explain its concepts, materials, locations and other things. Add a `dex.yaml` next to the story's `_index.md` (`content/stories/<you>/<story>/dex.yaml`):
 
 ```yaml
 entries:
@@ -156,6 +158,42 @@ entries:
 Both fields are plain text, and `name` is required. Entries are always shown in alphabetical order, whatever order you write them in. The file is optional.
 
 With a dex, a **Dex** button appears next to the Bio button (or alone, if the story has no bio) on the story page and in every chapter. It opens a popup with all the entries, styled by the story theme. A file without an `entries` list, or an entry without a name, fails the build.
+
+## Challenges
+
+A challenge is an open writing prompt that any author can answer. Challenges live apart from stories, in `content/challenges/`: one folder per challenge, named with a lowercase slug.
+
+```
+content/challenges/<challenge-slug>/_index.md          <- the challenge (title + description)
+content/challenges/<challenge-slug>/<anything>.md      <- a contribution
+```
+
+### New challenge
+
+Create `content/challenges/<challenge-slug>/_index.md`. The text below the front matter is the description shown on the challenge page (its first lines also appear on the home page):
+
+```markdown
+---
+title: A world without electricity
+---
+One morning, everything that runs on electricity stops, for good. Tell us how a town adapts.
+```
+
+A challenge has no theme, summary or author.
+
+### New contribution
+
+Add a Markdown file in the challenge folder. You can post as many contributions as you like (one file each), and several authors can contribute to the same challenge. A contribution needs a `title` and your user name as `author` (the name of your folder under `content/stories/`, which must exist):
+
+```markdown
+---
+title: The Last Working Terminal
+author: bogdan
+---
+Contribution text in Markdown.
+```
+
+Contributions are not ordered and have no theme: they use the plain site style. They support the same **callout**, **terminal**, **chat** and **scene break** blocks as chapters (documented above). Maps, Bio and Dex are only for stories: a `~~~map` block in a contribution fails the build, and `bio.yaml` / `dex.yaml` files are not accepted in a challenge folder.
 
 ## Workflow
 
