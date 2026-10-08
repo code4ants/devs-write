@@ -37,6 +37,7 @@ body {
 }
 
 h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; margin: 0 0 .5em; font-weight: 600; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 h1 { font-size: clamp(1.75rem, 1.4rem + 1.8vw, 2.5rem); letter-spacing: -.01em; }
 h2 { font-size: clamp(1.25rem, 1.1rem + .8vw, 1.6rem); margin-top: 2rem; }
 p { margin: 0 0 1.1em; }
@@ -273,13 +274,48 @@ body.challenges { --font-body: var(--font-head); }
 .story-row .by { margin: 0; color: var(--muted); font-family: var(--font-head); font-size: .9rem; line-height: 1.5; }
 .story-row .by a { color: inherit; }
 .story-row .latest a { color: var(--fg); }
-/* Collapsible panel for the demo user's stories */
-.panel { margin-top: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
-.panel > summary { cursor: pointer; padding: .8rem 1.15rem; font-family: var(--font-head); font-weight: 700; color: var(--fg); }
+/* Home page groups (Stories, Challenges, Demo content): each is its own bordered block with a tinted header
+   (outline icon, title, count, chevron); the entries inside are flat rows separated by hairlines. */
+.panel { margin-top: 1.75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); overflow: hidden; }
+.panel > summary {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .85rem 1.15rem;
+  background: color-mix(in srgb, var(--fg) 5%, var(--card));
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--fg);
+}
+.panel[open] > summary { border-bottom: 1px solid var(--border); }
+.panel > summary::-webkit-details-marker { display: none; }
+.panel > summary::after {
+  content: "";
+  flex: none;
+  width: .5rem;
+  height: .5rem;
+  margin: 0 .35rem 0 auto;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: translateY(-.15rem) rotate(45deg);
+  transition: transform .15s;
+}
+.panel[open] > summary::after { transform: translateY(.1rem) rotate(-135deg); }
 .panel > summary:hover, .panel > summary:focus-visible { color: var(--accent); }
-.panel .count { font-weight: 400; color: var(--muted); }
-.panel > .story-list { margin: 0; padding: 0 1rem 1rem; }
-.panel > .meta { margin: 0; padding: 0 1.15rem 1rem; }
+.panel > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.panel .icon { flex: none; width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; color: var(--muted); }
+.panel > summary:hover .icon, .panel[open] > summary .icon { color: var(--fg); }
+.panel .count { font-size: .85rem; font-weight: 400; color: var(--muted); }
+.panel > .story-list { margin: 0; gap: 0; }
+.panel .story-row { padding: .95rem 1.15rem 1rem; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: none; }
+.panel .story-row:last-child { border-bottom: 0; }
+.panel .story-row:hover, .panel .story-row:focus-within { border-color: var(--border); background: color-mix(in srgb, var(--fg) 4%, transparent); }
+.panel .story-row:last-child:hover, .panel .story-row:last-child:focus-within { border-bottom: 0; }
+.panel > .meta { margin: 0; padding: 1rem 1.15rem; }
 @media (max-width: 36rem) { .story-row .sep { display: none; } .story-row .latest { display: block; } }
 
 /* Story page */

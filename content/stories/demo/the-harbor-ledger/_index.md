@@ -1,6 +1,6 @@
 ---
-title: ZZ The Harbor Ledger
+title: Demo of the Newspaper theme.
 theme: newspaper
 summary: A port-city reporter follows a missing shipment through a week of rumors.
 ---
-*Sample story: delete or replace.*
+This is a demo story.

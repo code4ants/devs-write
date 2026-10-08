@@ -1,5 +1,5 @@
 ---
-title: The Last Working Terminal
+title: Demo contribution - The Last Working Terminal
 author: demo
 ---
 On the ninth day, Ilse finally stopped pressing the light switch when she walked into a room.

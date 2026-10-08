@@ -1,13 +1,14 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+<h1 class="sr-only">{{ site.Params.homeTitle | default .Title }}</h1>
+{{ with .Content }}<div class="lede">{{ . }}</div>{{ else }}<p class="lede">{{ site.Params.description }}</p>{{ end }}
 
+{{- /* Icons are 24x24 outline glyphs drawn in currentColor (see .panel .icon in base.css). */ -}}
 {{ $all := partial "stories.html" . }}
 {{ $challenges := slice }}
 {{ with site.GetPage "/challenges" }}{{ $challenges = .Sections }}{{ end }}
 
 <details class="panel" open>
-  <summary>Stories <span class="count">({{ len $all.stories }})</span></summary>
+  <summary><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5C10.5 5 8 4.5 4 4.5v14c4 0 6.5.5 8 2 1.5-1.5 4-2 8-2v-14c-4 0-6.5.5-8 2zM12 6.5v14"/></svg><span class="label">Stories</span><span class="count">{{ len $all.stories }}</span></summary>
   {{ if $all.stories }}
   <ul class="story-list">
     {{ range sort $all.stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
@@ -18,7 +19,7 @@
 </details>
 
 <details class="panel" open>
-  <summary>Challenges <span class="count">({{ len $challenges }})</span></summary>
+  <summary><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h12l-2.5 4 2.5 4H5"/></svg><span class="label">Challenges</span><span class="count">{{ len $challenges }}</span></summary>
   {{ if $challenges }}
   <ul class="story-list">
     {{ range sort $challenges "Title" }}{{ partial "challenge-row.html" . }}{{ end }}
@@ -30,7 +31,7 @@
 
 {{ if $all.demo }}
 <details class="panel">
-  <summary>Demo content <span class="count">({{ len $all.demo }})</span></summary>
+  <summary><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg><span class="label">Demo content</span><span class="count">{{ len $all.demo }}</span></summary>
   <ul class="story-list">
     {{ range sort $all.demo "Title" }}{{ partial "story-row.html" . }}{{ end }}
   </ul>

@@ -1,6 +1,6 @@
 ---
-title: ZZ The Last Ember
+title: Demo of the Fantasy theme.
 theme: fantasy
 summary: A hedge-witch carries the last coal of the old forge across the Ashen Marches.
 ---
-*Sample story: delete or replace.*
+This is a demo story.
