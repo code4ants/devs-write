@@ -2,6 +2,10 @@
        and their chapters have one; home, author, challenge and contribution pages do not. A chapter is a page whose
        parent section is a story, so stray files in an author folder (e.g. a git-ignored `local/` draft) get no theme. */ -}}
 {{- $themes := slice "fantasy" "sf" "newspaper" "dusty" -}}
+{{- /* Challenge pages (list, challenge, contributions) always use the "challenge" theme; it is not selectable by stories. */ -}}
+{{- if eq .Section "challenges" -}}
+  {{- return "challenge" -}}
+{{- end -}}
 {{- $story := false -}}
 {{- if eq .Section "stories" -}}
   {{- if and (eq .Kind "section") (eq (len (split (strings.Trim .Path "/") "/")) 3) -}}

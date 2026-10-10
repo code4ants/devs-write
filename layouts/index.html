@@ -1,6 +1,5 @@
 {{ define "main" }}
-<h1 class="sr-only">{{ site.Params.homeTitle | default .Title }}</h1>
-{{ with .Content }}<div class="lede">{{ . }}</div>{{ else }}<p class="lede">{{ site.Params.description }}</p>{{ end }}
+<h1 class="sr-only">{{ .Title }}</h1>
 
 {{- /* Icons are 24x24 outline glyphs drawn in currentColor (see .panel .icon in base.css). */ -}}
 {{ $all := partial "stories.html" . }}

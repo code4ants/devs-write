@@ -4,10 +4,6 @@ locale: en
 disableHugoGeneratorInject: true
 disableKinds: [taxonomy, term, RSS, sitemap, robotsTXT]
 
-params:
-  description: Literature written by a group of friends.
-  homeTitle: Devs Write On The Internet
-
 # Author, story, layout and theme inheritance are derived from the folder layout
 # (see layouts/). Authors only write front matter + prose.
 markup:

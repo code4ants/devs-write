@@ -229,9 +229,6 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .chat .right.first .bubble { border-top-right-radius: .2rem; }
 @media (max-width: 36rem) { .chat { margin-inline: -.25rem; } .chat .log { padding: .75rem; } .chat .bar { padding-inline: .75rem; } .chat .msg { max-width: 92%; } }
 
-/* Challenge pages (list, challenge and contributions) have no story theme: the reading text uses the sans-serif UI font. */
-body.challenges { --font-body: var(--font-head); }
-
 /* Header / footer */
 .site-header, .site-footer {
   padding: .9rem var(--gutter);
@@ -468,3 +465,12 @@ html.bio-open { overflow: hidden; }
 .section-head .actions { margin-top: 1.5rem; }
 .meta.top > .bio-btn { margin-left: 0; }
 .section-head .bio-btn { margin-top: 0; }
+
+/* Home page: straight lines only. No rounded corners; panels stay collapsible. */
+.home { --radius: 0; }
+.home .panel { background: none; }
+.home .panel > summary { background: none; text-transform: uppercase; letter-spacing: .12em; font-size: 1rem; }
+.home .panel .icon { stroke-linecap: square; stroke-linejoin: miter; }
+.home .panel > summary::after { border-width: 0 2px 2px 0; }
+.home .panel .story-row { border-left: 0; }
+.home .panel .story-row:hover, .home .panel .story-row:focus-within { box-shadow: inset 3px 0 0 var(--accent); }

@@ -193,7 +193,7 @@ author: bogdan
 Contribution text in Markdown.
 ```
 
-Contributions are not ordered and have no theme: they use the plain site style. They support the same **callout**, **terminal**, **chat** and **scene break** blocks as chapters (documented above). Maps, Bio and Dex are only for stories: a `~~~map` block in a contribution fails the build, and `bio.yaml` / `dex.yaml` files are not accepted in a challenge folder.
+Contributions are not ordered and take no `theme` in front matter: every challenge page uses the built-in dark sans-serif `challenge` theme (slate and violet). They support the same **callout**, **terminal**, **chat** and **scene break** blocks as chapters (documented above). Maps, Bio and Dex are only for stories: a `~~~map` block in a contribution fails the build, and `bio.yaml` / `dex.yaml` files are not accepted in a challenge folder.
 
 ## Workflow
 

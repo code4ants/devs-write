@@ -1,0 +1,48 @@
+/* Challenge, dark: slate and violet, plain sans-serif. Built for comfortable reading of short pieces. */
+.theme-challenge {
+  --bg: #15181e;
+  --fg: #e3e6ec;
+  --muted: #9aa1b0;
+  --accent: #b4a0ff;
+  --card: #1c2028;
+  --border: #323847;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-head: "Lexend", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --radius: 6px;
+  /* callout inks: soft coral, sage, sky */
+  --c-red: #f08a8a;
+  --c-green: #7fd1a0;
+  --c-blue: #7fb8f2;
+  font-size: clamp(1.08rem, 1.02rem + .3vw, 1.2rem);
+  line-height: 1.75;
+}
+html:has(.theme-challenge) { background: #15181e; }
+.theme-challenge .site-header { background: var(--card); }
+.theme-challenge h1 { font-weight: 600; letter-spacing: -.015em; }
+.theme-challenge h2 { font-weight: 600; }
+.theme-challenge .prose { max-width: 38rem; }
+.theme-challenge .prose p { margin-bottom: 1.2em; }
+.theme-challenge .meta { font-family: var(--font-body); }
+.theme-challenge .chapter-nav a { background: var(--card); }
+.theme-challenge .story-row { border-left-color: var(--accent); }
+
+/* Scene break: a hairline with three dots. */
+.theme-challenge .prose hr {
+  --hr-mark: "\00B7  \00B7  \00B7";
+  --hr-c: var(--border);
+}
+.theme-challenge .prose hr::before { color: var(--accent); font-size: 1.4rem; font-weight: 700; letter-spacing: .1em; }
+
+/* Terminal: neutral console in the accent colour. */
+.theme-challenge .terminal {
+  --t-fg: #d9d2ff;
+  --t-bg: #0f1116;
+  --t-bar: #1c2028;
+  --t-edge: #323847;
+}
+
+/* Callout: a calm tinted note, no italics (sans-serif italics tire the eye). */
+.theme-challenge .callout { font-style: normal; }
+
+/* Chat: soft bubbles in the theme font. */
+.theme-challenge .chat { --k-bg: #181b22; --k-edge: #323847; --k-r: .9rem; font-size: 1rem; }
