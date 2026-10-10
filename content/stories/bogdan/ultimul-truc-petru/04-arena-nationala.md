@@ -6,7 +6,7 @@ Fix 18 luni se împlinesc în seara asta, gândi Petru. 18 luni - un an și jum�
 
 Acest plan culmina în seara aceasta cu showul de pe Arena Națională. 55.000 de oameni au cumpărat bilete la ceea ce urmează să fie un show incendiar, zăpăcitor, de neuitat. Petru se privi în oglindă și zâmbi: arăta impunător, fascinant. Cu un tuxedo argintiu, sclipitor, care i se potrivea perfect pe corp, cu flăcări în jurul mâinilor și aripi formate din fulgere ce îi țâșneau din spate, arăta ca o creatură de pe alte meleaguri. 
 
-Un ciocănit discret în ușa cabinei de artist, pe care scrie cu litere aurii "Petru Petrovici", îl făcu pe Petru să tresară. Flăcările și aripile electrizate dispărură instant. O blondă drăguță, angajată recent în echipa de organizare, apăru scurt în cadrul ușii și îi zâmbi cu ambele gropițe din obraji: 
+Un ciocănit discret în ușa cabinei de artist, pe care scria cu litere aurii "Petru Petrovici", îl făcu să tresară. Flăcările și aripile electrizate dispărură instant. O blondă drăguță, angajată recent în echipa de organizare, apăru scurt în cadrul ușii și îi zâmbi cu ambele gropițe din obraji: 
 
 -- Petru, intrăm în 5 minute. Să fii gata! Arăți superb! 
 
