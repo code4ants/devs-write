@@ -7,7 +7,7 @@
 {{- $s := newScratch -}}
 {{- $s.Set "seen" slice -}}
 {{- $s.Set "prev" "" -}}
-<div class="chat" role="group" aria-label="{{ .Attributes.title | default "Conversation" }}">
+<div class="chat" role="group" aria-label="{{ .Attributes.title | default "Conversație" }}">
 <div class="bar">{{ .Attributes.title }}</div>
 <div class="log">{{- range split (replace .Inner "\r" "") "\n" -}}
   {{- $line := . -}}
@@ -62,7 +62,7 @@
 {{- if not $pts -}}
   {{- errorf "map block in %s: needs at least one 'X, Y' point" .Page.Path -}}
 {{- end -}}
-<p class="map-block"><button type="button" class="map-btn" data-src="{{ $img.RelPermalink }}" data-w="{{ $img.Width }}" data-h="{{ $img.Height }}" data-points="[{{ delimit $pts "," }}]" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="1.15em" height="1.15em" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Map</span></button></p>
+<p class="map-block"><button type="button" class="map-btn" data-src="{{ $img.RelPermalink }}" data-w="{{ $img.Width }}" data-h="{{ $img.Height }}" data-points="[{{ delimit $pts "," }}]" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="1.15em" height="1.15em" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg><span>Hartă</span></button></p>
 {{- else -}}
 <pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
 {{- end }}

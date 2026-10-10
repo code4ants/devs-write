@@ -45,7 +45,7 @@
   function open(btn) {
     var W = +btn.dataset.w, H = +btn.dataset.h, pts = JSON.parse(btn.dataset.points);
     var dlg = el("dialog", "map-dialog", document.body);
-    dlg.setAttribute("aria-label", "Map");
+    dlg.setAttribute("aria-label", "Hartă");
     var view = el("div", "map-view loading", dlg);
     view.tabIndex = 0;
     var stage = el("div", "map-stage", view);
@@ -77,10 +77,10 @@
     });
 
     var ctl = el("div", "map-controls", dlg);
-    var close = button("map-close", "Close map", "×", dlg);
-    var zin = button("map-zin", "Zoom in", "+", ctl);
-    var zout = button("map-zout", "Zoom out", "−", ctl);
-    var fit = pts.length > 1 ? button("map-fit", "Show the whole path", "⤢", ctl) : null;
+    var close = button("map-close", "Închide harta", "×", dlg);
+    var zin = button("map-zin", "Mărește", "+", ctl);
+    var zout = button("map-zout", "Micșorează", "−", ctl);
+    var fit = pts.length > 1 ? button("map-fit", "Arată tot traseul", "⤢", ctl) : null;
 
     var vw = 0, vh = 0, s = 1, tx = 0, ty = 0, minS = 0.1;
 

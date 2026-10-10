@@ -371,10 +371,10 @@ html.map-open { overflow: hidden; }
 }
 .map-view.grabbing { cursor: grabbing; }
 .map-view.loading::after, .map-view.failed::after {
-  content: "Loading map\2026"; position: absolute; inset: 0; display: grid; place-items: center;
+  content: "Se încarcă harta\2026"; position: absolute; inset: 0; display: grid; place-items: center;
   color: var(--muted); letter-spacing: .08em; pointer-events: none;
 }
-.map-view.failed::after { content: "The map could not be loaded."; }
+.map-view.failed::after { content: "Harta nu a putut fi încărcată."; }
 .map-stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
 .map-img { display: block; max-width: none; width: 100%; height: 100%; -webkit-user-drag: none; }
 .map-path { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }

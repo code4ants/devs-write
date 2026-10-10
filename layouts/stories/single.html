@@ -6,7 +6,7 @@
   <div class="meta top"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a>{{ with $bio }}<span class="actions">{{ . | safeHTML }}</span>{{ end }}</div>
   <h1>{{ .Title }}</h1>
   <div class="prose">{{ .Content }}</div>
-  <nav class="chapter-nav" aria-label="Chapters">
+  <nav class="chapter-nav" aria-label="Capitole">
     {{ range $i, $c := $chapters }}{{ if eq $c.RelPermalink $.RelPermalink }}
       {{ if gt $i 0 }}{{ with index $chapters (sub $i 1) }}
       <a class="prev" href="{{ .RelPermalink }}" rel="prev">&larr; {{ .Title }}</a>

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   {{ partial "head.html" . }}
 </head>
 <body class="{{ with partial "theme.html" . }}theme-{{ . }}{{ end }}{{ if .IsHome }}home{{ end }}">
   <header class="site-header">
-    <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <a class="site-title" href="{{ "/" | relURL }}">{{ partial "header-title.html" . }}</a>
   </header>
   <main class="wrap">
     {{ block "main" . }}{{ end }}
   </main>
   <footer class="site-footer">
-    <p>{{ site.Title }}</p>
+    {{- /* Last publish = newest chapter (demo stories excluded) or challenge/contribution, from git history. */ -}}
+    {{- $last := time.AsTime "1970-01-01" -}}
+    {{- range site.RegularPages -}}
+      {{- if and (in (slice "stories" "challenges") .Section) (not (hasPrefix .Path "/stories/demo/")) (gt .Lastmod $last) }}{{ $last = .Lastmod }}{{ end -}}
+    {{- end -}}
+    {{- $months := slice "ianuarie" "februarie" "martie" "aprilie" "mai" "iunie" "iulie" "august" "septembrie" "octombrie" "noiembrie" "decembrie" -}}
+    <p>DW{{ if gt $last.Year 1970 }} / Ultima publicare: {{ $last.Day }} {{ index $months (sub $last.Month 1) }} {{ $last.Year }}{{ end }}</p>
   </footer>
 </body>
 </html>

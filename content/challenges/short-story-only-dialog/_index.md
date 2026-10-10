@@ -1,4 +1,4 @@
 ---
-title: Zombie horror story with just dialog
+title: Povestire horror cu zombi, doar în dialog
 ---
-Create a short story with 2 or more characters that has only dialog, with a strong horror flavour and set in a universe populated by humans and zombies.
+Scrie o povestire scurtă cu 2 sau mai multe personaje, formată doar din dialog, cu o puternică tentă horror, într-un univers populat de oameni și zombi.

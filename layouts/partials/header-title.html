@@ -1,0 +1,13 @@
+{{- /* Header label: "DW / Nuvelă" on a story and its chapters (content/stories/<author>/<story>/...),
+       "DW / Exercițiu" on a challenge and its contributions (content/challenges/<challenge>/...),
+       the site title elsewhere. */ -}}
+{{- $label := "" -}}
+{{- $depth := len (split (strings.Trim .Path "/") "/") -}}
+{{- $parentDepth := 0 -}}
+{{- with .Parent }}{{ $parentDepth = len (split (strings.Trim .Path "/") "/") }}{{ end -}}
+{{- if eq .Section "stories" -}}
+  {{- if or (and (eq .Kind "section") (eq $depth 3)) (and (eq .Kind "page") (eq $parentDepth 3)) }}{{ $label = "Nuvelă" }}{{ end -}}
+{{- else if eq .Section "challenges" -}}
+  {{- if or (and (eq .Kind "section") (eq $depth 2)) (and (eq .Kind "page") (eq $parentDepth 2)) }}{{ $label = "Exercițiu" }}{{ end -}}
+{{- end -}}
+{{- if $label -}}DW / {{ $label }}{{- else -}}{{ site.Title }}{{- end -}}

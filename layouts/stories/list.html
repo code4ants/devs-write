@@ -9,7 +9,7 @@
     {{ range sort $all.stories "Title" }}{{ partial "story-row.html" . }}{{ end }}
   </ul>
 {{ else }}
-  <p class="meta">No stories yet.</p>
+  <p class="meta">Nicio nuvelă încă.</p>
 {{ end }}
 {{ else if .Parent.Parent.IsHome }}
 {{- /* author page */ -}}
@@ -20,18 +20,18 @@
     {{ range sort . "Title" }}{{ partial "story-row.html" . }}{{ end }}
   </ul>
 {{ else }}
-  <p class="meta">No stories yet.</p>
+  <p class="meta">Nicio nuvelă încă.</p>
 {{ end }}
 {{ else }}
 {{- /* story page */ -}}
 <article class="story">
   <h1>{{ .Title }}</h1>
-  <p class="meta">by <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+  <p class="meta">de <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
   {{ with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
   <div class="prose">{{ .Content }}</div>
 
   {{ $bio := printf "%s%s" (partial "bio.html" .) (partial "dex.html" .) | strings.TrimSpace }}
-  <div class="section-head"><h2>Chapters</h2>{{ with $bio }}<span class="actions">{{ . | safeHTML }}</span>{{ end }}</div>
+  <div class="section-head"><h2>Capitole</h2>{{ with $bio }}<span class="actions">{{ . | safeHTML }}</span>{{ end }}</div>
   <ol class="chapter-list">
     {{ range partial "chapters.html" . }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

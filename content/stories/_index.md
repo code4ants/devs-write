@@ -1,3 +1,3 @@
 ---
-title: Stories
+title: Nuvele
 ---

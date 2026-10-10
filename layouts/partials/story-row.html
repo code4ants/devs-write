@@ -1,6 +1,6 @@
 <li class="story-row">
   <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-  <p class="by">by <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
-  {{- with partial "chapters.html" . }}{{ with index . (sub (len .) 1) }}<span class="sep" aria-hidden="true"> · </span><span class="latest">Latest: <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>{{ end }}{{ end -}}
+  <p class="by">de <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+  {{- with partial "chapters.html" . }}{{ with index . (sub (len .) 1) }}<span class="sep" aria-hidden="true"> · </span><span class="latest">Ultimul capitol: <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>{{ end }}{{ end -}}
   </p>
 </li>

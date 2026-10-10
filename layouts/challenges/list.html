@@ -8,22 +8,22 @@
     {{ range sort . "Title" }}{{ partial "challenge-row.html" . }}{{ end }}
   </ul>
 {{ else }}
-  <p class="meta">No challenges yet.</p>
+  <p class="meta">Niciun exercițiu încă.</p>
 {{ end }}
 {{ else }}
 {{- /* challenge page: description + contributions */ -}}
 <article class="story">
-  <p class="meta">Challenge</p>
+  <p class="meta">Exercițiu</p>
   <h1>{{ .Title }}</h1>
   <div class="prose">{{ .Content }}</div>
 
-  <div class="section-head"><h2>Contributions</h2></div>
+  <div class="section-head"><h2>Contribuții</h2></div>
   {{ with .RegularPages }}
   <ul class="story-list">
     {{ range sort . "Title" }}{{ partial "contribution-row.html" . }}{{ end }}
   </ul>
   {{ else }}
-  <p class="meta">No contributions yet.</p>
+  <p class="meta">Nicio contribuție încă.</p>
   {{ end }}
 </article>
 {{ end }}

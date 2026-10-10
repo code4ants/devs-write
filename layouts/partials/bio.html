@@ -13,7 +13,7 @@
   {{- end -}}
   <button type="button" class="bio-btn" aria-haspopup="dialog" aria-controls="bio-dialog"><svg viewBox="0 0 24 24" width="1.1em" height="1.1em" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/></svg><span>Bio</span></button>
   <dialog class="bio-dialog" id="bio-dialog" aria-labelledby="bio-title">
-    <div class="bio-head"><h2 id="bio-title">Characters</h2><button type="button" class="bio-close" aria-label="Close">&times;</button></div>
+    <div class="bio-head"><h2 id="bio-title">Personaje</h2><button type="button" class="bio-close" aria-label="Închide">&times;</button></div>
     <ul class="bio-list">
     {{- range $chars -}}
       {{- if not (and (reflect.IsMap .) .name) -}}

@@ -1,4 +1,4 @@
 ---
-title: A world without electricity
+title: O lume fără electricitate
 ---
-One morning, everything that ran on electricity stops, for good. No grid, no batteries, no screens. Create a story that captures an event or a drama of a person or a family in these conditions.
+Într-o dimineață, tot ce funcționa cu electricitate se oprește, pentru totdeauna. Fără rețea electrică, fără baterii, fără ecrane. Scrie o povestire care surprinde un eveniment sau drama unei persoane sau a unei familii în aceste condiții.

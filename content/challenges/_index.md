@@ -1,4 +1,4 @@
 ---
-title: Challenges
+title: Exerciții
 ---
-Open writing prompts: pick one and add your own contribution.
+Teme deschise de scris: alege una și adaugă propria contribuție.
