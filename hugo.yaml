@@ -1,7 +1,6 @@
 baseURL: https://devswrite.eapp.site/
 title: DW / Scrieri
 locale: ro
-languageCode: ro
 enableGitInfo: true   # page .Lastmod = date of the last commit touching the file (footer: "Ultima publicare")
 disableHugoGeneratorInject: true
 disableKinds: [taxonomy, term, RSS, sitemap, robotsTXT]
