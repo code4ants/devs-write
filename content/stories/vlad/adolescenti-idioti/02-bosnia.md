@@ -14,7 +14,7 @@ Era 9 seara si ne intorceam pasind incet spre statia de autobuz, eu cam ametit, 
 
 "...m-mai sa sst-stii ca ... sa stii ca mie imi place la .. la..." ii zic cu ochii sticlosi, incercand sa ma tin drept, sa nu cad
 
-"La Idi-ot?" 
+"La BouIdiot?" 
 
 "da-da-ce? nuu nu - nu mah ... termina.. nu, sunt-sunt chiar ok... BlueDot... tu cum esti la .. la Morri.. Morrison Bank?"
 
