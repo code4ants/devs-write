@@ -85,7 +85,7 @@ author: vlad
 
 "Familie numeroasa - parinti, unchi, verisori, bunici - unul din ei a fost Afectat - peste noapte s-au transformat toti - dimineata i-am inchis in casa si le-am dat foc - i-am urmarit pana s-au oprit din urlat si apoi am lesinat pe solul inghetat - am degeraturi pe spate si nu imi simt degetele de la picioare"
 
-"... imi pare rau - nu exista leac pentru Afectiuni - nu aveai de ales - ai facut un serviciu Natiunii si iti multumesc pentru asta... o sa te trec pe lista de prioritate si un doctor o sa te vada maine la prima ora - incearca sa te odihnesti - camera #841"
+"... imi pare rau - nu exista leac pentru Afectati - nu aveai de ales - ai facut un serviciu Natiunii si iti multumesc pentru asta... o sa te trec pe lista de prioritate si un doctor o sa te vada maine la prima ora - incearca sa te odihnesti - camera #841"
 
 "..."
 

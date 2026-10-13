@@ -40,7 +40,7 @@ Oamenii de aici sunt rupti de oboseala, majoritatea isi petrec zilele dormind (c
 
 Mai tii minte acum o saptamana cand ne-am inscris la bunica Bev in baraca? I-am zis numele noastre si in timp ce tasta, a vazut ceva pe ecran de s-a oprit din admirat cerceii mei superbi (chiar sunt superbi!). Eh, intre timp am interactionat cu cat de multi oameni noi am putut si nimeni nu are istoricul nostru. Suntem singurii care obisnuiau sa frecventeze *poligonul*. Crezi ca am aparut undeva in evidenta ei ca suntem "clienti vechi"?  
 
-Gah, vorbesc prostii - ma stii ca am o afinitate catre teorii ale conspiratiei! Haha, gata, sora Katarina Cera raporteaza inchiderea programului si inchiderea transmisiei! Over! *KHASHHHHHCHT!* (imagineaza-ti ca am facut sunetul ala de statie de receptie, ca in filme).
+Gah, vorbesc prostii - ma stii ca am o afinitate catre teorii ale conspiratiei! Haha, gata, sora Katarina Cela raporteaza inchiderea programului si inchiderea transmisiei! Over! *KHASHHHHHCHT!* (imagineaza-ti ca am facut sunetul ala de statie de receptie, ca in filme).
 
 ---
 
