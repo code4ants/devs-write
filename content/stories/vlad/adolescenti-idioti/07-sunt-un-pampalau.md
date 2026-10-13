@@ -10,21 +10,21 @@ Oricum, draga frate, orice ar fi abominatia asta, fii sigur ca o sa iti scot och
 
 ---
 
-Tot eu sunt, Max, ma plictisesc atat de tare incat am decis sa ma o fac pe scriitoarea din nou (da, ATAT de tare ma plictisesc!). Ne-am facut griji ca ramanem fara curent la telefoane incat am luat baterii si panouri solare dar nu ne-am gandit la semnal. Ce sa fac cu un telefon incarcat dar fara semnal??
+Tot eu sunt, Max, ma plictisesc atat de tare incat am decis sa ma prefac mare scriitoare din nou (da, ATAT de tare ma plictisesc!). Ne-am facut griji ca ne raman telefoanele fara curent si am luat baterii si panouri solare dar nu ne-am gandit la semnal. Ce sa fac cu un telefon incarcat dar fara semnal??
 
-In fine, chiar ti-a pus capac omleta aia, huh? De dimineata nu te-ai ridicat din pat, si e deja dupa amiaza. Nu ca am fi avut ce face, e inca o zi ploioasa si pe jos e noroi. A trecut Robin pe aici, hehe, fastacindu-se ca de obicei (ador sa il pun la colt), si printre altele ne-a spus ca la primele ore au mai plecat cateva rulote, printre care si batranul de la #133. Cica diseara s-ar organiza un foc de tabara, cu "muzica live". Sper ca nu aduce iara bunica Bev chitara, sa i-o bag pe gat!
+In fine, chiar ti-a pus capac omleta aia, huh? De dimineata nu te-ai ridicat din pat, si e deja dupa amiaza. Nu ca am fi avut ce face, e inca o zi ploioasa si pe jos e noroi. A trecut Robin pe aici, hehe, fastacindu-se ca de obicei (ador sa il pun la colt), si printre altele ne-a spus ca la primele ore au mai plecat cateva rulote, printre care si batranul de la #133. Cica diseara s-ar organiza un foc de tabara, cu "muzica live". Sper ca nu aduce iara bunica Bev chitara, ca i-o bag pe gat!
 
 PS: e chiar fun sa scrii! 
 
 ---
 
-Au trecut deja 2 ore dupa apus, si 10 minute de cand a inceput iara bunica Bev cu muzica ei religioasa. Nu ma intelege gresit, stie sa cante la chitara, dar stie doar cateva melodii. Daca mai insista mult, o sa ajung sa cred ce zice acolo...
+Au trecut deja 2 ore dupa apus, si 10 minute de cand a inceput bunica Bev cu muzica ei religioasa. Nu ma intelege gresit, stie sa cante la chitara, dar stie doar cateva melodii. Daca mai insista mult, o sa ajung sa cred ce zice acolo...
 
-Se pare ca azi am facut pe sora medicala si iti spun sincer ca mi-a displacut. Fa-te odata bine, ce naiba - a fost doar o omleta!
+Se pare ca azi fac pe sora medicala si iti spun sincer ca imi displace. Fa-te odata bine, ce naiba - a fost doar o omleta!
 
 ---
 
-As vrea sa dorm, dar de fiecare data cand atipesc, te aud cum te chinui, asa ca stau pe intuneric, si ma uit pe geam la intunericul bezna de afara. Stii cum se zice ca nu ai de ce sa te sperie sunetele noptii, pentru ca sunt tot felul de animale nocturne active, majoritatea inofensive - pasari, soareci, veverite, d-astea. Pe mine ma sperie faptul ca aici nu se aude nimic. Si am realizat o chestie...
+As vrea sa dorm, dar de fiecare data cand atipesc, te aud cum te chinui, asa ca stau pe intuneric, si ma uit pe geam la intunericul bezna de afara. Stii cum se zice ca nu au de ce sa te sperie sunetele noptii, pentru ca sunt tot felul de animale nocturne active, majoritatea inofensive - pasari, soareci, veverite, d-astea. Pe mine ma sperie faptul ca aici nu se aude nimic. Si am realizat o chestie...
 
 Nici *atunci* nu se auzea nimic. Asta era una din placerile "poligonului" - puteai sa auzi, cu lux de amanunte, cand gasca se distra prin corturi, hehe. Dar, cred ca ti-am mai spus, nu o data am stat, intr-o trezire anormala din ameteala alcoolului si a drogurilor, in mijlocul noptii, cu urechile ciulite, incercand sa aud si cel mai mic sunet. Mi-a inghetat sangele in vene atunci, dar l-am pus pe seama substantelor si a stilului nostru de viata.
 
@@ -34,16 +34,28 @@ Si acum imi ingheata sangele in vene...
 
 Demonii exista, sunt foarte reali, doar ca nu sunt niste baieti in latex rosu cu cornite si furca, ci sunt ganduri care te bantuie in mijlocul noptii. Stii ca sunt bisericoasa tare, dar pana si eu am demoni...
 
-Tocmai am realizat ca mai sunt niste chestii pe care le-am observat, identice cu *atunci*. Baiatul ala, fiiul macelarului, se balbaia ca batranul de la #133 inainte sa se mute. Batranul tocmai a plecat.
+Sunt cam multe chestii identice cu *atunci*. Baiatul ala, fiiul macelarului, se balbaia ca batranul de la #133 inainte sa se mute. Batranul tocmai a plecat.
 
 Oamenii de aici sunt rupti de oboseala, majoritatea isi petrec zilele dormind (ce fac noaptea??). Si noi eram la fel, dar mereu am zis ca poate petreceam prea mult. Babalacii astia ce scuza au?
 
 Mai tii minte acum o saptamana cand ne-am inscris la bunica Bev in baraca? I-am zis numele noastre si in timp ce tasta, a vazut ceva pe ecran de s-a oprit din admirat cerceii mei superbi (chiar sunt superbi!). Eh, intre timp am interactionat cu cat de multi oameni noi am putut si nimeni nu are istoricul nostru. Suntem singurii care obisnuiau sa frecventeze *poligonul*. Crezi ca am aparut undeva in evidenta ei ca suntem "clienti vechi"?  
 
-Gah, vorbesc prostii - ma stii ca am o afinitate catre teorii ale conspiratiei! Haha, gata, sora Katarina Cera raporteaza inchiderea programului si inchiderea transmisiei! Over! *CASHHHHHCHT!* (imagineaza-ti ca am facut sunetul ala de statie de receptie, ca in filme).
+Gah, vorbesc prostii - ma stii ca am o afinitate catre teorii ale conspiratiei! Haha, gata, sora Katarina Cera raporteaza inchiderea programului si inchiderea transmisiei! Over! *KHASHHHHHCHT!* (imagineaza-ti ca am facut sunetul ala de statie de receptie, ca in filme).
 
 ---
 
 Este 4 dimineata, in sfarsit ai reusit sa dormi o ora fara sa gemi, si te gandesti ca as fi adormit si eu, dar ma tot gandesc... Desigur ca maine o sa discutam tot ce am scris aici, dar nu am rabdare sa astept cateva ore - simt nevoia sa imi notez undeva.
 
-Ma tot gandesc la copacul nostru, la *Nuc*. De ce este identic? Am putea tine noi minte ca e identic dar de fapt sa avem amintiri distorsionate, insa, scrijelitul e impecabil... Maine mergem din nou la el! Vreau sa il mai vad o data...
+Ma tot gandesc la copacul nostru, la *Nuc*. De ce este identic? Am putea tine noi minte ca e identic dar de fapt sa avem amintiri distorsionate, insa, scrijelitul e impecabil... Poate are trebui sa mai vedem o data copacul...
+
+---
+
+O ora mi-a luat sa realizez ca rulotele pleaca in ordinea numarului. 
+
+*RULOTELE PLEACA IN ORDINEA NUMARULUI, MAX!* 
+
+Nu stiu cine a plecat in primele noastre zile, dar inainte sa plece batranul de la #133, au plecat #83 si #87, apoi in zilele urmatoarea #101, #104, #105, #110, #117, #120, #121, #125 si #128.
+
+Zero sanse sa mai dorm, nu mai pot sa stau, afara a inceput sa se lumineze, ma duc la *Nuc* - trebuie sa vad copacul!
+
+Ar trebui sa ma intorc, inainte sa te trezesti!
