@@ -101,6 +101,25 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
   white-space: nowrap;
 }
 
+/* Dialogue: a paragraph that starts with "--" (layouts/partials/prose.html tags it .dlg and wraps the dash in
+   .dash). The dash hangs in the margin so wrapped lines align with the first word; a rule on the left marks
+   the line as speech. Themes restyle the rule, tint and dash. */
+.prose p.dlg {
+  --dlg-c: var(--accent);
+  --dlg-w: 1.5em;
+  margin-bottom: .8em;
+  padding: .1em 0 .1em calc(var(--dlg-w) + .5rem);
+  border-left: 2px solid color-mix(in srgb, var(--dlg-c) 55%, transparent);
+}
+.prose p.dlg .dash {
+  display: inline-block;
+  box-sizing: border-box;
+  width: var(--dlg-w);
+  margin-left: calc(-1 * var(--dlg-w));
+  color: var(--dlg-c);
+  font-weight: 700;
+}
+
 /* Terminal: a fenced code block that looks like a console window.
    Authors write:   ~~~
                     $ ping relay-9

@@ -5,7 +5,7 @@
 {{ $bio := printf "%s%s" (partial "bio.html" $story) (partial "dex.html" $story) | strings.TrimSpace }}
   <div class="meta top"><a href="{{ $story.RelPermalink }}">{{ $story.Title }}</a>{{ with $bio }}<span class="actions">{{ . | safeHTML }}</span>{{ end }}</div>
   <h1>{{ .Title }}</h1>
-  <div class="prose">{{ .Content }}</div>
+  <div class="prose">{{ partial "prose.html" . }}</div>
   <nav class="chapter-nav" aria-label="Capitole">
     {{ range $i, $c := $chapters }}{{ if eq $c.RelPermalink $.RelPermalink }}
       {{ if gt $i 0 }}{{ with index $chapters (sub $i 1) }}

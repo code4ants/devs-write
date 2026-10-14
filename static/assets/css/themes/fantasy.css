@@ -94,3 +94,13 @@ html:has(.theme-fantasy) { background: #15110c; }
 .theme-fantasy .bio-close { position: absolute; right: .9rem; }
 .theme-fantasy .bio-mark { border-radius: 3px; border: 3px double color-mix(in srgb, var(--accent) 70%, transparent); }
 .theme-fantasy .bio-card h3 { font-family: var(--font-head); letter-spacing: .05em; }
+
+/* Dialogue: speech set off by a gilded double rule, a gold dash hanging in the margin and a faint candle glow. */
+.theme-fantasy .prose p.dlg {
+  --dlg-c: var(--accent);
+  --dlg-w: 1.6em;
+  padding: .25em .5rem .25em calc(var(--dlg-w) + .6rem);
+  border-left: 3px double color-mix(in srgb, var(--accent) 70%, transparent);
+  background: linear-gradient(to right, rgba(217, 164, 65, .09), transparent 75%);
+}
+.theme-fantasy .prose p.dlg .dash { font-family: var(--font-head); text-shadow: 0 0 8px rgba(217, 164, 65, .5); }

@@ -96,3 +96,15 @@ html:has(.theme-sf) { background: #090d16; }
 .theme-sf .bio-card h3 { text-transform: uppercase; letter-spacing: .08em; font-size: 1rem; }
 .theme-sf .bio-role::before { content: "> "; }
 .theme-sf .meta.top::before { margin-right: .5ch; } /* flex item: the trailing space of "// " is collapsed */
+
+/* Dialogue: a comms line. Glowing teal bar, the dash becomes a neon prompt marker. */
+.theme-sf .prose p.dlg {
+  --dlg-c: var(--accent);
+  --dlg-w: 1.7rem; /* rem: the dash itself is font-size 0 */
+  padding: .15em .5rem .15em calc(var(--dlg-w) + .5rem);
+  border-left: 2px solid var(--accent);
+  background: linear-gradient(to right, rgba(25, 227, 209, .08), transparent 70%);
+  box-shadow: -3px 0 10px -4px rgba(25, 227, 209, .7);
+}
+.theme-sf .prose p.dlg .dash { font-size: 0; text-shadow: 0 0 8px rgba(25, 227, 209, .7); } /* the dash is hidden, ">" drawn instead */
+.theme-sf .prose p.dlg .dash::after { content: ">"; font-size: 1rem; }

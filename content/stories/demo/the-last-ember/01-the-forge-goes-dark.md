@@ -14,6 +14,14 @@ Edda | left | With what? The last ember died at dusk.
 Master Orin | right | With stubbornness, child. It has always burned hotter than coal.
 ~~~
 
+-- Master, the bellows are silent.
+
+-- Then listen harder, child. A forge never truly sleeps.
+
+-- And if it does?
+
+-- Then we wake it ourselves.
+
 She wrapped the last ember in wet moss and a scrap of her mother's shawl, and she did not look back.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum ex, dictum eleifend euismod a, tristique nec quam. Duis magna libero, auctor a mauris ut, aliquam ultricies nibh. Quisque sed magna ut massa maximus sollicitudin nec nec metus. Quisque euismod urna nec est elementum, vitae aliquam felis condimentum. Proin interdum ligula et ipsum efficitur, a accumsan mi aliquet. Quisque sagittis tempus tortor, at scelerisque nibh. Sed vehicula sem vitae diam viverra posuere. Cras ultrices sit amet tortor vel aliquam.

@@ -105,3 +105,13 @@ html:has(.theme-newspaper) { background: #141414; }
 .theme-newspaper .bio-mark { border-radius: 0; background: var(--fg); color: var(--bg); font-family: var(--font-head); font-weight: 900; border: 0; }
 .theme-newspaper .bio-card h3 { font-family: var(--font-head); font-weight: 900; }
 .theme-newspaper .bio-role { color: var(--muted); }
+
+/* Dialogue: an interview transcript. A hairline column rule, a heavy serif dash in the margin, no tint. */
+.theme-newspaper .prose p.dlg {
+  --dlg-c: var(--fg);
+  --dlg-w: 1.4em;
+  margin-bottom: .65em;
+  padding: .05em 0 .05em calc(var(--dlg-w) + .5rem);
+  border-left: 1px solid var(--border);
+}
+.theme-newspaper .prose p.dlg .dash { font-family: var(--font-head); font-weight: 900; font-size: 1.1em; line-height: 1.4; }

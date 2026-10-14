@@ -46,3 +46,13 @@ html:has(.theme-challenge) { background: #15181e; }
 
 /* Chat: soft bubbles in the theme font. */
 .theme-challenge .chat { --k-bg: #181b22; --k-edge: #323847; --k-r: .9rem; font-size: 1rem; }
+
+/* Dialogue: a calm speech line. A soft violet bar and a faint tint, rounded on the right so it reads as a bubble edge. */
+.theme-challenge .prose p.dlg {
+  --dlg-c: var(--accent);
+  --dlg-w: 1.4em;
+  padding: .3em .75rem .3em calc(var(--dlg-w) + .5rem);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: color-mix(in srgb, var(--accent) 8%, var(--bg));
+}

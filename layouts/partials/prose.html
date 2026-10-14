@@ -1,0 +1,4 @@
+{{- /* Page body. A paragraph that starts with "--" (the typographer turns it into an en dash) is a line of dialogue:
+       tag it `.dlg` and wrap the dash in `.dash` (a hanging marker) so each theme can style it. Hugo has no
+       paragraph render hook, so it is done on the rendered HTML. */ -}}
+{{- .Content | replaceRE `<p>(?:&ndash;|–)\s+` `<p class="dlg"><span class="dash">&ndash;</span>` | safeHTML -}}

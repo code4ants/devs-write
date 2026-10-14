@@ -12,6 +12,14 @@ title: The Last Cistern
 
 The wind came down off the ridge at dawn and took the roof of the old pump house with it. Mara counted the sheets of corrugated steel as they went, the way her mother had taught her to count everything that could not be replaced.
 
+-- Sister, the water is gone.
+
+-- Then we walk to the next cistern, Tomas.
+
+-- It is three days across the flats!
+
+-- Then we had better start before the dust does.
+
 ~~~chat
 Sister Ana | left | How much is left in the cistern?
 Tomas | right | Four days. Maybe five if nobody prays too loudly.

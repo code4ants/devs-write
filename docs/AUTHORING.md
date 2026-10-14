@@ -58,6 +58,18 @@ The color is optional and the same three IDs work in every theme: `.red`, `.gree
 
 A plain `>` blockquote (without the `{...}` line) stays a quiet, muted quote.
 
+## Dialogue
+
+A paragraph that starts with `--` is a line of dialogue. The site turns the `--` into a dash that hangs in the margin and marks the line with a bar on the left, so speech stands out from narration:
+
+```markdown
+-- Echo 1, reception.
+
+-- Echo 0, this is Echo 1.
+```
+
+Write the `--` and a space at the very start of the paragraph, one speaker line per paragraph. Each theme styles it its own way: a gilded double rule (fantasy), a glowing `>` prompt (sf), a hairline column rule with a heavy serif dash (newspaper), a thick rust bar like a stencilled edge (dusty) and a soft violet bar (challenges). Quoted dialogue (`"..."`) is plain text and is not styled.
+
 ## Scene breaks
 
 To separate two story planes or two fragments of the same chapter, put `---` on a line of its own, with a blank line above and below (without the blank line above, Markdown reads it as a heading):
