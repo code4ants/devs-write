@@ -159,13 +159,13 @@ author: vlad
 
 "Nicio problema, sa ai grija! Nu mai e mult! Nero! Atat pe ziua de azi, inchide poarta!"
 
-"Auzi??? Asta, ultima, era insarcinata!!"
+"Auzi, esti sanatos la cap??? Asta, ultima - era insarcinata!!"
 
-"... aoleu... Nero, crezi ca se pune la numar?"
+"... nu influenteaza numarul - tot o persoana e"
 
 "Numarul??? Eu te intreb de ea ca persoana, de tine ca persoana? Chiar esti ok cu asta???"
 
-"... numarul conteaza. Nimic altceva. Pe maine, Nero!"
+"... numarul conteaza. Nimic altceva. Avem o datorie. Acesti oameni sunt salvatorii oamenirii si noi suntem instrumentele lor. Pe maine, Nero!"
 
 ---
 
@@ -207,25 +207,29 @@ author: vlad
 
 "URMATORUL!!"
 
-"Buna ziua! Jux Tillerman, capitan echipa recunoastere Vulturii, vin impreuna cu trei prizonieri. Avem nevoie de adapost pentru aceasta noapte - plecam mai departe maine la rasaritul soarelui."
+"Buna ziua! Jux Tillerman, capitan echipa recunoastere Vulturii, vin impreuna cu un grup de prizonieri - am reusit sa capturez o echipa completa de zece grenadieri din care doi au fost Afectati. Avem nevoie de adapost pentru aceasta noapte - plecam mai departe maine la rasaritul soarelui."
 
 "Buna ziua capitane, va multumim pentru serviciul adus Natiunii! Actele personale si ale prizonierilor impreuna cu sigiliul imperial!"
 
 "Desigur!"
 
-"Excelent! Dumneavoastra o sa va cazati in camera #331, prizonierii vor fi tinuti in celula #841."
+"Excelent! Dumneavoastra o sa va cazati in camera #331, prizonierii vor fi tinuti trei in celula #841, si restul in #1110."
 
 "Minunat! O zi buna!"
 
-"Nero, atat pe ziua de azi - inchide usa ... ia zi-mi, esti ok?"
+"Nero, atat pe ziua de azi - inchide usa... "
 
-"Nu prea... Tu?"
+"Cum poti sa faci asta, zi de zi??"
 
-"Daca scapa... e mult mai rau..."
+"Te obisnuiesti dupa un timp"
 
-"Ce faci cu capitanul?"
+"Sute de oameni..."
 
-"Dimineata ii vei spune ca prizonierii au scapat in toiul noptii - iti pregatesc actele ca sa le ai gata maine."
+"Daca pleaca... vor fi milioane..."
+
+"... ce facem cu capitanul?"
+
+"Dimineata ii vei spune ca prizonierii din Camera, au scapat in toiul noptii - iti pregatesc actele ca sa le ai gata maine."
 
 "Ok - pe maine atunci!"
 
