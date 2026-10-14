@@ -22,94 +22,61 @@ Mai sunt două ore până la răsărit, poate apuc să mai dorm. Îmi aprind o �
 
 Adorm în fund lângă consolă.
 
--- Bună dimineața, Adi
-
--- Hei tu...
-
--- Care e starea echipamentelor?
-
--- Echipamentele sunt ok, eu în schimb era să mor azi noapte.
-
--- De dorul meu?
-
--- Ești foarte amuzantă. Am avut o breșă în modul și a trebuit să fac prestidigitații în miez de noapte.
-
+-- Bună dimineața, Adi\
+-- Hei tu...\
+-- Care e starea echipamentelor?\
+-- Echipamentele sunt ok, eu în schimb era să mor azi noapte.\
+-- De dorul meu?\
+-- Ești foarte amuzantă. Am avut o breșă în modul și a trebuit să fac prestidigitații în miez de noapte.\
 -- Ești ok?! Sistemele de bază sunt ok?? Trebuie să abandonăm misiunea?
 
 N-are rost s-o sperii mai mult. Are destule pe cap acolo sus.
 
--- E ok, a trecut. Hai să terminăm treaba și să ne cărăm acasă.
-
--- .. Îmi pare rău că am glumit
-
--- Stai liniștită. Am murit și de dorul tău, dar a trecut ceva timp de atunci. Zi-mi te rog la ce capacitate suntem cu nitroxul.
-
--- 90%, mai avem câteva foraje și gata.
-
+-- E ok, a trecut. Hai să terminăm treaba și să ne cărăm acasă.\
+-- .. Îmi pare rău că am glumit\
+-- Stai liniștită. Am murit și de dorul tău, dar a trecut ceva timp de atunci. Zi-mi te rog la ce capacitate suntem cu nitroxul.\
+-- 90%, mai avem câteva foraje și gata.\
 -- Bun, hai să-i dăm bice
 
 Repet rutina de două săptămâni și trimit echipamentul de extracție către ultima locație. Mă doare puțin capul dar o pun pe seama stresului de azi noapte.
 
--- Auzi, Teo
-
--- Da?
-
--- Ce ne-a lipsit?
-
--- Ți-am mai zis de X ori. Nu erai eligibil.
-
--- De ce?
-
--- ...
-
--- Serios
-
--- Te-am rugat să nu mai insiști. Oricum a fost demult
-
--- Știu, dar îmi stă pe creier. Mai ales că ne-am iubit.
-
--- Nu mai insista! Ți-am tot spus.
-
+-- Auzi, Teo\
+-- Da?\
+-- Ce ne-a lipsit?\
+-- Ți-am mai zis de X ori. Nu erai eligibil.\
+-- De ce?\
+-- ...\
+-- Serios\
+-- Te-am rugat să nu mai insiști. Oricum a fost demult\
+-- Știu, dar îmi stă pe creier. Mai ales că ne-am iubit.\
+-- Nu mai insista! Ți-am tot spus.\
 -- Bineeee...
 
 Îmi mușc limba. Dacă n-a vrut să-mi spună în douăzeci de ani, n-o să-mi spună pe o planetă uitată de lume. Separ o nouă tranșă de nitrox din echipamentul de extracție și o trimit către cargo.
 
--- Auzi
-
--- Da, Adi. Ce mai e?
-
+-- Auzi\
+-- Da, Adi. Ce mai e?\
 -- Nimic.
 
 Ajung înapoi în modul, mănânc în liniște și mă pun să citesc. Azi am chef de Crafting Interpreters.
 
--- Ce faci, Adi?
-
--- Citesc. Tu?
-
--- Eu nu. Mi-am terminat raportul. Mai avem 15 minute până la apus, vrei să ne jucăm ceva?
-
--- Te plictisești?
-
--- Da, mă gândeam să ne plictisim împreună.
-
--- Ok.. Hai să jucăm "avioanele", că tot avem linkul audio
-
+-- Ce faci, Adi?\
+-- Citesc. Tu?\
+-- Eu nu. Mi-am terminat raportul. Mai avem 15 minute până la apus, vrei să ne jucăm ceva?\
+-- Te plictisești?\
+-- Da, mă gândeam să ne plictisim împreună.\
+-- Ok.. Hai să jucăm "avioanele", că tot avem linkul audio\
 -- Hai
 
 Desenez rapid careurile pe tabletă, plasez navele și zic "Gata"
 
--- A3
-
--- Lovit. D1
-
--- Aer. ... Tot acolo le pui. Ca la...
-
--- Ca la ce?
-
+-- A3\
+-- Lovit. D1\
+-- Aer. ... Tot acolo le pui. Ca la...\
+-- Ca la ce?\
 -- Nimic. B7
 
 Am continuat să jucăm până când linkul audio a început să se piardă.
 
--- Noapte bună, Adi
-
+-- Noapte bună, Adi\
 -- Noapte bună Echo 0
