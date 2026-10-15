@@ -290,6 +290,7 @@ blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--
 .story-row .by { margin: 0; color: var(--muted); font-family: var(--font-head); font-size: .9rem; line-height: 1.5; }
 .story-row .by a { color: inherit; }
 .story-row .latest a { color: var(--fg); }
+.story-row .by .num { color: var(--fg); }
 /* Home page groups (Stories, Challenges, Demo content): each is its own bordered block with a tinted header
    (outline icon, title, count, chevron); the entries inside are flat rows separated by hairlines. */
 .panel { margin-top: 1.75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); overflow: hidden; }
@@ -539,11 +540,14 @@ html.has-readbar { font-size: calc(100% + var(--font-delta, 0px)); }
 .readbar-drop button:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
 .readbar-drop button:disabled { color: var(--muted); opacity: .5; cursor: default; }
 
-/* Home page: the Nuvele (stories) panel's white text (header, story titles, latest chapter) is light orange, to tell it
-   apart from Exerciții. Lines and backgrounds are unchanged. */
+/* Home page: the white text of the Nuvele panel (header, story titles, latest chapter) is light orange and that of
+   the Conținut demo panel light blue, to tell the panels apart from Exerciții. Lines and backgrounds are unchanged. */
 .panel-stories { --text-c: #f0b27a; }
-.panel-stories > summary,
-.panel-stories .story-row > .title,
-.panel-stories .story-row .latest a { color: var(--text-c); }
+.panel-demo { --text-c: #8ec5f0; }
+.panel-stories > summary, .panel-demo > summary,
+.panel-stories .story-row > .title, .panel-demo .story-row > .title,
+.panel-stories .story-row .latest a, .panel-demo .story-row .latest a { color: var(--text-c); }
 .panel-stories > summary:hover, .panel-stories > summary:focus-visible,
-.panel-stories .story-row > .title:hover, .panel-stories .story-row > .title:focus-visible { color: var(--accent); }
+.panel-demo > summary:hover, .panel-demo > summary:focus-visible,
+.panel-stories .story-row > .title:hover, .panel-stories .story-row > .title:focus-visible,
+.panel-demo .story-row > .title:hover, .panel-demo .story-row > .title:focus-visible { color: var(--accent); }

@@ -1,5 +1,8 @@
 <li class="story-row">
   <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
   {{ with .Content | plainify | truncate 160 }}<p class="by">{{ . }}</p>{{ end }}
-  <p class="by">{{ with len .RegularPages }}{{ . }} {{ if eq . 1 }}contribuție{{ else if or (lt (mod . 100) 1) (gt (mod . 100) 19) }}de contribuții{{ else }}contribuții{{ end }}{{ else }}Nicio contribuție încă{{ end }}</p>
+  <p class="by">{{ with len .RegularPages }}<span class="num">{{ . }}</span> {{ if eq . 1 }}contribuție{{ else if or (lt (mod . 100) 1) (gt (mod . 100) 19) }}de contribuții{{ else }}contribuții{{ end }}{{ else }}Nicio contribuție încă{{ end }}
+  {{- /* Latest = the most recently committed contribution (page .Lastmod, from git). */ -}}
+  {{- with .RegularPages.ByLastmod.Reverse }}{{ with index . 0 }}<span class="sep" aria-hidden="true"> · </span><span class="latest">Ultima contribuție: <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>{{ end }}{{ end -}}
+  </p>
 </li>

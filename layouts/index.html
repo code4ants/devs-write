@@ -29,7 +29,7 @@
 </details>
 
 {{ if $all.demo }}
-<details class="panel">
+<details class="panel panel-demo">
   <summary><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg><span class="label">Conținut demo</span><span class="count">{{ len $all.demo }}</span></summary>
   <ul class="story-list">
     {{ range sort $all.demo "Title" }}{{ partial "story-row.html" . }}{{ end }}
