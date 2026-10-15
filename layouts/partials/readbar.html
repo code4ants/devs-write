@@ -1,8 +1,8 @@
 {{- /* Sticky reading bar for chapter and contribution pages: current title on the left, a hamburger menu on the right
-       with "+ Font" / "- Font". The font delta lives in localStorage (assets/js/readbar.js). The inline script applies
-       the stored delta before the content is painted, so a refresh does not flash at the default size. */ -}}
+       with "+ Font" / "- Font" / "+ Margin" / "- Margin". Both deltas live in localStorage (assets/js/readbar.js). The
+       inline script applies them before the content is painted, so a refresh does not flash at the default look. */ -}}
 <div class="readbar" id="readbar">
-  <script>try{var d=parseInt(localStorage.getItem("dw:font-delta"),10);if(d)document.documentElement.style.setProperty("--font-delta",d+"px");document.documentElement.classList.add("has-readbar")}catch(e){document.documentElement.classList.add("has-readbar")}</script>
+  <script>var r=document.documentElement;r.classList.add("has-readbar");try{[["font",-4,12],["margin",-18,36]].forEach(function(k){var d=parseInt(localStorage.getItem("dw:"+k[0]+"-delta"),10);if(d)r.style.setProperty("--"+k[0]+"-delta",Math.max(k[1],Math.min(k[2],d))+"px")})}catch(e){}</script>
   <span class="readbar-title">{{ .Title }}</span>
   <div class="readbar-menu">
     <button type="button" class="readbar-btn" aria-label="Meniu" aria-haspopup="true" aria-expanded="false" aria-controls="readbar-drop">
@@ -11,6 +11,8 @@
     <div class="readbar-drop" id="readbar-drop" role="menu" hidden>
       <button type="button" role="menuitem" data-font="1">+ Font</button>
       <button type="button" role="menuitem" data-font="-1">- Font</button>
+      <button type="button" role="menuitem" data-margin="1">+ Margin</button>
+      <button type="button" role="menuitem" data-margin="-1">- Margin</button>
     </div>
   </div>
 </div>

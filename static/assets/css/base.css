@@ -500,6 +500,10 @@ html.bio-open { overflow: hidden; }
    localStorage) is added to the root font size, so everything set in rem/em grows with it. The bar itself is set
    in px so it stays put while the text changes size. Themes restyle the colours and rules. */
 html.has-readbar { font-size: calc(100% + var(--font-delta, 0px)); }
+/* Side margins: --margin-delta (px) is added to the page gutter and, on wide screens, narrows (or widens, when
+   negative) the text column by the same amount on both sides. Only the page content moves, not the header or bar. */
+.has-readbar .wrap { --gutter: max(calc(20px + var(--margin-delta, 0px)), env(safe-area-inset-left), env(safe-area-inset-right)); }
+.has-readbar .chapter { max-width: calc(var(--measure) - 2 * var(--margin-delta, 0px)); }
 .readbar {
   position: sticky;
   top: 0;
@@ -526,11 +530,13 @@ html.has-readbar { font-size: calc(100% + var(--font-delta, 0px)); }
 .readbar-btn:hover, .readbar-btn[aria-expanded="true"] { background: color-mix(in srgb, var(--accent) 14%, transparent); }
 .readbar-btn:focus-visible, .readbar-drop button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .readbar-drop {
-  position: absolute; top: calc(100% + 4px); right: -10px; min-width: 150px; padding: 4px;
+  position: absolute; top: calc(100% + 4px); right: -10px; width: max-content; padding: 4px;
+  display: grid; grid-template-columns: 1fr 1fr;
   background: var(--card); border: 1px solid var(--accent); border-radius: var(--radius);
   box-shadow: 0 10px 28px rgba(0, 0, 0, .55);
 }
 .readbar-drop[hidden] { display: none; }
+.readbar-drop button { white-space: nowrap; }
 .readbar-drop button {
   display: block; width: 100%; min-height: 44px; padding: 0 16px; text-align: left;
   font: 600 15px/1 var(--font-head); color: var(--fg); cursor: pointer;

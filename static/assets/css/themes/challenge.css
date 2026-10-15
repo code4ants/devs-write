@@ -20,7 +20,7 @@ html:has(.theme-challenge) { background: #15181e; }
 .theme-challenge .site-header { background: var(--card); }
 .theme-challenge h1 { font-weight: 600; letter-spacing: -.015em; }
 .theme-challenge h2 { font-weight: 600; }
-.theme-challenge .prose { max-width: 38rem; }
+.theme-challenge .prose { max-width: calc(38rem - 2 * var(--margin-delta, 0px)); }
 .theme-challenge .prose p { margin-bottom: 1.2em; }
 .theme-challenge .meta { font-family: var(--font-body); }
 .theme-challenge .chapter-nav a { background: var(--card); }
