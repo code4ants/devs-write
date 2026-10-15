@@ -7,6 +7,7 @@
   <header class="site-header">
     <a class="site-title" href="{{ "/" | relURL }}">{{ partial "header-title.html" . }}</a>
   </header>
+  {{ block "readbar" . }}{{ end }}
   <main class="wrap">
     {{ block "main" . }}{{ end }}
   </main>

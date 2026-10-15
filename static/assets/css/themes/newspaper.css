@@ -115,3 +115,8 @@ html:has(.theme-newspaper) { background: #141414; }
   border-left: 1px solid var(--border);
 }
 .theme-newspaper .prose p.dlg .dash { font-family: var(--font-head); font-weight: 900; font-size: 1.1em; line-height: 1.4; }
+
+/* Reading bar: a running head, small caps over a double rule. */
+.theme-newspaper .readbar { border-bottom: 4px double var(--border); text-transform: uppercase; letter-spacing: .1em; font-size: 13px; font-family: var(--font-head); font-weight: 700; }
+.theme-newspaper .readbar-drop { border-width: 1px; }
+.theme-newspaper .readbar-drop button { text-transform: uppercase; letter-spacing: .08em; font-size: 13px; }

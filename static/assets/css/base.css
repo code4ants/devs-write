@@ -493,3 +493,57 @@ html.bio-open { overflow: hidden; }
 .home .panel > summary::after { border-width: 0 2px 2px 0; }
 .home .panel .story-row { border-left: 0; }
 .home .panel .story-row:hover, .home .panel .story-row:focus-within { box-shadow: inset 3px 0 0 var(--accent); }
+
+/* Reading bar (chapters and contributions): sticks to the top while the page scrolls. Title on the left, a
+   hamburger menu on the right with "+ Font" / "- Font". The reader's font delta (assets/js/readbar.js, kept in
+   localStorage) is added to the root font size, so everything set in rem/em grows with it. The bar itself is set
+   in px so it stays put while the text changes size. Themes restyle the colours and rules. */
+html.has-readbar { font-size: calc(100% + var(--font-delta, 0px)); }
+.readbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 0 var(--gutter);
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  font: 600 15px/1.3 var(--font-head);
+  color: var(--fg);
+}
+.readbar-title { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.readbar-menu { position: relative; flex: none; }
+.readbar-btn {
+  display: grid; place-items: center; width: 44px; height: 44px; margin-right: -10px; padding: 0;
+  color: var(--accent); cursor: pointer; background: none; border: 1px solid transparent; border-radius: var(--radius);
+  -webkit-tap-highlight-color: transparent;
+}
+.readbar-btn svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.readbar-btn:hover, .readbar-btn[aria-expanded="true"] { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.readbar-btn:focus-visible, .readbar-drop button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.readbar-drop {
+  position: absolute; top: calc(100% + 4px); right: -10px; min-width: 150px; padding: 4px;
+  background: var(--card); border: 1px solid var(--accent); border-radius: var(--radius);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .55);
+}
+.readbar-drop[hidden] { display: none; }
+.readbar-drop button {
+  display: block; width: 100%; min-height: 44px; padding: 0 16px; text-align: left;
+  font: 600 15px/1 var(--font-head); color: var(--fg); cursor: pointer;
+  background: none; border: 0; border-radius: calc(var(--radius) - 1px);
+  -webkit-tap-highlight-color: transparent;
+}
+.readbar-drop button:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
+.readbar-drop button:disabled { color: var(--muted); opacity: .5; cursor: default; }
+
+/* Home page: the Nuvele (stories) panel's white text (header, story titles, latest chapter) is light orange, to tell it
+   apart from Exerciții. Lines and backgrounds are unchanged. */
+.panel-stories { --text-c: #f0b27a; }
+.panel-stories > summary,
+.panel-stories .story-row > .title,
+.panel-stories .story-row .latest a { color: var(--text-c); }
+.panel-stories > summary:hover, .panel-stories > summary:focus-visible,
+.panel-stories .story-row > .title:hover, .panel-stories .story-row > .title:focus-visible { color: var(--accent); }

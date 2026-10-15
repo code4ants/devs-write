@@ -6,7 +6,7 @@
 {{ $challenges := slice }}
 {{ with site.GetPage "/challenges" }}{{ $challenges = .Sections }}{{ end }}
 
-<details class="panel" open>
+<details class="panel panel-stories" open>
   <summary><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5C10.5 5 8 4.5 4 4.5v14c4 0 6.5.5 8 2 1.5-1.5 4-2 8-2v-14c-4 0-6.5.5-8 2zM12 6.5v14"/></svg><span class="label">Nuvele</span><span class="count">{{ len $all.stories }}</span></summary>
   {{ if $all.stories }}
   <ul class="story-list">

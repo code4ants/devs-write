@@ -56,3 +56,7 @@ html:has(.theme-challenge) { background: #15181e; }
   border-radius: 0 var(--radius) var(--radius) 0;
   background: color-mix(in srgb, var(--accent) 8%, var(--bg));
 }
+
+/* Reading bar: a calm slate bar with a soft violet rule. */
+.theme-challenge .readbar { font-family: var(--font-body); font-weight: 700; border-bottom-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
+.theme-challenge .readbar-drop button { font-family: var(--font-body); font-weight: 700; }

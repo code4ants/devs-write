@@ -104,3 +104,8 @@ html:has(.theme-fantasy) { background: #15110c; }
   background: linear-gradient(to right, rgba(217, 164, 65, .09), transparent 75%);
 }
 .theme-fantasy .prose p.dlg .dash { font-family: var(--font-head); text-shadow: 0 0 8px rgba(217, 164, 65, .5); }
+
+/* Reading bar: gilded Cinzel title between double rules. */
+.theme-fantasy .readbar { border-bottom: 3px double var(--border); letter-spacing: .08em; background: #1a140e; }
+.theme-fantasy .readbar-drop { border: 3px double var(--accent); }
+.theme-fantasy .readbar-drop button { letter-spacing: .1em; text-transform: uppercase; }

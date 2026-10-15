@@ -1,0 +1,17 @@
+{{- /* Sticky reading bar for chapter and contribution pages: current title on the left, a hamburger menu on the right
+       with "+ Font" / "- Font". The font delta lives in localStorage (assets/js/readbar.js). The inline script applies
+       the stored delta before the content is painted, so a refresh does not flash at the default size. */ -}}
+<div class="readbar" id="readbar">
+  <script>try{var d=parseInt(localStorage.getItem("dw:font-delta"),10);if(d)document.documentElement.style.setProperty("--font-delta",d+"px");document.documentElement.classList.add("has-readbar")}catch(e){document.documentElement.classList.add("has-readbar")}</script>
+  <span class="readbar-title">{{ .Title }}</span>
+  <div class="readbar-menu">
+    <button type="button" class="readbar-btn" aria-label="Meniu" aria-haspopup="true" aria-expanded="false" aria-controls="readbar-drop">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <div class="readbar-drop" id="readbar-drop" role="menu" hidden>
+      <button type="button" role="menuitem" data-font="1">+ Font</button>
+      <button type="button" role="menuitem" data-font="-1">- Font</button>
+    </div>
+  </div>
+</div>
+<script src="{{ "assets/js/readbar.js" | relURL }}?v={{ readFile "static/assets/js/readbar.js" | md5 | truncate 8 "" }}" defer></script>

@@ -108,3 +108,9 @@ html:has(.theme-sf) { background: #090d16; }
 }
 .theme-sf .prose p.dlg .dash { font-size: 0; text-shadow: 0 0 8px rgba(25, 227, 209, .7); } /* the dash is hidden, ">" drawn instead */
 .theme-sf .prose p.dlg .dash::after { content: ">"; font-size: 1rem; }
+
+/* Reading bar: a console status line, `// title`, with a glowing rule. */
+.theme-sf .readbar { text-transform: uppercase; letter-spacing: .08em; font-size: 13px; border-bottom-color: var(--accent); box-shadow: 0 1px 14px rgba(25, 227, 209, .18); }
+.theme-sf .readbar-title::before { content: "// "; color: var(--accent); }
+.theme-sf .readbar-drop { box-shadow: 0 0 16px rgba(25, 227, 209, .25); }
+.theme-sf .readbar-drop button { text-transform: uppercase; letter-spacing: .08em; font-size: 13px; }
