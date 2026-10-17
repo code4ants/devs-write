@@ -1,9 +1,9 @@
-{{- /* Sticky reading bar for chapter and contribution pages: current title on the left, a hamburger menu on the right
+{{- /* Sticky reading bar for chapter and contribution pages: current title on the left (a link to the story or challenge), a hamburger menu on the right
        with "+ Font" / "- Font" / "+ Margin" / "- Margin". Both deltas live in localStorage (assets/js/readbar.js). The
        inline script applies them before the content is painted, so a refresh does not flash at the default look. */ -}}
 <div class="readbar" id="readbar">
   <script>var r=document.documentElement;r.classList.add("has-readbar");try{[["font",-4,12],["margin",-18,36]].forEach(function(k){var d=parseInt(localStorage.getItem("dw:"+k[0]+"-delta"),10);if(d)r.style.setProperty("--"+k[0]+"-delta",Math.max(k[1],Math.min(k[2],d))+"px")})}catch(e){}</script>
-  <span class="readbar-title">{{ .Title }}</span>
+  <a class="readbar-title" href="{{ .Parent.RelPermalink }}" title="{{ .Parent.Title }}">{{ .Title }}</a>
   <div class="readbar-menu">
     <button type="button" class="readbar-btn" aria-label="Meniu" aria-haspopup="true" aria-expanded="false" aria-controls="readbar-drop">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
