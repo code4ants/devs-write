@@ -1,0 +1,315 @@
+
+/* Newspaper, autumn: warm parchment, chestnut ink, and fall foliage. */
+.theme-autumn {
+  --bg: #A5AA78;
+  --fg: #3F3025;
+  --muted: #5F6248;
+  --accent: #A65332;
+  --card: #929766;
+  --border: #7E8458;
+
+  --font-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --font-head: "Barlow", "Segoe UI", system-ui, sans-serif;
+
+  --radius: 0;
+
+  /* Autumn callout inks */
+  --c-red: #A65332;
+  --c-green: #596747;
+  --c-blue: #657D78;
+
+  color: var(--fg);
+  background: var(--bg);
+  font-family: var(--font-body);
+  font-size: clamp(1.06rem, 1rem + .3vw, 1.125rem);
+  line-height: 1.8;
+}
+
+html:has(.theme-autumn) {
+  background: #A5AA78;
+  color: #3F3025;
+}
+
+.theme-autumn .site-header {
+  text-align: center;
+  border-bottom: 4px double var(--border);
+  padding-block: 1rem;
+}
+
+.theme-autumn .site-title {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: clamp(1.4rem, 1rem + 2vw, 2.1rem);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--fg);
+}
+
+.theme-autumn h1 {
+  font-family: var(--font-head);
+  font-weight: 900;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.theme-autumn h2,
+.theme-autumn h3,
+.theme-autumn h4 {
+  font-family: var(--font-head);
+  color: var(--fg);
+}
+
+.theme-autumn .meta {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .78rem;
+}
+
+.theme-autumn .chapter-nav a {
+  border-width: 1px 0;
+  color: var(--accent);
+}
+
+.theme-autumn .chapter .prose > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-head);
+  font-size: 3.2em;
+  line-height: .8;
+  padding-right: .08em;
+  color: var(--accent);
+}
+
+/* Scene break: antique ink and a classic printer's ornament. */
+.theme-autumn .prose hr {
+  --hr-mark: "\2042";
+  --hr-c: var(--accent);
+  height: 2rem;
+  margin: 2.5rem 0;
+  background:
+    linear-gradient(var(--hr-c), var(--hr-c))
+      center calc(50% - 3px) / 100% 3px no-repeat,
+    linear-gradient(var(--hr-c), var(--hr-c))
+      center calc(50% + 3px) / 100% 1px no-repeat;
+}
+
+.theme-autumn .prose hr::before {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0 .9rem;
+  color: var(--accent);
+}
+
+/* Terminal: vintage typewriter on deep walnut. */
+.theme-autumn .terminal {
+  --t-fg: #F3E8D2;
+  --t-bg: #35251D;
+  --t-bar: #493326;
+  --t-edge: #82664E;
+
+  border-width: 1px 0;
+  border-top: 3px solid var(--accent);
+  font-family: "Courier New", Courier, monospace;
+  color: var(--t-fg);
+  background: var(--t-bg);
+}
+
+.theme-autumn .terminal pre {
+  font-size: .92rem;
+  letter-spacing: .02em;
+}
+
+/* Callout: a warm editorial pull quote. */
+.theme-autumn .callout {
+  border: 0;
+  border-top: 3px solid var(--c);
+  border-bottom: 1px solid var(--c);
+  font-family: var(--font-body);
+  font-size: 1.08em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  padding: .9rem 1.1rem;
+  background: #EADBC0;
+  color: var(--fg);
+}
+
+/* Chat: a printed transcript on parchment. */
+.theme-autumn .chat {
+  --k-bg: transparent;
+  --k-edge: #C8AD88;
+  --k-r: 0;
+
+  border-width: 3px 0;
+  border-style: double;
+  font-size: 1.02rem;
+  color: var(--fg);
+}
+
+.theme-autumn .chat .bar {
+  padding-inline: .25rem;
+  background: none;
+  color: var(--accent);
+  font-family: var(--font-head);
+  font-size: .85rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.theme-autumn .chat .log {
+  padding-inline: .25rem;
+}
+
+.theme-autumn .chat .who {
+  font-variant: small-caps;
+  font-size: .9rem;
+  letter-spacing: .08em;
+  font-weight: 900;
+  color: var(--accent);
+}
+
+.theme-autumn .chat .who::after {
+  content: ":";
+}
+
+.theme-autumn .chat .bubble {
+  border: 0;
+  border-top: 1px solid
+    color-mix(in srgb, var(--pc) 70%, transparent);
+  background: color-mix(in srgb, #B85C38 7%, transparent);
+  padding: .5rem .8rem .55rem;
+  color: var(--fg);
+}
+
+.theme-autumn .chat .right .bubble {
+  border-top-width: 3px;
+  background: color-mix(in srgb, #68794D 10%, transparent);
+}
+
+.theme-autumn .chat .p0 {
+  --pc: var(--accent);
+}
+
+/* Map: a vintage printed plate. */
+.theme-autumn .map-btn {
+  border-width: 1px 0;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: none;
+  color: var(--accent);
+}
+
+.theme-autumn .map-dialog {
+  background: var(--bg);
+  color: var(--fg);
+  border: 0;
+  outline: 1px solid var(--border);
+  outline-offset: -8px;
+  border-top: 4px double var(--accent);
+  border-bottom: 4px double var(--accent);
+}
+
+.theme-autumn .map-img {
+  filter: sepia(.3) saturate(.8) contrast(1.05);
+}
+
+.theme-autumn .map-path .line {
+  stroke: var(--accent);
+}
+
+/* Bio: classic dramatis personae. */
+.theme-autumn .bio-btn {
+  border-radius: 0;
+  border-width: 1px 0;
+  background: none;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  padding-inline: .4rem;
+}
+
+.theme-autumn .bio-dialog {
+  background: var(--bg);
+  color: var(--fg);
+  border: 0;
+  border-top: 4px double var(--accent);
+  border-bottom: 4px double var(--accent);
+}
+
+.theme-autumn .bio-head {
+  border-bottom: 1px solid var(--border);
+}
+
+.theme-autumn .bio-head h2 {
+  font-family: var(--font-head);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--fg);
+}
+
+.theme-autumn .bio-mark {
+  border-radius: 0;
+  background: var(--accent);
+  color: #FFF3DF;
+  font-family: var(--font-head);
+  font-weight: 900;
+  border: 0;
+}
+
+.theme-autumn .bio-card h3 {
+  font-family: var(--font-head);
+  font-weight: 900;
+  color: var(--fg);
+}
+
+.theme-autumn .bio-role {
+  color: var(--muted);
+}
+
+/* Dialogue: a warm, inked interview transcript. */
+.theme-autumn .prose p.dlg {
+  --dlg-c: var(--fg);
+  --dlg-w: 1.4em;
+
+  margin-bottom: .65em;
+  padding: .05em 0 .05em calc(var(--dlg-w) + .5rem);
+  border-left: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.theme-autumn .prose p.dlg .dash {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: 1.1em;
+  line-height: 1.4;
+  color: var(--accent);
+}
+
+/* Reading bar: warm ink, small caps, and antique rules. */
+.theme-autumn .readbar {
+  border-bottom: 4px double var(--border);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 13px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.theme-autumn .readbar-drop {
+  border-width: 1px;
+  border-color: var(--border);
+}
+
+.theme-autumn .readbar-drop button {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 13px;
+  color: var(--accent);
+}
+
