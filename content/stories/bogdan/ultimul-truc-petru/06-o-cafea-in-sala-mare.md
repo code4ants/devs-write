@@ -36,7 +36,7 @@ Zona întunecată de la intrare lăsă loc rapid unor camere și pasaje luminate
 
 -- Arată, într-adevăr, foarte bine. Chiar mă gândeam că nu l-am văzut niciodată așa, în nicio poză și nici când l-am vizitat, acum probabil vreo 10 ani.
 
--- Exact - *spuse Diavolul cu satisfactie* - Mie îmi place să vizitez castelele atunci când au fost ele construite și locuite pentru măcar 2-3 ani. Este ceva special în modul în care oamenii schimbă interiorul unei clădiri, mai ales atunci când...
+-- Exact - *spuse Diavolul cu satisfacție* - Mie îmi place să vizitez castelele atunci când au fost ele construite și numai după ce au fost locuite pentru măcar 2-3 ani. Este ceva special în modul în care oamenii schimbă interiorul unei clădiri, mai ales atunci când...
 
 Petru lăsă glasul Diavolului undeva în fundal, și își trecu atenția asupra unui punct care pentru el era esențial pentru ce urma să se întâmple. Planul pe care și-l făcuse pentru acest final. Nu știa ce urmează, cum se vor întampla lucrurile, iar planul era singurul punct de care se agăța în acest moment cu toată disperarea gândurilor sale. Picioarele îl împingeau înainte, făcându-l să îl urmeze pe Diavol pe culoarele întortocheate ale castelului. Mâinile însă îi erau libere. Deschise ușor palma dreaptă și aruncă o privire la ea. Pentru o fracțiune de secundă o mingiuță mică și roșie îi apăru în palmă și dispăru imediat după aceea. Petru zâmbi impercetibil și neliniștea din suflet i se mai atenuă puțin.
 
@@ -54,13 +54,13 @@ Evident, se așteptase să îl găsească și pe Cosaș la această ceremonie - 
 
 Diavolul bătu din palme cu voiciune:
 
--- Petru, da-mi voie să te servesc cu o cafea deosebită! O putem savura cât o să ne zici cum au fost acești doi ani pentru tine.
+-- Petru, dă-mi voie să te servesc cu o cafea deosebită! O putem savura cât o să ne zici cum au fost acești doi ani pentru tine.
 
 O ușă laterală se deschise și o domnișoară foarte sexi îmbrăcată intră aducând 3 cești negre de cafea și mai multe gustări, pe o tavă generoasă. Într-un recipient de pe tavă o grămăjoară considerabilă de boabe de cafea completa vizual oferta de pe masă.
 
--- Asta, Petru, este cea mai bună cafea din lume! Ia o gură și spune-mi cum ți se pare. Am obținut boabele astea de la ultimul membru al familiei Rodriguez, din sudul Boliviei. Evident, ca să mă asigure că această recoltă este ultima și nu va mai putea fi reprodusă vreodata, acest sărman a trebuit să își omoare întreaga familie și pe toți care ar fi putut prelua afacerea familiei. Foarte tragic, îți dai seama!
+-- Asta, Petru, este cea mai bună cafea din lume! Ia o gură și spune-mi cum ți se pare. Am obținut boabele astea de la ultimul membru al fa miliei Rodriguez, din sudul Boliviei. Evident, ca să mă asigure că recolta pe care mi-o aduce ofrandă este ultima de tipul ei, și nu va mai putea fi reprodusă vreodata, acest sărman a trebuit să își omoare întreaga familie și pe toți care ar fi putut prelua afacerea familiei. Foarte tragic, îți dai seama!
 
-Diavolul râdea de unul singur, foarte satisfăcut. Cosașul nu se mișcase deloc de cand Petru intrase în Sala Mare a castelului. Cafeaua din fața sa era neatinsă și, cel mai probabil, așa urma să ramână.
+Diavolul râdea de unul singur, foarte satisfăcut. Cosașul nu se mișcase deloc de când Petru intrase în Sala Mare a castelului. Cafeaua din fața sa era neatinsă și, cel mai probabil, așa urma să ramână.
 
 Petru se uita lung după domnișoara care adusese tava pe masa din centrul sălii. Semăna izbitor de mult cu Maria. Nu o mai văzuse de peste 3 ani, dar chipul ei îi era întipărit pe veci în minte. Nu era Maria, clar, dar semăna suficient de mult încât să îi răscolească sentimentele și să îi aducă la suprafață diferite amintiri.
 
