@@ -6,5 +6,5 @@
 
 ## Checklist
 - [ ] I only changed files in my own `content/<me>/` folder (unless this is a site-code change)
-- [ ] The story `theme` is one of `fantasy`, `sf`, `newspaper`, `dusty`
+- [ ] The story `theme` is one of `fantasy`, `sf`, `newspaper`, `dusty`, `autumn`
 - [ ] CI is green

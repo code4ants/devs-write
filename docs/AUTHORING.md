@@ -24,7 +24,7 @@ Create `content/stories/<you>/<story-slug>/_index.md`:
 ```markdown
 ---
 title: The Last Ember
-theme: fantasy        # fantasy | sf | newspaper | dusty
+theme: fantasy        # fantasy | sf | newspaper | dusty | autumn
 summary: One or two sentences shown on the home page.
 ---
 Optional intro text shown above the chapter list.
@@ -68,7 +68,7 @@ A paragraph that starts with `--` is a line of dialogue. The site turns the `--`
 -- Echo 0, this is Echo 1.
 ```
 
-Write the `--` and a space at the very start of the paragraph, one speaker line per paragraph. Each theme styles it its own way: a gilded double rule (fantasy), a glowing `>` prompt (sf), a hairline column rule with a heavy serif dash (newspaper), a thick rust bar like a stencilled edge (dusty) and a soft violet bar (challenges). Quoted dialogue (`"..."`) is plain text and is not styled.
+Write the `--` and a space at the very start of the paragraph, one speaker line per paragraph. Each theme styles it its own way: a gilded double rule (fantasy), a glowing `>` prompt (sf), a hairline column rule with a heavy serif dash (newspaper), a thick rust bar like a stencilled edge (dusty), a hairline rule with a chestnut dash like an inked interview (autumn) and a soft violet bar (challenges). Quoted dialogue (`"..."`) is plain text and is not styled.
 
 ## Scene breaks
 
@@ -82,7 +82,7 @@ End of the first scene.
 Start of the next one.
 ```
 
-Each theme draws the break in its own style and palette: a gilded flourish (fantasy), a glowing dashed signal line (sf), a column rule with an asterism (newspaper) and hazard tape with a stencilled plate (dusty).
+Each theme draws the break in its own style and palette: a gilded flourish (fantasy), a glowing dashed signal line (sf), a column rule with an asterism (newspaper), hazard tape with a stencilled plate (dusty) and a double chestnut rule with a printer's ornament (autumn).
 
 ## Terminal blocks
 
@@ -95,7 +95,7 @@ reply from relay-9: time=-2ms
 ~~~
 ```
 
-It renders as a console window in the story's theme. To give the window a title, add it on the opening fence: `~~~terminal {title="relay-9 shell"}`. The title is optional; without one, dusty shows its default unit label and the other themes show plain window chrome. There is a single color per theme and no color options. Long lines wrap, so it stays readable on phones.
+It renders as a console window in the story's theme. To give the window a title, add it on the opening fence: `~~~terminal {title="relay-9 shell"}`. The title is optional; without one, dusty shows its default unit label and the other themes (autumn included, a typewriter-style window on dark walnut) show plain window chrome. There is a single color per theme and no color options. Long lines wrap, so it stays readable on phones.
 
 ## Chat blocks
 
@@ -109,9 +109,9 @@ Relay-9 | right | Again.
 ~~~
 ```
 
-To give the window a title, add it on the opening fence: `~~~chat {title="Night watch"}`. The title is optional. Without one, sf and dusty show a default header ("Comms // channel encrypted", "Relay 03"), fantasy shows a single ornament, and newspaper shows none.
+To give the window a title, add it on the opening fence: `~~~chat {title="Night watch"}`. The title is optional. Without one, sf and dusty show a default header ("Comms // channel encrypted", "Relay 03"), fantasy shows a single ornament, and newspaper and autumn show none.
 
-Each distinct name gets its own tint (up to four before colors repeat), taken from the theme's palette. Consecutive messages from the same person are grouped and show the name once. The message is plain text (no Markdown) and can contain `|`. A malformed line fails the build with the offending text. Each theme restyles the block: a comms feed (sf), a radio relay (dusty), a printed transcript (newspaper) and illuminated scrolls (fantasy).
+Each distinct name gets its own tint (up to four before colors repeat), taken from the theme's palette. Consecutive messages from the same person are grouped and show the name once. The message is plain text (no Markdown) and can contain `|`. A malformed line fails the build with the offending text. Each theme restyles the block: a comms feed (sf), a radio relay (dusty), a printed transcript (newspaper), a transcript on parchment between double rules (autumn) and illuminated scrolls (fantasy).
 
 ## Story maps
 
