@@ -1,4 +1,4 @@
 ---
-title: Povestire horror cu zombi, doar în dialog
+title: Schiță horror cu zombi, doar cu dialog
 ---
-Scrie o povestire scurtă cu 2 sau mai multe personaje, formată doar din dialog, cu o puternică tentă horror, într-un univers populat de oameni și zombi.
+Adaugă o contribuție (schiță) cu 2 sau mai multe personaje, formată doar din dialog și cu o puternică tentă horror, într-un univers populat de oameni și zombi.
