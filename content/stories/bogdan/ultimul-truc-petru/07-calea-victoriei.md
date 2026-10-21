@@ -2,7 +2,7 @@
 title: Calea Victoriei
 ---
 
-Petru nu se afla nicăieri. Exista și nu exista. Simțea că plutea undeva într-un mediu alb, fără nimic în jur. Plutea și atât. Își aducea aminte chiar și ultimele momente din sala aceea blestemată a castelului, dar nimic după. Se trezise direct în acest mediu, plutind și practic nesimțind nimic. Nu îi era frig, nu adia vântul, nu era nimeni cu el sau în jurul lui.
+Petru nu se afla nicăieri. Exista și nu exista. Simțea că plutea undeva într-un mediu alb, fără nimic în jur. Plutea și atât. Își aducea aminte chiar și ultimele momente din sala aceea blestemată a castelului, dar nimic după. Se trezise direct în această ceață lăptoasă, plutind și practic nesimțind nimic. Nu îi era frig, nu adia vântul, nu era nimeni cu el sau în jurul lui.
 
 Dar totuși ceva simțea. Având doar alb în jur și niciun punct de reper, era mai greu de verificat senzația, însă era destul de sigur că totuși cobora. Nu chiar cădere liberă, nu era o viteză mare, era slab perceptibilă, dar era convins de acest lucru. Curând senzația îi fu confirmată și vizual. Detalii macro ale unui oraș de dimensiuni mari incepură să apară sub el. Întâi doar forma imensă, aproape rotundă, pe urmă diferite grupuri mari de clădiri, apoi vîrfurile clădirilor foarte înalte. Nu dură mult ca Petru să realizeze că sub el era Bucureștiul, iar el cobora încet spre mijlocul Căii Victoria.
 
