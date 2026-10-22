@@ -159,9 +159,3 @@ Asteptam cateva minute in liniste completa, tinandu-ne strans de mana. Ii simtea
 -- Crezi ca treaba asta cu oameni disparuti, indivizii imbracati in negru, copacii falsi, trape in sol, etc... Crezi ca functiona si pe vremuri?
 
 -- Nu stiu... Cam multe coincidente...
-
-
-
-
-
-
