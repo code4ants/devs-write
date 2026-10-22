@@ -35,19 +35,19 @@ Trebuie sa fi trecut cateva luni de la evenimentul cu subiectii #459 cand primes
 
 ~~~chat {title="COM_CHANNEL_8"}
 X3_HQ | left | MOST WANTED
-Z7_GRND | right | Detalii  
+Z7_HQ | right | Detalii  
 X3_HQ | left | Subiectul #13 a fost gasit
-Z7_GRND | right | Horace? 
+Z7_HQ | right | Horace? 
 X3_HQ | left | Este internat intr-un spital de psihiatrie din Naperville
-Z7_GRND | right | Misiune
+Z7_HQ | right | Misiune
 X3_HQ | left | Investigheaza subiectul, stabileste potentiala bresa de informatii, musamalizeaza
-Z7_GRND | right | Elimin?
+Z7_HQ | right | Elimin?
 X3_HQ | left | Avem motive sa credem ca ne-ar fi de folos sa il pastram in viata - o sa vezi...
-Z7_GRND | right | Cand incep?
+Z7_HQ | right | Cand incep?
 X3_HQ | left | Deja ai inceput, ai in spatiul personal bilet de avion, acte false, echipament (pe care te sfatuiesc sa nu il folosesti), bani
-Z7_GRND | right | Cum ajung la Horace?
+Z7_HQ | right | Cum ajung la Horace?
 X3_HQ | left | Este deja programata o vizita in calitate de student la medicina - iti faci lucrarea de teza pe subiectul de psihoze extreme
-Z7_GRND | right | Inapoi pe bancile facultatii... 
+Z7_HQ | right | Inapoi pe bancile facultatii... 
 X3_HQ | left | Te asteapta transport la marginea Perimetrului - in 10h decoleaza avionul.
 ~~~
 
@@ -232,11 +232,13 @@ Arunc restul cutiei de chibrituri in foc, cauzand un mic bulgare de foc si pases
 ---
 
 ~~~chat {title="COM_CHANNEL_8"}
-Z7_GRND | right | Misiune indeplinita - #13 nu reprezinta un pericol 
+Z7_HQ | right | Misiune indeplinita - #13 nu reprezinta un pericol 
 X3_HQ | left | Ce stie despre noi?
-Z7_GRND | right | In mare parte baliverne - nimeni nu il crede
+Z7_HQ | right | In mare parte baliverne - nimeni nu il crede
 X3_HQ | left | Si in mica parte?
-Z7_GRND | right | Nimic concret - doar cenusa in vant...
+Z7_HQ | right | Nimic concret - doar cenusa in vant...
 ~~~
 
 ---
+
+SFARSIT
