@@ -49,6 +49,7 @@ Z7_GRND | right | Cum ajung la Horace?
 X3_HQ | left | Este deja programata o vizita in calitate de student la medicina - iti faci lucrarea de teza pe subiectul de psihoze extreme
 Z7_GRND | right | Inapoi pe bancile facultatii... 
 X3_HQ | left | Te asteapta transport la marginea Perimetrului - in 10h decoleaza avionul.
+~~~
 
 ---
 
@@ -236,4 +237,6 @@ X3_HQ | left | Ce stie despre noi?
 Z7_GRND | right | In mare parte baliverne - nimeni nu il crede
 X3_HQ | left | Si in mica parte?
 Z7_GRND | right | Nimic concret - doar cenusa in vant...
+~~~
+
 ---
