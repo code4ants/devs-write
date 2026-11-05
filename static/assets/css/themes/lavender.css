@@ -1,0 +1,134 @@
+/* Lavender, dark: deep indigo night, soft lavender ink. Built for long, comfortable reading:
+   a warm off-white body on a low-glare indigo ground (~13:1), a literary serif, generous leading,
+   and accents kept to pastel tints so nothing shouts. */
+.theme-lavender {
+  --bg: #15142b;
+  --fg: #e4e1f5;
+  --muted: #a6a2cc;
+  --accent: #b7a9ff;
+  --card: #1c1b38;
+  --border: #302e5a;
+
+  --font-body: "Literata", Georgia, "Times New Roman", serif;
+  --font-head: "Figtree", "Segoe UI", system-ui, sans-serif;
+
+  --radius: 10px;
+
+  /* callout inks: rose, mint, periwinkle */
+  --c-red: #f29bb8;
+  --c-green: #8fdcbc;
+  --c-blue: #8fb5ff;
+
+  font-size: clamp(1.06rem, 1rem + .3vw, 1.15rem);
+  line-height: 1.8;
+}
+html:has(.theme-lavender) { background: #15142b; }
+
+.theme-lavender .site-header { border-bottom-color: var(--border); }
+.theme-lavender .site-title { color: var(--accent); letter-spacing: .04em; }
+.theme-lavender h1 { font-weight: 700; letter-spacing: -.015em; color: #f1eefc; }
+.theme-lavender h2, .theme-lavender h3 { font-weight: 600; color: #f1eefc; }
+.theme-lavender .meta { letter-spacing: .02em; }
+.theme-lavender .lede { color: var(--muted); }
+.theme-lavender .prose { hyphens: manual; }
+.theme-lavender .prose em { color: #efe9ff; }
+.theme-lavender .prose strong { color: #f6f3ff; font-weight: 600; }
+.theme-lavender ::selection { background: rgba(183, 169, 255, .35); color: #fff; }
+.theme-lavender .prose blockquote { border-left-color: #48447f; color: var(--muted); font-style: italic; }
+
+.theme-lavender .chapter-list a::before { color: var(--accent); opacity: .75; }
+.theme-lavender .chapter-nav a { border-color: var(--border); background: var(--card); color: var(--accent); }
+.theme-lavender .chapter-nav a:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+
+/* Opening line: a soft lavender initial, no heavy drop cap. */
+.theme-lavender .chapter .prose > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-body);
+  font-size: 3.1em;
+  font-weight: 600;
+  line-height: .85;
+  padding: .06em .1em 0 0;
+  color: var(--accent);
+}
+
+/* Scene break: a hairline that fades in from both edges, with a small four-pointed star. */
+.theme-lavender .prose hr {
+  --hr-mark: "\2726";
+  --hr-c: var(--accent);
+  margin: 2.75rem 0;
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--hr-c) 60%, transparent) 30%,
+    color-mix(in srgb, var(--hr-c) 60%, transparent) 70%, transparent) center / 100% 1px no-repeat;
+}
+.theme-lavender .prose hr::before {
+  font-size: .85rem;
+  letter-spacing: .5em;
+  padding: 0 .9rem 0 1.4rem; /* letter-spacing trails the glyph: offset it to stay centred */
+  color: var(--accent);
+}
+
+/* Callout: a rounded, softly tinted card. Upright text, so long passages stay easy on the eye. */
+.theme-lavender .callout {
+  font-style: normal;
+  border: 1px solid color-mix(in srgb, var(--c) 30%, transparent);
+  border-left: 3px solid var(--c);
+  background: color-mix(in srgb, var(--c) 9%, var(--card));
+  box-shadow: 0 6px 20px -12px color-mix(in srgb, var(--c) 45%, transparent);
+}
+.theme-lavender .callout em { color: inherit; }
+
+/* Dialogue: a slim lavender bar and an en dash in the margin. */
+.theme-lavender .prose p.dlg {
+  --dlg-c: var(--accent);
+  --dlg-w: 1.4em;
+  padding-block: .15em;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  background: linear-gradient(to right, rgba(183, 169, 255, .07), transparent 65%);
+  border-radius: 0 6px 6px 0;
+}
+.theme-lavender .prose p.dlg .dash { font-weight: 600; }
+
+/* Terminal: a night-ink console with lavender text. */
+.theme-lavender .terminal {
+  --t-fg: #cfc6ff;
+  --t-bg: #0e0d20;
+  --t-bar: #1b1a37;
+  --t-edge: #34316a;
+  --t-dot: #5c579c;
+  font-family: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  box-shadow: 0 10px 30px -18px rgba(120, 100, 255, .55);
+}
+.theme-lavender .terminal pre { font-size: .9rem; line-height: 1.65; }
+
+/* Chat: rounded message bubbles on a slightly raised indigo panel. */
+.theme-lavender .chat {
+  --k-bg: #1a1934;
+  --k-edge: var(--border);
+  --k-r: 1.1rem;
+  font-family: var(--font-head);
+  font-size: .98rem;
+}
+.theme-lavender .chat .bar { background: #211f42; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+.theme-lavender .chat .who { letter-spacing: .04em; }
+.theme-lavender .chat .bubble { border-color: color-mix(in srgb, var(--pc) 30%, transparent); background: color-mix(in srgb, var(--pc) 10%, #1a1934); }
+.theme-lavender .chat .right .bubble { background: color-mix(in srgb, var(--pc) 20%, #1a1934); }
+
+/* Map: a pill button and a softly lit popup. */
+.theme-lavender .map-btn { border-radius: 999px; border-color: color-mix(in srgb, var(--accent) 65%, transparent); }
+.theme-lavender .map-dialog { border-width: 1px; box-shadow: 0 0 0 1px var(--border), 0 2rem 5rem rgba(10, 8, 40, .8), 0 0 50px rgba(183, 169, 255, .15); }
+.theme-lavender .map-ctl { border-radius: 50%; }
+.theme-lavender .map-img { filter: saturate(.85) hue-rotate(-8deg); }
+
+/* Bio + Dex: rounded cards with lavender initials. */
+.theme-lavender .bio-dialog { border-width: 1px; box-shadow: 0 0 0 1px var(--border), 0 2rem 5rem rgba(10, 8, 40, .8), 0 0 50px rgba(183, 169, 255, .15); }
+.theme-lavender .bio-head h2 { letter-spacing: .08em; }
+.theme-lavender .bio-mark { background: color-mix(in srgb, var(--accent) 16%, var(--bg)); }
+.theme-lavender .bio-role { color: var(--muted); }
+.theme-lavender .bio-card h3 { color: #f1eefc; }
+
+/* Reading bar: a translucent indigo strip that lets the page show through faintly. */
+.theme-lavender .readbar {
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.theme-lavender .readbar-drop { border-color: var(--border); }
