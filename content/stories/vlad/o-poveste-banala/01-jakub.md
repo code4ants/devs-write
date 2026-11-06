@@ -7,8 +7,6 @@ title: Jakub
 980,487
 ~~~
 
-Salut! 
-
 Aceasta poveste... e una banala. Poate chiar plictisitoare, despre un individ banal, poate chiar plictisitor. Eu sunt respectivul individ! 
 
 Salut, numele meu este Jakub Kowalczyk si... nu prea stiu ce pot spune despre mine. Mi s-a reprosat ca sunt prea... nicicum, ca cerul lipsit de definitie, al unei toamne reci. Nici prea prea, nici foarte foarte. Chestia e ca, desi nu sunt de acord cu evaluarea jignitoare a altora, nici nu ii condamn ca ar interpreta gresit lucrurile.
