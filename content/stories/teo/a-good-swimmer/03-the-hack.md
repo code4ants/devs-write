@@ -34,7 +34,7 @@ I slip into programming mode. My fingers find every key on their own and fly acr
 
 So, let’s see…
 
-I try to remember everything I used to teach my students about x8086 16-bit assembly. 
+I try to remember everything I used to teach my students about 8086 16-bit assembly. 
 
 I can’t find anything online about this architecture, because nobody uses it anymore. I’ll have to assemble and run the code myself.
 
@@ -175,7 +175,10 @@ The cursor keeps blinking. The apartment is silent.
 I put the four results together and say them out loud, to the empty room.
 
 ```
-52 45 41 4C 4C 59 20 4D 49 53 53 45 44 20 55 20 42 41 42 45
+52 45 41 4C 4C 59 
+4D 49 53 53 45 44
+55
+42 41 42 45
 ```
 
 ***REALLY MISSED U BABE***
